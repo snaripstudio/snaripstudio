@@ -341,49 +341,28 @@ export default function Index() {
             CLIENT WORDS
           </h2>
 
-          <div className="relative">
-            <div className="max-w-4xl">
-              <blockquote className="text-2xl md:text-3xl font-light leading-relaxed mb-8">
-                "{testimonials[currentTestimonial].quote}"
-              </blockquote>
+          <div className="max-w-4xl">
+            <blockquote className="text-2xl md:text-3xl font-normal leading-relaxed mb-8">
+              "{testimonials[0].quote}"
+            </blockquote>
 
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-4">
-                  <img
-                    src={testimonials[currentTestimonial].avatar}
-                    alt={testimonials[currentTestimonial].name}
-                    className="w-12 h-12 rounded-full object-cover grayscale"
-                  />
-                  <div>
-                    <div className="font-medium">
-                      {testimonials[currentTestimonial].name}
-                    </div>
-                    <div className="text-sm text-gray-600">
-                      {testimonials[currentTestimonial].position}
-                    </div>
-                  </div>
-                  <img
-                    src={testimonials[currentTestimonial].logo}
-                    alt="Company logo"
-                    className="h-8 ml-6 grayscale opacity-60"
-                  />
-                </div>
-
-                <div className="flex gap-4">
-                  <button
-                    onClick={prevTestimonial}
-                    className="w-10 h-10 border border-gray-300 flex items-center justify-center hover:border-orange transition-colors"
-                  >
-                    ←
-                  </button>
-                  <button
-                    onClick={nextTestimonial}
-                    className="w-10 h-10 border border-gray-300 flex items-center justify-center hover:border-orange transition-colors"
-                  >
-                    →
-                  </button>
+            <div className="flex items-center gap-4">
+              <img
+                src={testimonials[0].avatar}
+                alt={testimonials[0].name}
+                className="w-12 h-12 rounded-full object-cover"
+              />
+              <div>
+                <div className="font-medium">{testimonials[0].name}</div>
+                <div className="text-sm text-gray-600">
+                  {testimonials[0].position}
                 </div>
               </div>
+              <img
+                src={testimonials[0].logo}
+                alt="Company logo"
+                className="h-8 ml-6 grayscale opacity-60"
+              />
             </div>
           </div>
         </div>
