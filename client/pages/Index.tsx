@@ -396,7 +396,7 @@ export default function Index() {
 
       {/* CTA Section */}
       <section className="px-4 md:px-8 py-24 bg-black text-white">
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-7xl mx-auto text-center animate-on-scroll fade-up">
           <h2 className="text-4xl md:text-6xl font-michroma leading-tight mb-8">
             READY TO CREATE
             <br />
