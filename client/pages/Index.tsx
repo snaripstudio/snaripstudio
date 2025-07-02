@@ -273,6 +273,116 @@ export default function Index() {
         </div>
       </section>
 
+      {/* About Us Section */}
+      <section className="px-4 md:px-8 py-16">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="animate-on-scroll fade-up">
+              <h2 className="text-sm font-medium tracking-widest text-gray-500 mb-4">
+                ABOUT US
+              </h2>
+              <h3 className="text-3xl md:text-5xl font-michroma leading-tight mb-8">
+                EVERY BRAND HAS A
+                <br />
+                UNIQUE STORY
+              </h3>
+              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                At SnaripStudio, we believe every brand has a unique story—and
+                your website should tell it beautifully. We're a passionate team
+                of web developers and designers dedicated to creating
+                tailor-made websites that don't just look great, but also work
+                seamlessly, load quickly, and help your business grow.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                With years of combined experience, we merge creativity and
+                technology to deliver solutions that stand out in a crowded
+                digital world.
+              </p>
+            </div>
+            <div className="animate-on-scroll fade-left">
+              <img
+                src="https://images.unsplash.com/photo-1559028006-448665bd7c7f?w=600&h=400&fit=crop&crop=center&auto=format&q=80"
+                alt="Design process"
+                className="w-full h-[400px] object-cover grayscale transition-transform duration-500 hover:scale-105"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What Makes Us Unique */}
+      <section className="px-4 md:px-8 py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16 animate-on-scroll fade-up">
+            <h2 className="text-sm font-medium tracking-widest text-gray-500 mb-4">
+              WHAT MAKES US UNIQUE
+            </h2>
+            <h3 className="text-3xl md:text-5xl font-michroma leading-tight">
+              WHY CHOOSE
+              <br />
+              SNARIPSTUDIO
+            </h3>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {[
+              {
+                title: "Tailored Approach",
+                description:
+                  "Every project starts with understanding your needs, not forcing you into pre-made templates.",
+              },
+              {
+                title: "Creative Design & Smart Development",
+                description:
+                  "We design stunning, engaging interfaces and develop them with clean, efficient code.",
+              },
+              {
+                title: "One-Stop Web Partner",
+                description:
+                  "From design and development to maintenance and updates, we handle it all so you don't have to.",
+              },
+              {
+                title: "Performance Obsessed",
+                description:
+                  "Fast-loading websites optimized for SEO, conversions, and the best user experience.",
+              },
+              {
+                title: "Mobile-First Mindset",
+                description:
+                  "Every website adapts beautifully on all devices, ensuring a seamless experience everywhere.",
+              },
+              {
+                title: "Transparent Communication",
+                description:
+                  "We keep you updated throughout the project with clear timelines and honest feedback.",
+              },
+              {
+                title: "Long-Term Support",
+                description:
+                  "We don't disappear after launch; we offer ongoing support so your website stays fresh and secure.",
+              },
+            ].map((feature, index) => (
+              <div
+                key={index}
+                className={`flex gap-4 animate-on-scroll fade-up delay-${index * 100}`}
+              >
+                <div className="flex-shrink-0 w-8 h-8 bg-orange rounded-full flex items-center justify-center mt-1">
+                  <span className="text-white text-sm">✓</span>
+                </div>
+                <div>
+                  <h4 className="font-michroma text-lg mb-2">
+                    {feature.title}
+                  </h4>
+                  <p className="text-gray-600 leading-relaxed">
+                    {feature.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section className="px-4 md:px-8 py-16">
         <div className="max-w-7xl mx-auto">
