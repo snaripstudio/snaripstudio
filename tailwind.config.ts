@@ -53,6 +53,7 @@ export default {
         },
         orange: {
           DEFAULT: "hsl(var(--orange))",
+          bright: "hsl(var(--orange-bright))",
           foreground: "hsl(var(--orange-foreground))",
         },
         sidebar: {
