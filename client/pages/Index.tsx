@@ -423,7 +423,7 @@ export default function Index() {
         </div>
 
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="grid md:grid-cols-3 gap-16">
+          <div className="grid md:grid-cols-3 gap-16 animate-on-scroll fade-up">
             {/* Column 1: Team image + Newsletter */}
             <div>
               <img
