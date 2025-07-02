@@ -543,6 +543,30 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Why Choose SnaripStudio Section */}
+      <section className="px-4 md:px-8 py-16">
+        <div className="max-w-7xl mx-auto text-center">
+          <div className="animate-on-scroll fade-up">
+            <h2 className="text-sm font-medium tracking-widest text-gray-500 mb-4">
+              WHY CHOOSE US
+            </h2>
+            <h3 className="text-3xl md:text-5xl font-michroma leading-tight mb-8">
+              WE DON'T JUST BUILD
+              <br />
+              WEBSITES—WE CRAFT
+              <br />
+              <span className="text-orange">DIGITAL EXPERIENCES</span>
+            </h3>
+            <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+              We blend creativity, technical expertise, and a genuine passion
+              for your success. Our websites inspire trust, impress your
+              customers, and grow your business through strategic design and
+              flawless execution.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="px-4 md:px-8 py-24 bg-black text-white">
         <div className="max-w-7xl mx-auto text-center animate-on-scroll fade-up">
