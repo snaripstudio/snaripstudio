@@ -234,7 +234,7 @@ export default function Index() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="hero-text">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-michroma leading-[1.1] tracking-tight mb-8">
-                WE DESIGN & BUILD
+                WEBSITES THAT TURN
                 <br />
                 <span
                   className="text-orange inline-block"
@@ -243,18 +243,24 @@ export default function Index() {
                   {typewriterText}
                   <span className="animate-pulse">|</span>
                 </span>{" "}
-                DIGITAL
+                IDEAS
                 <br />
-                EXPERIENCES.
+                INTO EXTRAORDINARY
+                <br />
+                DIGITAL EXPERIENCES.
               </h1>
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-lg mb-8">
-                We create stunning digital experiences that connect brands with
-                their audiences through innovative design and strategic
-                thinking.
+                Custom-crafted websites, flawless performance, and designs that
+                captivate—let's build your online success together.
               </p>
-              <button className="bg-orange-bright text-white px-8 py-4 text-sm font-medium tracking-wide transition-all hover:shadow-lg hover:shadow-orange-bright/25">
-                GET STARTED
-              </button>
+              <div className="flex gap-4">
+                <button className="bg-orange-bright text-white px-8 py-4 text-sm font-medium tracking-wide transition-all hover:shadow-lg hover:shadow-orange-bright/25">
+                  GET STARTED
+                </button>
+                <button className="border border-gray-300 text-black px-8 py-4 text-sm font-medium tracking-wide transition-all hover:border-orange">
+                  SEE OUR WORK
+                </button>
+              </div>
             </div>
             <div className="relative hero-image">
               <img
