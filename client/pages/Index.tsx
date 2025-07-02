@@ -571,16 +571,17 @@ export default function Index() {
       <section className="px-4 md:px-8 py-24 bg-black text-white">
         <div className="max-w-7xl mx-auto text-center animate-on-scroll fade-up">
           <h2 className="text-4xl md:text-6xl font-michroma leading-tight mb-8">
-            READY TO CREATE
+            READY TO TRANSFORM
             <br />
-            SOMETHING AMAZING?
+            YOUR DIGITAL PRESENCE?
           </h2>
           <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed">
             Let's discuss your project and bring your vision to life with our
-            creative expertise.
+            creative expertise. Your extraordinary digital experience starts
+            with a conversation.
           </p>
           <button className="group bg-orange-bright text-white px-12 py-4 text-lg font-medium tracking-wide transition-all hover:shadow-lg hover:shadow-orange-bright/25 inline-flex items-center gap-3 floating-cta">
-            LET'S DISCUSS
+            LET'S DISCUSS YOUR PROJECT
             <span className="transform transition-transform group-hover:translate-x-1">
               →
             </span>
