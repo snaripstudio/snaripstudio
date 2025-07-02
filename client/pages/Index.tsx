@@ -268,12 +268,11 @@ export default function Index() {
                 <br />
                 <span
                   className="text-orange inline-block"
-                  style={{ minWidth: "400px" }}
+                  style={{ minWidth: "200px" }}
                 >
                   {typewriterText}
                   <span className="animate-pulse">|</span>
-                </span>{" "}
-                IDEAS
+                </span>
                 <br />
                 INTO EXTRAORDINARY
                 <br />
