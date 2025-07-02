@@ -315,7 +315,7 @@ export default function Index() {
       {/* Project Marquee */}
       <section className="py-16 bg-gray-50">
         <div className="px-4 md:px-8 mb-16">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-7xl mx-auto animate-on-scroll fade-up">
             <h2 className="text-sm font-medium tracking-widest text-gray-500 mb-4">
               SELECTED PROJECTS
             </h2>
@@ -325,7 +325,7 @@ export default function Index() {
           </div>
         </div>
 
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden animate-on-scroll fade-up delay-300">
           <div className="marquee-container">
             <div className="marquee-content">
               {[...projects, ...projects].map((project, index) => (
