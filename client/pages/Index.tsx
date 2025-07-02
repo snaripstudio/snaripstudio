@@ -418,12 +418,12 @@ export default function Index() {
         <div className="max-w-7xl mx-auto">
           <div className="mb-16 animate-on-scroll fade-up">
             <h2 className="text-sm font-medium tracking-widest text-gray-500 mb-4">
-              WHAT WE DO
+              OUR SERVICES
             </h2>
             <h3 className="text-3xl md:text-5xl font-michroma leading-tight">
-              WE CREATE BRANDS AND
+              COMPREHENSIVE
               <br />
-              DIGITAL PRODUCTS
+              WEB SOLUTIONS
             </h3>
           </div>
 
@@ -431,7 +431,7 @@ export default function Index() {
             {services.map((service, index) => (
               <div
                 key={index}
-                className={`group cursor-pointer animate-on-scroll fade-up delay-${index * 200}`}
+                className={`group cursor-pointer animate-on-scroll fade-up delay-${index * 100}`}
               >
                 <div className="relative overflow-hidden mb-6">
                   <img
@@ -440,8 +440,11 @@ export default function Index() {
                     className="w-full h-64 object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-500"></div>
-                  <div className="absolute top-4 right-4 text-xs font-medium tracking-widest text-white bg-black/50 px-2 py-1">
+                  <div className="absolute top-4 right-4 text-xs font-medium tracking-widest text-white bg-black/70 px-2 py-1">
                     {service.category}
+                  </div>
+                  <div className="absolute top-4 left-4 text-2xl">
+                    {service.icon}
                   </div>
                 </div>
                 <div>
