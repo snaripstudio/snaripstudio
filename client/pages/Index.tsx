@@ -268,7 +268,7 @@ export default function Index() {
                 <br />
                 <span
                   className="text-orange inline-block"
-                  style={{ minWidth: "200px" }}
+                  style={{ minWidth: "400px" }}
                 >
                   {typewriterText}
                   <span className="animate-pulse">|</span>
