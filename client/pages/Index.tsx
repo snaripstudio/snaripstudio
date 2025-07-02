@@ -119,11 +119,11 @@ export default function Index() {
   const testimonials = [
     {
       quote:
-        "SNARIPSTUDIO DELIVERED EXCEPTIONAL RESULTS THAT EXCEEDED OUR EXPECTATIONS. THEIR CREATIVE APPROACH PERFECTLY CAPTURED OUR BRAND ESSENCE.",
-      name: "SARAH JOHNSON",
-      position: "CEO, TechFlow",
+        "SNARIPSTUDIO CREATED AN OUTSTANDING WEBSITE FOR OUR SOCIAL MEDIA MARKETING AGENCY THAT TRANSFORMED OUR BUSINESS. THE CONVERSION-FOCUSED DESIGN INCREASED OUR CLIENT INQUIRIES BY 150% WITHIN THE FIRST MONTH.",
+      name: "DEVANSH SRIVASTAVA",
+      position: "CEO, ConixMedia",
       avatar:
-        "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=60&h=60&fit=crop&crop=face&auto=format&q=80",
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face&auto=format&q=80",
       logo: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=120&h=40&fit=crop&crop=center&auto=format&q=80",
     },
     {
