@@ -546,6 +546,35 @@ export default function Index() {
         .nav-link:hover::after {
           width: 100%;
         }
+
+        .marquee-container {
+          width: 100%;
+        }
+
+        .marquee-content {
+          display: flex;
+          gap: 2rem;
+          animation: marquee 60s linear infinite;
+          width: max-content;
+        }
+
+        .marquee-container:hover .marquee-content {
+          animation-play-state: paused;
+        }
+
+        .marquee-item {
+          flex-shrink: 0;
+          width: 320px;
+        }
+
+        @keyframes marquee {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(-50%);
+          }
+        }
       `}</style>
     </div>
   );
