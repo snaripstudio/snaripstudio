@@ -73,28 +73,58 @@ export default function Index() {
 
   const services = [
     {
-      title: "BRAND IDENTITY",
+      title: "CUSTOM WEBSITE DESIGN",
       description:
-        "We craft distinctive brand identities that captivate audiences and communicate your brand essence effectively.",
-      image:
-        "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
-      category: "BRANDING",
-    },
-    {
-      title: "UI/UX DESIGN",
-      description:
-        "Creating intuitive and beautiful user experiences that drive engagement and conversions.",
+        "Unique, pixel-perfect designs made from scratch. Every element crafted specifically for your brand's story and goals.",
       image:
         "https://images.unsplash.com/photo-1559028006-448665bd7c7f?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "DESIGN",
+      icon: "🎨",
     },
     {
-      title: "WEB DEVELOPMENT",
+      title: "RESPONSIVE WEB DEVELOPMENT",
       description:
-        "Building fast, scalable, and modern web applications with cutting-edge technologies.",
+        "Mobile-friendly websites that look stunning on any device. Clean, efficient code built for performance and scalability.",
       image:
         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "DEVELOPMENT",
+      icon: "💻",
+    },
+    {
+      title: "E-COMMERCE SOLUTIONS",
+      description:
+        "Build online stores with powerful features that convert visitors into customers. Secure, fast, and user-friendly shopping experiences.",
+      image:
+        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+      category: "E-COMMERCE",
+      icon: "🛒",
+    },
+    {
+      title: "SEO OPTIMIZATION",
+      description:
+        "Websites crafted with SEO best practices for better search engine visibility and organic traffic growth.",
+      image:
+        "https://images.unsplash.com/photo-1542744094-3a31f272c490?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+      category: "SEO",
+      icon: "🔍",
+    },
+    {
+      title: "CONTENT MANAGEMENT",
+      description:
+        "Easy-to-manage sites with WordPress, custom CMS, or headless solutions. Update your content with confidence.",
+      image:
+        "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+      category: "CMS",
+      icon: "📝",
+    },
+    {
+      title: "SECURITY & MAINTENANCE",
+      description:
+        "Regular updates, backups, and secure coding practices. Keep your website safe, fast, and up-to-date.",
+      image:
+        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+      category: "MAINTENANCE",
+      icon: "🔒",
     },
   ];
 
