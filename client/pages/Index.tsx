@@ -256,7 +256,7 @@ export default function Index() {
                 GET STARTED
               </button>
             </div>
-            <div className="relative animate-on-scroll fade-left">
+            <div className="relative hero-image">
               <img
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop&crop=center&auto=format&q=80"
                 alt="Creative team collaboration"
