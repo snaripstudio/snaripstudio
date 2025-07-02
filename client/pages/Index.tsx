@@ -363,11 +363,11 @@ export default function Index() {
       {/* Testimonials Carousel */}
       <section className="px-4 md:px-8 py-16">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-sm font-medium tracking-widest text-gray-500 mb-8">
+          <h2 className="text-sm font-medium tracking-widest text-gray-500 mb-8 animate-on-scroll fade-up">
             CLIENT WORDS
           </h2>
 
-          <div className="max-w-4xl">
+          <div className="max-w-4xl animate-on-scroll fade-up delay-200">
             <blockquote className="text-2xl md:text-3xl font-normal leading-relaxed mb-8">
               "{testimonials[0].quote}"
             </blockquote>
