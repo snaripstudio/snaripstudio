@@ -406,7 +406,7 @@ export default function Index() {
             Let's discuss your project and bring your vision to life with our
             creative expertise.
           </p>
-          <button className="group bg-orange-bright text-white px-12 py-4 text-lg font-medium tracking-wide transition-all hover:shadow-lg hover:shadow-orange-bright/25 inline-flex items-center gap-3">
+          <button className="group bg-orange-bright text-white px-12 py-4 text-lg font-medium tracking-wide transition-all hover:shadow-lg hover:shadow-orange-bright/25 inline-flex items-center gap-3 floating-cta">
             LET'S DISCUSS
             <span className="transform transition-transform group-hover:translate-x-1">
               →
