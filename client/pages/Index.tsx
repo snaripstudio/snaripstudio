@@ -304,10 +304,10 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Project Grid */}
-      <section className="px-4 md:px-8 py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="mb-16">
+      {/* Project Marquee */}
+      <section className="py-16 bg-gray-50">
+        <div className="px-4 md:px-8 mb-16">
+          <div className="max-w-7xl mx-auto">
             <h2 className="text-sm font-medium tracking-widest text-gray-500 mb-4">
               SELECTED PROJECTS
             </h2>
@@ -315,35 +315,39 @@ export default function Index() {
               OUR RECENT WORK
             </h3>
           </div>
+        </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <div key={index} className="group cursor-pointer">
-                <div className="relative overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-64 object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-500"></div>
-                  <div className="absolute top-4 right-4 text-xs font-medium tracking-widest text-white bg-black/70 px-2 py-1">
-                    {project.category}
-                  </div>
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="text-center text-white p-6">
-                      <p className="text-sm leading-relaxed">
-                        {project.description}
-                      </p>
+        <div className="relative overflow-hidden">
+          <div className="marquee-container">
+            <div className="marquee-content">
+              {[...projects, ...projects].map((project, index) => (
+                <div key={index} className="marquee-item group cursor-pointer">
+                  <div className="relative overflow-hidden w-80 h-64">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-500"></div>
+                    <div className="absolute top-4 right-4 text-xs font-medium tracking-widest text-white bg-black/70 px-2 py-1">
+                      {project.category}
+                    </div>
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="text-center text-white p-6">
+                        <p className="text-sm leading-relaxed">
+                          {project.description}
+                        </p>
+                      </div>
                     </div>
                   </div>
+                  <div className="pt-6 px-4">
+                    <h3 className="text-xl font-michroma mb-2">
+                      {project.title}
+                    </h3>
+                  </div>
                 </div>
-                <div className="pt-6">
-                  <h3 className="text-xl font-michroma mb-2">
-                    {project.title}
-                  </h3>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
