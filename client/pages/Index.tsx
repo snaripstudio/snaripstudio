@@ -39,7 +39,7 @@ export default function Index() {
     };
   }, []);
 
-  const fullText = "IMPACTFUL";
+  const fullText = "IDEAS";
   const typewriterSpeed = 150;
   const deleteSpeed = 100;
   const pauseTime = 2000;
