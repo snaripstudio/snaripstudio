@@ -119,29 +119,11 @@ export default function Index() {
   const testimonials = [
     {
       quote:
-        "SNARIPSTUDIO CREATED AN OUTSTANDING WEBSITE FOR OUR SOCIAL MEDIA MARKETING AGENCY THAT TRANSFORMED OUR BUSINESS. THE CONVERSION-FOCUSED DESIGN INCREASED OUR CLIENT INQUIRIES BY 150% WITHIN THE FIRST MONTH.",
+        "SnaripStudio created an outstanding website for our social media marketing agency that transformed our business. The conversion-focused design increased our client inquiries by 150% within the first month.",
       name: "DEVANSH SRIVASTAVA",
       position: "CEO, ConixMedia",
       avatar:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face&auto=format&q=80",
-      logo: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=120&h=40&fit=crop&crop=center&auto=format&q=80",
-    },
-    {
-      quote:
-        "THE TEAM'S ATTENTION TO DETAIL AND INNOVATIVE SOLUTIONS TRANSFORMED OUR DIGITAL PRESENCE COMPLETELY. HIGHLY RECOMMENDED!",
-      name: "MICHAEL CHEN",
-      position: "Founder, StartupX",
-      avatar:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face&auto=format&q=80",
-      logo: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=120&h=40&fit=crop&crop=center&auto=format&q=80",
-    },
-    {
-      quote:
-        "WORKING WITH SNARIPSTUDIO WAS A GAME-CHANGER. THEY UNDERSTOOD OUR VISION AND BROUGHT IT TO LIFE BRILLIANTLY.",
-      name: "EMILY DAVIS",
-      position: "Creative Director, DesignCo",
-      avatar:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face&auto=format&q=80",
+        "https://cdn.builder.io/api/v1/image/assets%2Ff48aa15f6f184b529ed3ca882d1ea006%2F11c44a19c4b3408281b5949101120872?format=webp&width=800",
       logo: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=120&h=40&fit=crop&crop=center&auto=format&q=80",
     },
   ];
