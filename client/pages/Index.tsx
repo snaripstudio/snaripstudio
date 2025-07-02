@@ -4,7 +4,6 @@ export default function Index() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [typewriterText, setTypewriterText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   const fullText = "IMPACTFUL";
   const typewriterSpeed = 150;
