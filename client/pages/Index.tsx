@@ -562,6 +562,125 @@ export default function Index() {
             transform: translateX(-50%);
           }
         }
+
+        /* Scroll Animations */
+        .animate-on-scroll {
+          opacity: 0;
+          transform: translateY(30px);
+          transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .animate-on-scroll.fade-up {
+          transform: translateY(50px);
+        }
+
+        .animate-on-scroll.fade-left {
+          transform: translateX(50px) translateY(20px);
+        }
+
+        .animate-on-scroll.fade-right {
+          transform: translateX(-50px) translateY(20px);
+        }
+
+        .animate-on-scroll.delay-200 {
+          transition-delay: 200ms;
+        }
+
+        .animate-on-scroll.delay-300 {
+          transition-delay: 300ms;
+        }
+
+        .animate-on-scroll.delay-400 {
+          transition-delay: 400ms;
+        }
+
+        .animate-on-scroll.delay-600 {
+          transition-delay: 600ms;
+        }
+
+        .animate-on-scroll.animate-in {
+          opacity: 1;
+          transform: translateY(0) translateX(0);
+        }
+
+        /* Staggered animations for grid items */
+        .animate-on-scroll.delay-0 {
+          transition-delay: 0ms;
+        }
+
+        .animate-on-scroll.delay-100 {
+          transition-delay: 100ms;
+        }
+
+        .animate-on-scroll.delay-500 {
+          transition-delay: 500ms;
+        }
+
+        /* Special animations for different elements */
+        .fade-in-scale {
+          opacity: 0;
+          transform: scale(0.95) translateY(20px);
+          transition: all 0.6s ease-out;
+        }
+
+        .fade-in-scale.animate-in {
+          opacity: 1;
+          transform: scale(1) translateY(0);
+        }
+
+        /* Smooth entrance for hero section */
+        .hero-text {
+          opacity: 0;
+          transform: translateY(40px);
+          animation: heroFadeIn 1s ease-out 0.3s forwards;
+        }
+
+        .hero-image {
+          opacity: 0;
+          transform: translateX(30px);
+          animation: heroImageSlide 1s ease-out 0.6s forwards;
+        }
+
+        @keyframes heroFadeIn {
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes heroImageSlide {
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+
+        /* Floating animation for CTA button */
+        .floating-cta {
+          animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+          0%,
+          100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-5px);
+          }
+        }
+
+        /* Smooth reveal for testimonial */
+        .testimonial-reveal {
+          opacity: 0;
+          transform: translateY(30px) scale(0.98);
+          transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .testimonial-reveal.animate-in {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
       `}</style>
     </div>
   );
