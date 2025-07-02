@@ -270,7 +270,7 @@ export default function Index() {
       {/* Services Section */}
       <section className="px-4 md:px-8 py-16">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-16">
+          <div className="mb-16 animate-on-scroll fade-up">
             <h2 className="text-sm font-medium tracking-widest text-gray-500 mb-4">
               WHAT WE DO
             </h2>
@@ -283,7 +283,10 @@ export default function Index() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="group cursor-pointer">
+              <div
+                key={index}
+                className={`group cursor-pointer animate-on-scroll fade-up delay-${index * 200}`}
+              >
                 <div className="relative overflow-hidden mb-6">
                   <img
                     src={service.image}
