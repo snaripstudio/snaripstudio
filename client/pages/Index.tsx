@@ -381,11 +381,6 @@ export default function Index() {
                   "Every website adapts beautifully on all devices, ensuring a seamless experience everywhere.",
               },
               {
-                title: "Transparent Communication",
-                description:
-                  "We keep you updated throughout the project with clear timelines and honest feedback.",
-              },
-              {
                 title: "Long-Term Support",
                 description:
                   "We don't disappear after launch; we offer ongoing support so your website stays fresh and secure.",
