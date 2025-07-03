@@ -228,30 +228,23 @@ export default function Index() {
       </header>
 
       {/* Hero Section */}
-      <section className="hero-gradient relative overflow-hidden min-h-[80vh] flex items-center">
-        {/* Abstract Graphics */}
+      <section className="hero-gradient relative overflow-hidden min-h-[80vh] flex items-center mr-auto pr-48">
+        {/* Animated Blob Shapes */}
         <div className="absolute right-0 top-0 w-1/2 h-full">
-          <img
-            src={`${window.location.origin}/hero-graphic.svg`}
-            alt=""
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 w-full h-auto opacity-80"
-            onError={(e) => {
-              // Fallback to CSS shapes if SVG not found
-              e.currentTarget.style.display = "none";
-            }}
-          />
-          {/* Fallback CSS Graphics */}
-          <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-96 h-96">
-            <div className="flowing-shape-1"></div>
-            <div className="flowing-shape-2"></div>
-            <div className="flowing-shape-3"></div>
-          </div>
+          {/* Blob 1 */}
+          <div className="blob-shape blob-1"></div>
+          {/* Blob 2 */}
+          <div className="blob-shape blob-2"></div>
+          {/* Blob 3 */}
+          <div className="blob-shape blob-3"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
-          <div className="max-w-2xl">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-michroma text-white leading-[0.9] tracking-tight mb-6">
-              Snarip Studio
+          <div className="max-w-2xl mr-auto flex flex-col justify-start items-start">
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-michroma text-white leading-[0.9] tracking-tight m-0 mb-6">
+              SNARIP
+              <br />
+              STUDIO
             </h1>
             <p className="text-lg md:text-xl text-orange-100 leading-relaxed mb-12 max-w-lg">
               Custom-crafted websites, flawless performance, and designs that
