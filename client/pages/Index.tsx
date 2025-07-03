@@ -597,65 +597,39 @@ export default function Index() {
         </div>
 
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="grid md:grid-cols-3 gap-16 animate-on-scroll fade-up">
-            {/* Column 1: Team image + Newsletter */}
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=200&fit=crop&crop=center&auto=format&q=80"
-                alt="Our team"
-                className="w-full h-32 object-cover mb-6 grayscale"
-              />
-              <h3 className="font-michroma text-lg mb-4">STAY UPDATED</h3>
-              <div className="flex">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 bg-gray-800 border border-gray-700 px-4 py-2 text-sm focus:outline-none focus:border-orange"
-                />
-                <button className="bg-orange px-4 py-2 text-sm font-medium">
-                  →
-                </button>
-              </div>
-            </div>
-
-            {/* Column 2: Links */}
+          <div className="grid md:grid-cols-2 gap-16 animate-on-scroll fade-up">
+            {/* Column 1: Links */}
             <div>
               <h3 className="font-michroma text-lg mb-6">NAVIGATION</h3>
               <nav className="space-y-4">
                 <a
-                  href="#"
+                  href="#about"
                   className="block text-gray-300 hover:text-orange transition-colors"
                 >
                   About Us
                 </a>
                 <a
-                  href="#"
+                  href="#services"
                   className="block text-gray-300 hover:text-orange transition-colors"
                 >
                   Services
                 </a>
                 <a
-                  href="#"
+                  href="#work"
                   className="block text-gray-300 hover:text-orange transition-colors"
                 >
                   Portfolio
                 </a>
                 <a
-                  href="#"
+                  href="/contact"
                   className="block text-gray-300 hover:text-orange transition-colors"
                 >
                   Contact
                 </a>
-                <a
-                  href="#"
-                  className="block text-gray-300 hover:text-orange transition-colors"
-                >
-                  Blog
-                </a>
               </nav>
             </div>
 
-            {/* Column 3: Social Links */}
+            {/* Column 2: Social Links */}
             <div>
               <h3 className="font-michroma text-lg mb-6">CONNECT</h3>
               <div className="space-y-4">
