@@ -206,28 +206,31 @@ export default function Index() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-12">
             <a
-              href="#"
+              href="#about"
               className="nav-link relative text-sm font-medium tracking-wide text-black transition-colors hover:text-orange"
             >
               ABOUT
             </a>
             <a
-              href="#"
+              href="#services"
               className="nav-link relative text-sm font-medium tracking-wide text-black transition-colors hover:text-orange"
             >
               SERVICES
             </a>
             <a
-              href="#"
+              href="#work"
               className="nav-link relative text-sm font-medium tracking-wide text-black transition-colors hover:text-orange"
             >
               WORK
             </a>
           </nav>
 
-          <button className="hidden md:block bg-orange-bright text-white px-6 py-3 text-sm font-medium tracking-wide transition-all hover:shadow-lg hover:shadow-orange-bright/25">
+          <a
+            href="/contact"
+            className="hidden md:block bg-orange-bright text-white px-6 py-3 text-sm font-medium tracking-wide transition-all hover:shadow-lg hover:shadow-orange-bright/25"
+          >
             LET'S TALK
-          </button>
+          </a>
 
           {/* Mobile Menu Button */}
           <button
