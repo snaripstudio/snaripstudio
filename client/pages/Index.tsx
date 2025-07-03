@@ -339,8 +339,8 @@ export default function Index() {
             </div>
             <div className="animate-on-scroll fade-left">
               <img
-                src="https://images.unsplash.com/photo-1559028006-448665bd7c7f?w=600&h=400&fit=crop&crop=center&auto=format&q=80"
-                alt="Design process"
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop&crop=center&auto=format&q=80"
+                alt="Team collaboration and design process"
                 className="w-full h-[400px] object-cover grayscale transition-transform duration-500 hover:scale-105"
               />
             </div>
