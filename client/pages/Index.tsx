@@ -217,6 +217,9 @@ export default function Index() {
         {isMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 bg-white border-t py-4 px-4">
             <nav className="flex flex-col space-y-4">
+              <a href="/" className="text-sm font-medium tracking-wide">
+                HOME
+              </a>
               <a href="#about" className="text-sm font-medium tracking-wide">
                 ABOUT
               </a>
