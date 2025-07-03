@@ -770,6 +770,109 @@ export default function Index() {
           transition-delay: 300ms;
         }
 
+        /* Animated Background Lines */
+        .background-lines {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          z-index: -1;
+          overflow: hidden;
+        }
+
+        .line {
+          position: absolute;
+          background: linear-gradient(
+            90deg,
+            transparent 0%,
+            rgba(0, 0, 0, 0.02) 50%,
+            transparent 100%
+          );
+          transform: rotate(-15deg);
+        }
+
+        .line-1 {
+          width: 1px;
+          height: 200vh;
+          left: 10%;
+          animation: moveVertical 20s linear infinite;
+          animation-delay: 0s;
+        }
+
+        .line-2 {
+          width: 1px;
+          height: 200vh;
+          left: 25%;
+          animation: moveVertical 25s linear infinite;
+          animation-delay: -5s;
+        }
+
+        .line-3 {
+          width: 1px;
+          height: 200vh;
+          left: 45%;
+          animation: moveVertical 30s linear infinite;
+          animation-delay: -10s;
+        }
+
+        .line-4 {
+          width: 1px;
+          height: 200vh;
+          left: 65%;
+          animation: moveVertical 22s linear infinite;
+          animation-delay: -15s;
+        }
+
+        .line-5 {
+          width: 1px;
+          height: 200vh;
+          left: 80%;
+          animation: moveVertical 28s linear infinite;
+          animation-delay: -8s;
+        }
+
+        .line-6 {
+          width: 1px;
+          height: 200vh;
+          left: 90%;
+          animation: moveVertical 24s linear infinite;
+          animation-delay: -12s;
+        }
+
+        @keyframes moveVertical {
+          0% {
+            transform: translateY(-100vh) rotate(-15deg);
+          }
+          100% {
+            transform: translateY(100vh) rotate(-15deg);
+          }
+        }
+
+        /* Add some horizontal movement too */
+        .line:nth-child(odd) {
+          animation:
+            moveVertical 20s linear infinite,
+            sway 8s ease-in-out infinite;
+        }
+
+        .line:nth-child(even) {
+          animation:
+            moveVertical 25s linear infinite,
+            sway 6s ease-in-out infinite reverse;
+        }
+
+        @keyframes sway {
+          0%,
+          100% {
+            transform: translateX(0px) translateY(-100vh) rotate(-15deg);
+          }
+          50% {
+            transform: translateX(20px) translateY(-100vh) rotate(-15deg);
+          }
+        }
+
         /* Special animations for different elements */
         .fade-in-scale {
           opacity: 0;
