@@ -261,8 +261,8 @@ export default function Index() {
       {/* Hero Section */}
       <section className="px-4 md:px-8 py-5">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="hero-text">
+          <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="hero-text flex-1 w-full">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-michroma leading-[1.1] tracking-tight mb-8">
                 WEBSITES THAT TURN
                 <br />
