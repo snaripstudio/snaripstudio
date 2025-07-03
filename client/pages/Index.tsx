@@ -516,29 +516,26 @@ export default function Index() {
             CLIENT WORDS
           </h2>
 
-          <div className="max-w-4xl animate-on-scroll fade-up delay-200">
-            <blockquote className="text-2xl md:text-3xl font-normal leading-relaxed mb-8">
-              "{testimonials[0].quote}"
-            </blockquote>
-
-            <div className="flex items-center gap-4">
+          <div className="max-w-4xl animate-on-scroll fade-up delay-200 text-center">
+            <div className="mb-8">
               <img
                 src={testimonials[0].avatar}
                 alt={testimonials[0].name}
-                className="w-12 h-12 rounded-full object-cover"
+                className="w-20 h-20 rounded-full object-cover mx-auto mb-6"
               />
-              <div>
-                <div className="font-medium">{testimonials[0].name}</div>
+              <div className="mb-4">
+                <div className="font-medium text-lg">
+                  {testimonials[0].name}
+                </div>
                 <div className="text-sm text-gray-600">
                   {testimonials[0].position}
                 </div>
               </div>
-              <img
-                src={testimonials[0].logo}
-                alt="Company logo"
-                className="h-8 ml-6 grayscale opacity-60"
-              />
             </div>
+
+            <blockquote className="text-lg md:text-xl font-normal leading-relaxed">
+              "{testimonials[0].quote}"
+            </blockquote>
           </div>
         </div>
       </section>
