@@ -270,8 +270,8 @@ export default function Index() {
       {/* Hero Section */}
       <section className="px-4 md:px-8 py-5">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col lg:flex-row gap-16 items-center">
-            <div className="hero-text flex-1 w-full">
+          <div className="text-center">
+            <div className="hero-text">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-michroma leading-[1.1] tracking-tight mb-8">
                 WEBSITES THAT TURN
                 <br />
@@ -287,11 +287,11 @@ export default function Index() {
                 <br />
                 DIGITAL EXPERIENCES.
               </h1>
-              <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-lg mb-8">
+              <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-lg mb-8 mx-auto">
                 Custom-crafted websites, flawless performance, and designs that
                 captivate—let's build your online success together.
               </p>
-              <div className="flex gap-4">
+              <div className="flex gap-4 justify-center mb-12">
                 <a
                   href="/contact"
                   className="bg-orange-bright text-white px-8 py-4 text-sm font-medium tracking-wide transition-all hover:shadow-lg hover:shadow-orange-bright/25 inline-block"
@@ -306,11 +306,11 @@ export default function Index() {
                 </a>
               </div>
             </div>
-            <div className="relative hero-image flex-1 w-full">
+            <div className="relative hero-image max-w-4xl mx-auto">
               <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop&crop=center&auto=format&q=80"
-                alt="Creative team collaboration"
-                className="w-full h-[500px] object-cover grayscale transition-transform duration-500 hover:scale-105"
+                src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?w=800&h=500&fit=crop&crop=center&auto=format&q=80"
+                alt="Modern web development workspace"
+                className="w-full h-[400px] object-cover grayscale transition-transform duration-500 hover:scale-105"
               />
             </div>
           </div>
