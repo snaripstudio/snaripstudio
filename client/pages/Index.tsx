@@ -916,33 +916,6 @@ export default function Index() {
           transform: scale(1) translateY(0);
         }
 
-        /* Smooth entrance for hero section */
-        .hero-text {
-          opacity: 0;
-          transform: translateY(40px);
-          animation: heroFadeIn 1s ease-out 0.3s forwards;
-        }
-
-        .hero-image {
-          opacity: 0;
-          transform: translateX(30px);
-          animation: heroImageSlide 1s ease-out 0.6s forwards;
-        }
-
-        @keyframes heroFadeIn {
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        @keyframes heroImageSlide {
-          to {
-            opacity: 1;
-            transform: translateX(0);
-          }
-        }
-
         /* Floating animation for CTA button */
         .floating-cta {
           animation: float 3s ease-in-out infinite;
