@@ -5,70 +5,32 @@ export default function Index() {
   const [typewriterText, setTypewriterText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
 
-  // Scroll animation setup
-  const observerRef = useRef<IntersectionObserver | null>(null);
-  const [lastScrollY, setLastScrollY] = useState(0);
-
+  // Simple scroll animation setup
   useEffect(() => {
-    let ticking = false;
-
-    const updateScrollDirection = () => {
-      const scrollY = window.scrollY;
-
-      if (Math.abs(scrollY - lastScrollY) < 5) {
-        ticking = false;
-        return;
-      }
-
-      setLastScrollY(scrollY);
-      ticking = false;
-    };
-
-    const onScroll = () => {
-      if (!ticking) {
-        requestAnimationFrame(updateScrollDirection);
-        ticking = true;
-      }
-    };
-
-    // Set up intersection observer for scroll animations
-    observerRef.current = new IntersectionObserver(
+    const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          const scrollingDown = window.scrollY > lastScrollY;
-
-          if (entry.isIntersecting && scrollingDown) {
+          if (entry.isIntersecting) {
             entry.target.classList.add("animate-in");
-            entry.target.classList.remove("animate-out");
-          } else if (!entry.isIntersecting && !scrollingDown) {
-            entry.target.classList.remove("animate-in");
-            entry.target.classList.add("animate-out");
           }
         });
       },
       {
-        threshold: 0.15,
-        rootMargin: "0px 0px -100px 0px",
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
       },
     );
 
     // Observe all animated elements
     const animatedElements = document.querySelectorAll(".animate-on-scroll");
     animatedElements.forEach((el) => {
-      if (observerRef.current) {
-        observerRef.current.observe(el);
-      }
+      observer.observe(el);
     });
 
-    window.addEventListener("scroll", onScroll, { passive: true });
-
     return () => {
-      if (observerRef.current) {
-        observerRef.current.disconnect();
-      }
-      window.removeEventListener("scroll", onScroll);
+      observer.disconnect();
     };
-  }, [lastScrollY]);
+  }, []);
 
   const fullText = "IMPACTFUL IDEAS";
   const typewriterSpeed = 150;
