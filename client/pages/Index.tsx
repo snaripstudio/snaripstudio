@@ -7,20 +7,48 @@ export default function Index() {
 
   // Scroll animation setup
   const observerRef = useRef<IntersectionObserver | null>(null);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
+    let ticking = false;
+
+    const updateScrollDirection = () => {
+      const scrollY = window.scrollY;
+
+      if (Math.abs(scrollY - lastScrollY) < 5) {
+        ticking = false;
+        return;
+      }
+
+      setLastScrollY(scrollY);
+      ticking = false;
+    };
+
+    const onScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(updateScrollDirection);
+        ticking = true;
+      }
+    };
+
     // Set up intersection observer for scroll animations
     observerRef.current = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
+          const scrollingDown = window.scrollY > lastScrollY;
+
+          if (entry.isIntersecting && scrollingDown) {
             entry.target.classList.add("animate-in");
+            entry.target.classList.remove("animate-out");
+          } else if (!entry.isIntersecting && !scrollingDown) {
+            entry.target.classList.remove("animate-in");
+            entry.target.classList.add("animate-out");
           }
         });
       },
       {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px",
+        threshold: 0.15,
+        rootMargin: "0px 0px -100px 0px",
       },
     );
 
@@ -32,12 +60,15 @@ export default function Index() {
       }
     });
 
+    window.addEventListener("scroll", onScroll, { passive: true });
+
     return () => {
       if (observerRef.current) {
         observerRef.current.disconnect();
       }
+      window.removeEventListener("scroll", onScroll);
     };
-  }, []);
+  }, [lastScrollY]);
 
   const fullText = "IMPACTFUL IDEAS";
   const typewriterSpeed = 150;
