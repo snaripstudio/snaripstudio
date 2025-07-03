@@ -684,12 +684,13 @@ export default function Index() {
 
         .marquee-container {
           width: 100%;
+          overflow: hidden;
         }
 
         .marquee-content {
           display: flex;
           gap: 2rem;
-          animation: marquee 60s linear infinite;
+          animation: marquee 80s linear infinite;
           width: max-content;
         }
 
@@ -703,11 +704,11 @@ export default function Index() {
         }
 
         @keyframes marquee {
-          from {
+          0% {
             transform: translateX(0);
           }
-          to {
-            transform: translateX(-50%);
+          100% {
+            transform: translateX(calc(-320px * 6 - 2rem * 6));
           }
         }
 
