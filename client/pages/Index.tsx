@@ -262,51 +262,41 @@ export default function Index() {
       </header>
 
       {/* Hero Section */}
-      <section className="px-4 md:px-8 py-5">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center">
-            <div className="hero-text">
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-michroma leading-[1.1] tracking-tight mb-8">
-                WEBSITES THAT TURN
-                <br />
-                <span
-                  className="text-orange inline-block"
-                  style={{ minWidth: "400px" }}
-                >
-                  {typewriterText}
-                  <span className="animate-pulse">|</span>
-                </span>
-                <br />
-                INTO EXTRAORDINARY
-                <br />
-                DIGITAL EXPERIENCES.
-              </h1>
-              <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-lg mb-8 mx-auto">
-                Custom-crafted websites, flawless performance, and designs that
-                captivate—let's build your online success together.
-              </p>
-              <div className="flex gap-4 justify-center mb-12">
-                <a
-                  href="/contact"
-                  className="bg-orange-bright text-white px-8 py-4 text-sm font-medium tracking-wide transition-all hover:shadow-lg hover:shadow-orange-bright/25 inline-block"
-                >
-                  GET STARTED
-                </a>
-                <a
-                  href="#work"
-                  className="border border-gray-300 text-black px-8 py-4 text-sm font-medium tracking-wide transition-all hover:border-orange inline-block"
-                >
-                  SEE OUR WORK
-                </a>
-              </div>
-            </div>
-            <div className="relative hero-image max-w-4xl mx-auto">
-              <img
-                src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?w=800&h=500&fit=crop&crop=center&auto=format&q=80"
-                alt="Modern web development workspace"
-                className="w-full h-[400px] object-cover grayscale transition-transform duration-500 hover:scale-105"
-              />
-            </div>
+      <section className="hero-gradient relative overflow-hidden min-h-[80vh] flex items-center">
+        {/* Abstract Graphics */}
+        <div className="absolute right-0 top-0 w-1/2 h-full">
+          <img
+            src={`${window.location.origin}/hero-graphic.svg`}
+            alt=""
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 w-full h-auto opacity-80"
+            onError={(e) => {
+              // Fallback to CSS shapes if SVG not found
+              e.currentTarget.style.display = "none";
+            }}
+          />
+          {/* Fallback CSS Graphics */}
+          <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-96 h-96">
+            <div className="flowing-shape-1"></div>
+            <div className="flowing-shape-2"></div>
+            <div className="flowing-shape-3"></div>
+          </div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+          <div className="max-w-2xl">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-michroma text-white leading-[0.9] tracking-tight mb-6">
+              Snarip Studio
+            </h1>
+            <p className="text-lg md:text-xl text-orange-100 leading-relaxed mb-12 max-w-lg">
+              Custom-crafted websites, flawless performance, and designs that
+              captivate—let's build your online success together.
+            </p>
+            <a
+              href="/contact"
+              className="inline-block bg-transparent border-2 border-white text-white px-8 py-4 text-sm font-medium tracking-wide transition-all hover:bg-white hover:text-orange-600"
+            >
+              GET STARTED
+            </a>
           </div>
         </div>
       </section>
