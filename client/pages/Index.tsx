@@ -2,8 +2,6 @@ import { useState, useEffect, useRef } from "react";
 
 export default function Index() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [typewriterText, setTypewriterText] = useState("");
-  const [isDeleting, setIsDeleting] = useState(false);
 
   // Simple scroll animation setup
   useEffect(() => {
@@ -31,38 +29,6 @@ export default function Index() {
       observer.disconnect();
     };
   }, []);
-
-  const fullText = "IMPACTFUL IDEAS";
-  const typewriterSpeed = 150;
-  const deleteSpeed = 100;
-  const pauseTime = 2000;
-
-  // Typewriter effect
-  useEffect(() => {
-    let timeout: NodeJS.Timeout;
-
-    if (!isDeleting) {
-      if (typewriterText.length < fullText.length) {
-        timeout = setTimeout(() => {
-          setTypewriterText(fullText.slice(0, typewriterText.length + 1));
-        }, typewriterSpeed);
-      } else {
-        timeout = setTimeout(() => {
-          setIsDeleting(true);
-        }, pauseTime);
-      }
-    } else {
-      if (typewriterText.length > 0) {
-        timeout = setTimeout(() => {
-          setTypewriterText(typewriterText.slice(0, -1));
-        }, deleteSpeed);
-      } else {
-        setIsDeleting(false);
-      }
-    }
-
-    return () => clearTimeout(timeout);
-  }, [typewriterText, isDeleting]);
 
   const services = [
     {
