@@ -471,7 +471,7 @@ export default function Index() {
       </section>
 
       {/* Project Marquee */}
-      <section className="py-16 bg-gray-50">
+      <section id="work" className="py-16 bg-gray-50">
         <div className="px-4 md:px-8 mb-16">
           <div className="max-w-7xl mx-auto animate-on-scroll fade-up">
             <h2 className="text-sm font-medium tracking-widest text-gray-500 mb-4">
