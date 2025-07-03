@@ -133,12 +133,20 @@ export default function Index() {
       category: "BRANDING",
     },
     {
-      title: "MOBILE BANKING APP",
+      title: "VIDEOGRAPHY PORTFOLIO",
       description:
-        "Secure and user-friendly mobile banking application with seamless transactions.",
+        "Stunning portfolio website for a videographer showcasing creative work with immersive galleries.",
       image:
-        "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
-      category: "MOBILE",
+        "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+      category: "PORTFOLIO",
+    },
+    {
+      title: "SOCIAL MEDIA AGENCY",
+      description:
+        "Dynamic website for social media marketing agency with conversion-focused design and analytics integration.",
+      image:
+        "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+      category: "MARKETING",
     },
     {
       title: "STARTUP IDENTITY",
@@ -147,14 +155,6 @@ export default function Index() {
       image:
         "https://images.unsplash.com/photo-1542744094-3a31f272c490?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "BRANDING",
-    },
-    {
-      title: "SAAS DASHBOARD",
-      description:
-        "Clean and functional dashboard design for a SaaS product with complex data visualization.",
-      image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
-      category: "UI/UX",
     },
     {
       title: "PORTFOLIO WEBSITE",
