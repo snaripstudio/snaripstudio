@@ -765,20 +765,25 @@ export default function Index() {
         /* Scroll Animations */
         .animate-on-scroll {
           opacity: 0;
-          transform: translateY(30px);
-          transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          transform: translateY(60px);
+          transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+          will-change: transform, opacity;
         }
 
         .animate-on-scroll.fade-up {
-          transform: translateY(50px);
+          transform: translateY(80px);
         }
 
         .animate-on-scroll.fade-left {
-          transform: translateX(50px) translateY(20px);
+          transform: translateX(60px) translateY(40px);
         }
 
         .animate-on-scroll.fade-right {
-          transform: translateX(-50px) translateY(20px);
+          transform: translateX(-60px) translateY(40px);
+        }
+
+        .animate-on-scroll.delay-100 {
+          transition-delay: 100ms;
         }
 
         .animate-on-scroll.delay-200 {
@@ -793,6 +798,10 @@ export default function Index() {
           transition-delay: 400ms;
         }
 
+        .animate-on-scroll.delay-500 {
+          transition-delay: 500ms;
+        }
+
         .animate-on-scroll.delay-600 {
           transition-delay: 600ms;
         }
@@ -802,17 +811,10 @@ export default function Index() {
           transform: translateY(0) translateX(0);
         }
 
-        /* Staggered animations for grid items */
-        .animate-on-scroll.delay-0 {
-          transition-delay: 0ms;
-        }
-
-        .animate-on-scroll.delay-100 {
-          transition-delay: 100ms;
-        }
-
-        .animate-on-scroll.delay-500 {
-          transition-delay: 500ms;
+        .animate-on-scroll.animate-out {
+          opacity: 0;
+          transform: translateY(30px);
+          transition: all 0.6s cubic-bezier(0.7, 0, 0.84, 0);
         }
 
         /* Special animations for different elements */
