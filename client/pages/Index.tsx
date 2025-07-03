@@ -247,18 +247,21 @@ export default function Index() {
         {isMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 bg-white border-t py-4 px-4">
             <nav className="flex flex-col space-y-4">
-              <a href="#" className="text-sm font-medium tracking-wide">
+              <a href="#about" className="text-sm font-medium tracking-wide">
                 ABOUT
               </a>
-              <a href="#" className="text-sm font-medium tracking-wide">
+              <a href="#services" className="text-sm font-medium tracking-wide">
                 SERVICES
               </a>
-              <a href="#" className="text-sm font-medium tracking-wide">
+              <a href="#work" className="text-sm font-medium tracking-wide">
                 WORK
               </a>
-              <button className="bg-orange-bright text-white px-6 py-3 text-sm font-medium tracking-wide w-fit">
+              <a
+                href="/contact"
+                className="bg-orange-bright text-white px-6 py-3 text-sm font-medium tracking-wide w-fit"
+              >
                 LET'S TALK
-              </button>
+              </a>
             </nav>
           </div>
         )}
