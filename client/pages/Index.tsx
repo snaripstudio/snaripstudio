@@ -292,12 +292,18 @@ export default function Index() {
                 captivate—let's build your online success together.
               </p>
               <div className="flex gap-4">
-                <button className="bg-orange-bright text-white px-8 py-4 text-sm font-medium tracking-wide transition-all hover:shadow-lg hover:shadow-orange-bright/25">
+                <a
+                  href="/contact"
+                  className="bg-orange-bright text-white px-8 py-4 text-sm font-medium tracking-wide transition-all hover:shadow-lg hover:shadow-orange-bright/25 inline-block"
+                >
                   GET STARTED
-                </button>
-                <button className="border border-gray-300 text-black px-8 py-4 text-sm font-medium tracking-wide transition-all hover:border-orange">
+                </a>
+                <a
+                  href="#work"
+                  className="border border-gray-300 text-black px-8 py-4 text-sm font-medium tracking-wide transition-all hover:border-orange inline-block"
+                >
                   SEE OUR WORK
-                </button>
+                </a>
               </div>
             </div>
             <div className="relative hero-image flex-1 w-full">
