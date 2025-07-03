@@ -724,24 +724,28 @@ export default function Index() {
           }
         }
 
-        /* Scroll Animations */
+        /* Simple Scroll Animations */
         .animate-on-scroll {
           opacity: 0;
-          transform: translateY(60px);
-          transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
-          will-change: transform, opacity;
+          transform: translateY(30px);
+          transition: all 0.6s ease-out;
         }
 
         .animate-on-scroll.fade-up {
-          transform: translateY(80px);
+          transform: translateY(40px);
         }
 
         .animate-on-scroll.fade-left {
-          transform: translateX(60px) translateY(40px);
+          transform: translateX(40px);
         }
 
         .animate-on-scroll.fade-right {
-          transform: translateX(-60px) translateY(40px);
+          transform: translateX(-40px);
+        }
+
+        .animate-on-scroll.animate-in {
+          opacity: 1;
+          transform: translateY(0) translateX(0);
         }
 
         .animate-on-scroll.delay-100 {
@@ -754,29 +758,6 @@ export default function Index() {
 
         .animate-on-scroll.delay-300 {
           transition-delay: 300ms;
-        }
-
-        .animate-on-scroll.delay-400 {
-          transition-delay: 400ms;
-        }
-
-        .animate-on-scroll.delay-500 {
-          transition-delay: 500ms;
-        }
-
-        .animate-on-scroll.delay-600 {
-          transition-delay: 600ms;
-        }
-
-        .animate-on-scroll.animate-in {
-          opacity: 1;
-          transform: translateY(0) translateX(0);
-        }
-
-        .animate-on-scroll.animate-out {
-          opacity: 0;
-          transform: translateY(30px);
-          transition: all 0.6s cubic-bezier(0.7, 0, 0.84, 0);
         }
 
         /* Special animations for different elements */
