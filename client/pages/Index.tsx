@@ -291,7 +291,7 @@ export default function Index() {
                 </button>
               </div>
             </div>
-            <div className="relative hero-image">
+            <div className="relative hero-image flex-1 w-full">
               <img
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop&crop=center&auto=format&q=80"
                 alt="Creative team collaboration"
