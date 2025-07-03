@@ -446,9 +446,6 @@ export default function Index() {
                   <div className="absolute top-4 right-4 text-xs font-medium tracking-widest text-white bg-black/70 px-2 py-1">
                     {service.category}
                   </div>
-                  <div className="absolute top-4 left-4 text-2xl">
-                    {service.icon}
-                  </div>
                 </div>
                 <div>
                   <h3 className="text-xl font-michroma mb-4 transform transition-transform duration-300 group-hover:scale-105">
