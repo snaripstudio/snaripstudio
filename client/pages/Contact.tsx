@@ -1,6 +1,6 @@
 export default function Contact() {
-  const email = "hello@snaripstudio.com";
-  const whatsappNumber = "+1234567890"; // Replace with actual number
+  const email = "snaripstudio@gmail.com";
+  const whatsappNumber = "+91 6386873180";
   const whatsappMessage =
     "Hi! I'm interested in working with SnaripStudio for my project.";
 
