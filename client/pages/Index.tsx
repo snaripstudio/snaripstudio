@@ -185,7 +185,17 @@ export default function Index() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-inter">
+    <div className="min-h-screen bg-white font-inter relative overflow-hidden">
+      {/* Animated Background Lines */}
+      <div className="background-lines">
+        <div className="line line-1"></div>
+        <div className="line line-2"></div>
+        <div className="line line-3"></div>
+        <div className="line line-4"></div>
+        <div className="line line-5"></div>
+        <div className="line line-6"></div>
+      </div>
+
       {/* Header */}
       <header className="relative z-50 px-4 md:px-8 py-6">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
