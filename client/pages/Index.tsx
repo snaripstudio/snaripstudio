@@ -738,6 +738,103 @@ export default function Index() {
           transition-delay: 300ms;
         }
 
+        /* Hero Section Gradient */
+        .hero-gradient {
+          background: linear-gradient(
+            135deg,
+            #ff5722 0%,
+            #ff8a65 25%,
+            #ffab91 50%,
+            #ff7043 75%,
+            #d84315 100%
+          );
+        }
+
+        /* Flowing Abstract Shapes */
+        .flowing-shape-1 {
+          position: absolute;
+          top: 20%;
+          right: -10%;
+          width: 300px;
+          height: 200px;
+          background: linear-gradient(
+            45deg,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 192, 203, 0.2)
+          );
+          border-radius: 50% 80% 30% 70%;
+          transform: rotate(-15deg);
+          animation: float1 6s ease-in-out infinite;
+        }
+
+        .flowing-shape-2 {
+          position: absolute;
+          top: 50%;
+          right: 0%;
+          width: 250px;
+          height: 180px;
+          background: linear-gradient(
+            120deg,
+            rgba(255, 255, 255, 0.08),
+            rgba(255, 105, 180, 0.15)
+          );
+          border-radius: 60% 40% 80% 20%;
+          transform: rotate(25deg);
+          animation: float2 8s ease-in-out infinite;
+        }
+
+        .flowing-shape-3 {
+          position: absolute;
+          top: 70%;
+          right: -5%;
+          width: 200px;
+          height: 150px;
+          background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.06),
+            rgba(255, 20, 147, 0.12)
+          );
+          border-radius: 40% 60% 50% 80%;
+          transform: rotate(-30deg);
+          animation: float3 10s ease-in-out infinite;
+        }
+
+        @keyframes float1 {
+          0%,
+          100% {
+            transform: rotate(-15deg) translateY(0px) translateX(0px);
+          }
+          33% {
+            transform: rotate(-10deg) translateY(-20px) translateX(10px);
+          }
+          66% {
+            transform: rotate(-20deg) translateY(10px) translateX(-5px);
+          }
+        }
+
+        @keyframes float2 {
+          0%,
+          100% {
+            transform: rotate(25deg) translateY(0px) translateX(0px);
+          }
+          50% {
+            transform: rotate(30deg) translateY(-15px) translateX(15px);
+          }
+        }
+
+        @keyframes float3 {
+          0%,
+          100% {
+            transform: rotate(-30deg) translateY(0px) translateX(0px);
+          }
+          25% {
+            transform: rotate(-25deg) translateY(15px) translateX(-10px);
+          }
+          75% {
+            transform: rotate(-35deg) translateY(-10px) translateX(5px);
+          }
+        }
+
         /* Animated Background Lines */
         .background-lines {
           position: fixed;
