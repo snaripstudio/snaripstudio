@@ -159,12 +159,22 @@ export default function Index() {
       {/* Header */}
       <header className="relative z-50 px-4 md:px-8 py-6">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="text-2xl font-michroma tracking-wider">
-            SnaripStudio
-          </div>
+          <a href="/" className="flex items-center">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff48aa15f6f184b529ed3ca882d1ea006%2F80b9e9b58c234d4ebeea01c935603c20?format=webp&width=800"
+              alt="SnaripStudio Logo"
+              className="h-10 w-10 object-contain"
+            />
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-12">
+            <a
+              href="/"
+              className="nav-link relative text-sm font-medium tracking-wide text-black transition-colors hover:text-orange"
+            >
+              HOME
+            </a>
             <a
               href="#about"
               className="nav-link relative text-sm font-medium tracking-wide text-black transition-colors hover:text-orange"
