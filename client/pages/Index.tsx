@@ -589,12 +589,15 @@ export default function Index() {
             creative expertise. Your extraordinary digital experience starts
             with a conversation.
           </p>
-          <button className="group bg-orange-bright text-white px-12 py-4 text-lg font-medium tracking-wide transition-all hover:shadow-lg hover:shadow-orange-bright/25 inline-flex items-center gap-3 floating-cta">
+          <a
+            href="/contact"
+            className="group bg-orange-bright text-white px-12 py-4 text-lg font-medium tracking-wide transition-all hover:shadow-lg hover:shadow-orange-bright/25 inline-flex items-center gap-3 floating-cta"
+          >
             LET'S DISCUSS YOUR PROJECT
             <span className="transform transition-transform group-hover:translate-x-1">
               →
             </span>
-          </button>
+          </a>
         </div>
       </section>
 
