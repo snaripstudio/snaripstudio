@@ -252,8 +252,8 @@ export default function Index() {
           <div className="blob-shape blob-3"></div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
-          <div className="max-w-2xl mr-auto flex flex-col justify-start items-start">
+        <div className="w-full px-4 md:px-8 relative z-10">
+          <div className="max-w-2xl flex flex-col justify-start items-start">
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-michroma text-white leading-[0.9] tracking-tight m-0 mb-6">
               SNARIP
               <br />
