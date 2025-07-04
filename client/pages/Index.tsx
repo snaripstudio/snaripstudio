@@ -473,12 +473,12 @@ export default function Index() {
 
       {/* Testimonials Carousel */}
       <section className="px-4 md:px-8 py-16">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-sm font-medium tracking-widest text-gray-500 mb-8 animate-on-scroll fade-up">
             CLIENT WORDS
           </h2>
 
-          <div className="max-w-4xl animate-on-scroll fade-up delay-200 text-center">
+          <div className="max-w-4xl animate-on-scroll fade-up delay-200 mx-auto">
             <div className="mb-8">
               <img
                 src={testimonials[0].avatar}
@@ -495,7 +495,7 @@ export default function Index() {
               </div>
             </div>
 
-            <blockquote className="text-lg md:text-xl font-normal leading-relaxed">
+            <blockquote className="text-lg md:text-xl font-normal leading-relaxed text-center">
               "{testimonials[0].quote}"
             </blockquote>
           </div>
