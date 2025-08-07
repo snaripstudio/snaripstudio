@@ -142,7 +142,7 @@ export default function Contact() {
               >
                 CHAT ON WHATSAPP
               </a>
-              <div className="mt-4 text-sm text-gray-500">{whatsappNumber}</div>
+              <div className="mt-4 text-sm text-muted-foreground">{whatsappNumber}</div>
             </div>
           </div>
         </div>
