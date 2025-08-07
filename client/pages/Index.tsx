@@ -324,33 +324,66 @@ export default function Index() {
             </h3>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className={`group cursor-pointer animate-on-scroll fade-up delay-${index * 100}`}
-              >
-                <div className="relative overflow-hidden mb-6">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-64 object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-500"></div>
-                  <div className="absolute top-4 right-4 text-xs font-medium tracking-widest text-white bg-black/70 px-2 py-1">
-                    {service.category}
+          <div className="grid lg:grid-cols-4 gap-8 items-start">
+            <div className="lg:col-span-3 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className={`group cursor-pointer animate-on-scroll fade-up delay-${index * 100}`}
+                >
+                  <div className="relative overflow-hidden mb-6">
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="w-full h-64 object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-500"></div>
+                    <div className="absolute top-4 right-4 text-xs font-medium tracking-widest text-white bg-black/70 px-2 py-1">
+                      {service.category}
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-michroma text-foreground mb-4 transform transition-transform duration-300 group-hover:scale-105">
+                      {service.title}
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {service.description}
+                    </p>
                   </div>
                 </div>
-                <div>
-                  <h3 className="text-xl font-michroma text-foreground mb-4 transform transition-transform duration-300 group-hover:scale-105">
-                    {service.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {service.description}
-                  </p>
-                </div>
+              ))}
+            </div>
+
+            <div className="lg:col-span-1 flex justify-center">
+              <div style={{height: '500px', position: 'relative'}}>
+                <InfiniteScroll
+                  items={[
+                    { content: "DESIGN" },
+                    { content: <p className="text-primary">DEVELOPMENT</p> },
+                    { content: "E-COMMERCE" },
+                    { content: <p className="text-primary">SEO</p> },
+                    { content: "CMS" },
+                    { content: <p className="text-primary">MAINTENANCE</p> },
+                    { content: "BRANDING" },
+                    { content: <p className="text-primary">OPTIMIZATION</p> },
+                    { content: "HOSTING" },
+                    { content: <p className="text-primary">ANALYTICS</p> },
+                    { content: "SECURITY" },
+                    { content: <p className="text-primary">SUPPORT</p> },
+                    { content: "CONSULTING" },
+                    { content: <p className="text-primary">STRATEGY</p> },
+                  ]}
+                  isTilted={true}
+                  tiltDirection='left'
+                  autoplay={true}
+                  autoplaySpeed={0.1}
+                  autoplayDirection="down"
+                  pauseOnHover={true}
+                  width="16rem"
+                  itemMinHeight={120}
+                />
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
