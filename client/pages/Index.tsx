@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import AnimatedBackground from "../components/AnimatedBackground";
+import Silk from "../components/Silk";
 
 export default function Index() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
