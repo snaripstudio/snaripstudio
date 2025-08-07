@@ -59,7 +59,7 @@ export default function Contact() {
 
           <a
             href="/contact"
-            className="hidden md:block bg-orange-bright text-white px-6 py-3 text-sm font-medium tracking-wide transition-all hover:shadow-lg hover:shadow-orange-bright/25"
+            className="hidden md:block bg-primary text-primary-foreground px-6 py-3 text-sm font-medium tracking-wide transition-all hover:shadow-lg hover:shadow-primary/25"
           >
             LET'S TALK
           </a>
