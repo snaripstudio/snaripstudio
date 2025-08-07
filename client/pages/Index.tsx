@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import Silk from "../components/Silk";
 import InfiniteScroll from "../components/InfiniteScroll";
+import StarBorder from "../components/StarBorder";
 
 export default function Index() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
