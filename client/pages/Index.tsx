@@ -314,10 +314,10 @@ export default function Index() {
       <section id="services" className="px-4 md:px-8 py-16 bg-background">
         <div className="max-w-7xl mx-auto">
           <div className="mb-16 animate-on-scroll fade-up">
-            <h2 className="text-sm font-medium tracking-widest text-gray-500 mb-4">
+            <h2 className="text-sm font-medium tracking-widest text-muted-foreground mb-4">
               OUR SERVICES
             </h2>
-            <h3 className="text-3xl md:text-5xl font-michroma leading-tight">
+            <h3 className="text-3xl md:text-5xl font-michroma text-foreground leading-tight">
               COMPREHENSIVE
               <br />
               WEB SOLUTIONS
