@@ -243,7 +243,7 @@ export default function Index() {
       </section>
 
       {/* What Makes Us Unique */}
-      <section className="px-4 md:px-8 pt-16 pb-12 bg-gray-50">
+      <section className="px-4 md:px-8 pt-16 pb-12 bg-card">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-on-scroll fade-up">
             <h2 className="text-sm font-medium tracking-widest text-gray-500 mb-4">
