@@ -69,14 +69,14 @@ export default function Contact() {
       {/* Contact Hero Section */}
       <section className="px-4 md:px-8 py-16 md:py-24">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-michroma leading-[1.1] tracking-tight mb-8">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-michroma text-foreground leading-[1.1] tracking-tight mb-8">
             LET'S CREATE
             <br />
-            <span className="text-orange">SOMETHING</span>
+            <span className="text-primary">SOMETHING</span>
             <br />
             EXTRAORDINARY
           </h1>
-          <p className="text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto mb-16">
+          <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-16">
             Ready to transform your digital presence? We'd love to hear about
             your project and discuss how we can bring your vision to life.
           </p>
