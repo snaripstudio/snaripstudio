@@ -202,7 +202,7 @@ export default function Contact() {
           >
             SnaripStudio
           </a>
-          <div className="border-t border-gray-800 pt-8 text-sm text-gray-400">
+          <div className="border-t border-border pt-8 text-sm text-muted-foreground">
             © 2024 SnaripStudio. All rights reserved.
           </div>
         </div>
