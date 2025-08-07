@@ -554,7 +554,7 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="border-t border-gray-800 mt-16 pt-8 text-center text-sm text-gray-400">
+          <div className="border-t border-border mt-16 pt-8 text-center text-sm text-muted-foreground">
             © 2024 SnaripStudio. All rights reserved.
           </div>
         </div>
