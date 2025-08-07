@@ -213,7 +213,7 @@ export default function Index() {
               <h2 className="text-sm font-medium tracking-widest text-muted-foreground mb-4">
                 ABOUT US
               </h2>
-              <h3 className="text-3xl md:text-5xl font-michroma text-foreground leading-tight mb-8">
+              <h3 className="text-3xl md:text-5xl font-inter text-foreground leading-tight mb-8">
                 EVERY BRAND HAS A
                 <br />
                 UNIQUE STORY
