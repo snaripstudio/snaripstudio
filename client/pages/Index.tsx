@@ -242,20 +242,21 @@ export default function Index() {
       </header>
 
       {/* Hero Section */}
-      <section className="hero-gradient relative overflow-hidden min-h-[80vh] flex items-center mr-auto pr-48">
-        {/* Animated Blob Shapes */}
-        <div className="absolute right-0 top-0 w-1/2 h-full">
-          {/* Blob 1 */}
-          <div className="blob-shape blob-1"></div>
-          {/* Blob 2 */}
-          <div className="blob-shape blob-2"></div>
-          {/* Blob 3 */}
-          <div className="blob-shape blob-3"></div>
+      <section className="relative overflow-hidden min-h-[80vh] flex items-center mr-auto pr-48">
+        {/* Silk Background */}
+        <div className="absolute inset-0 w-full h-full">
+          <Silk
+            speed={5}
+            scale={1}
+            color="#7B7481"
+            noiseIntensity={1.5}
+            rotation={0}
+          />
         </div>
 
         <div className="w-full px-4 md:px-8 relative z-10">
           <div className="max-w-2xl flex flex-col justify-start items-start">
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-michroma text-white leading-[0.9] tracking-tight m-0 mb-6">
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-inter text-white leading-[0.9] tracking-tight m-0 mb-6">
               SNARIP
               <br />
               STUDIO
