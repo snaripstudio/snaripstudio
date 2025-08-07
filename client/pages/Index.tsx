@@ -177,7 +177,7 @@ export default function Index() {
             <div className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20">
               <span className="text-yellow-300 text-sm">��</span>
               <span className="text-white text-sm font-medium">
-                New Background
+                SnaripStudio
               </span>
             </div>
 
