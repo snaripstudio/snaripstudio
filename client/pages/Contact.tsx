@@ -33,25 +33,25 @@ export default function Contact() {
           <nav className="hidden md:flex items-center space-x-12">
             <a
               href="/"
-              className="nav-link relative text-sm font-medium tracking-wide text-black transition-colors hover:text-orange"
+              className="nav-link relative text-sm font-medium tracking-wide text-foreground transition-colors hover:text-primary"
             >
               HOME
             </a>
             <a
               href="/#about"
-              className="nav-link relative text-sm font-medium tracking-wide text-black transition-colors hover:text-orange"
+              className="nav-link relative text-sm font-medium tracking-wide text-foreground transition-colors hover:text-primary"
             >
               ABOUT
             </a>
             <a
               href="/#services"
-              className="nav-link relative text-sm font-medium tracking-wide text-black transition-colors hover:text-orange"
+              className="nav-link relative text-sm font-medium tracking-wide text-foreground transition-colors hover:text-primary"
             >
               SERVICES
             </a>
             <a
               href="/#work"
-              className="nav-link relative text-sm font-medium tracking-wide text-black transition-colors hover:text-orange"
+              className="nav-link relative text-sm font-medium tracking-wide text-foreground transition-colors hover:text-primary"
             >
               WORK
             </a>
