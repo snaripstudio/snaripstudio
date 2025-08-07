@@ -311,7 +311,7 @@ export default function Index() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="px-4 md:px-8 py-16">
+      <section id="services" className="px-4 md:px-8 py-16 bg-background">
         <div className="max-w-7xl mx-auto">
           <div className="mb-16 animate-on-scroll fade-up">
             <h2 className="text-sm font-medium tracking-widest text-gray-500 mb-4">
