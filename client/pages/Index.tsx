@@ -528,25 +528,25 @@ export default function Index() {
               <div className="space-y-4">
                 <a
                   href="#"
-                  className="flex items-center gap-3 text-gray-300 hover:text-orange transition-colors"
+                  className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
                 >
                   <span>LinkedIn</span>
                 </a>
                 <a
                   href="#"
-                  className="flex items-center gap-3 text-gray-300 hover:text-orange transition-colors"
+                  className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
                 >
                   <span>Behance</span>
                 </a>
                 <a
                   href="#"
-                  className="flex items-center gap-3 text-gray-300 hover:text-orange transition-colors"
+                  className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
                 >
                   <span>Instagram</span>
                 </a>
                 <a
                   href="#"
-                  className="flex items-center gap-3 text-gray-300 hover:text-orange transition-colors"
+                  className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
                 >
                   <span>Twitter</span>
                 </a>
