@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import Silk from "../components/Silk";
+import InfiniteScroll from "../components/InfiniteScroll";
 
 export default function Index() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
