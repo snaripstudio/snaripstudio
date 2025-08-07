@@ -206,7 +206,7 @@ export default function Index() {
       </section>
 
       {/* About Us Section */}
-      <section id="about" className="px-4 md:px-8 py-16">
+      <section id="about" className="px-4 md:px-8 py-16 bg-background">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="animate-on-scroll fade-up">
