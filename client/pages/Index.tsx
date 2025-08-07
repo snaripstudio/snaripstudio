@@ -821,7 +821,7 @@ export default function Index() {
           background: linear-gradient(
             90deg,
             transparent 0%,
-            rgba(0, 0, 0, 0.02) 50%,
+            hsl(var(--border)) 50%,
             transparent 100%
           );
           transform: rotate(-15deg);
