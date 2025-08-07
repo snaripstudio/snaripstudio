@@ -163,11 +163,11 @@ export default function Index() {
         {/* Silk Background */}
         <div className="absolute inset-0 w-full h-full">
           <Silk
-            speed={5}
-            scale={1}
-            color="#4c2a85"
-            noiseIntensity={1.5}
-            rotation={0}
+            speed={8}
+            scale={2.5}
+            color="#2d1b69"
+            noiseIntensity={2.2}
+            rotation={0.3}
           />
         </div>
 
