@@ -324,65 +324,86 @@ export default function Index() {
             </h3>
           </div>
 
-          <div className="grid lg:grid-cols-4 gap-8 items-start">
-            <div className="lg:col-span-3 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {services.map((service, index) => (
-                <div
-                  key={index}
-                  className={`group cursor-pointer animate-on-scroll fade-up delay-${index * 100}`}
-                >
-                  <div className="relative overflow-hidden mb-6">
-                    <img
-                      src={service.image}
-                      alt={service.title}
-                      className="w-full h-64 object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-500"></div>
-                    <div className="absolute top-4 right-4 text-xs font-medium tracking-widest text-white bg-black/70 px-2 py-1">
-                      {service.category}
-                    </div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-michroma text-foreground mb-4 transform transition-transform duration-300 group-hover:scale-105">
-                      {service.title}
-                    </h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {service.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="lg:col-span-1 flex justify-center">
-              <div style={{height: '500px', position: 'relative'}}>
-                <InfiniteScroll
-                  items={[
-                    { content: "DESIGN" },
-                    { content: <p className="text-primary">DEVELOPMENT</p> },
-                    { content: "E-COMMERCE" },
-                    { content: <p className="text-primary">SEO</p> },
-                    { content: "CMS" },
-                    { content: <p className="text-primary">MAINTENANCE</p> },
-                    { content: "BRANDING" },
-                    { content: <p className="text-primary">OPTIMIZATION</p> },
-                    { content: "HOSTING" },
-                    { content: <p className="text-primary">ANALYTICS</p> },
-                    { content: "SECURITY" },
-                    { content: <p className="text-primary">SUPPORT</p> },
-                    { content: "CONSULTING" },
-                    { content: <p className="text-primary">STRATEGY</p> },
-                  ]}
-                  isTilted={true}
-                  tiltDirection='left'
-                  autoplay={true}
-                  autoplaySpeed={0.1}
-                  autoplayDirection="down"
-                  pauseOnHover={true}
-                  width="16rem"
-                  itemMinHeight={120}
-                />
-              </div>
+          <div className="flex justify-center">
+            <div style={{height: '600px', position: 'relative', width: '100%', maxWidth: '800px'}}>
+              <InfiniteScroll
+                items={[
+                  {
+                    content: (
+                      <div className="text-center px-4">
+                        <div className="text-xs tracking-widest text-primary mb-2">DESIGN</div>
+                        <h3 className="text-lg font-michroma mb-3">CUSTOM WEBSITE DESIGN</h3>
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          Unique, pixel-perfect designs made from scratch. Every element crafted specifically for your brand's story and goals.
+                        </p>
+                      </div>
+                    )
+                  },
+                  {
+                    content: (
+                      <div className="text-center px-4">
+                        <div className="text-xs tracking-widest text-primary mb-2">DEVELOPMENT</div>
+                        <h3 className="text-lg font-michroma mb-3">RESPONSIVE WEB DEVELOPMENT</h3>
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          Mobile-friendly websites that look stunning on any device. Clean, efficient code built for performance and scalability.
+                        </p>
+                      </div>
+                    )
+                  },
+                  {
+                    content: (
+                      <div className="text-center px-4">
+                        <div className="text-xs tracking-widest text-primary mb-2">E-COMMERCE</div>
+                        <h3 className="text-lg font-michroma mb-3">E-COMMERCE SOLUTIONS</h3>
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          Build online stores with powerful features that convert visitors into customers. Secure, fast, and user-friendly shopping experiences.
+                        </p>
+                      </div>
+                    )
+                  },
+                  {
+                    content: (
+                      <div className="text-center px-4">
+                        <div className="text-xs tracking-widest text-primary mb-2">SEO</div>
+                        <h3 className="text-lg font-michroma mb-3">SEO OPTIMIZATION</h3>
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          Websites crafted with SEO best practices for better search engine visibility and organic traffic growth.
+                        </p>
+                      </div>
+                    )
+                  },
+                  {
+                    content: (
+                      <div className="text-center px-4">
+                        <div className="text-xs tracking-widest text-primary mb-2">CMS</div>
+                        <h3 className="text-lg font-michroma mb-3">CONTENT MANAGEMENT</h3>
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          Easy-to-manage sites with WordPress, custom CMS, or headless solutions. Update your content with confidence.
+                        </p>
+                      </div>
+                    )
+                  },
+                  {
+                    content: (
+                      <div className="text-center px-4">
+                        <div className="text-xs tracking-widest text-primary mb-2">MAINTENANCE</div>
+                        <h3 className="text-lg font-michroma mb-3">SECURITY & MAINTENANCE</h3>
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          Regular updates, backups, and secure coding practices. Keep your website safe, fast, and up-to-date.
+                        </p>
+                      </div>
+                    )
+                  },
+                ]}
+                isTilted={true}
+                tiltDirection='left'
+                autoplay={true}
+                autoplaySpeed={0.15}
+                autoplayDirection="down"
+                pauseOnHover={true}
+                width="100%"
+                itemMinHeight={200}
+              />
             </div>
           </div>
         </div>
