@@ -413,10 +413,10 @@ export default function Index() {
       <section id="work" className="py-16 bg-card">
         <div className="px-4 md:px-8 mb-16">
           <div className="max-w-7xl mx-auto animate-on-scroll fade-up">
-            <h2 className="text-sm font-medium tracking-widest text-gray-500 mb-4">
+            <h2 className="text-sm font-medium tracking-widest text-muted-foreground mb-4">
               SELECTED PROJECTS
             </h2>
-            <h3 className="text-3xl md:text-5xl font-michroma leading-tight">
+            <h3 className="text-3xl md:text-5xl font-inter text-foreground leading-tight">
               OUR RECENT WORK
             </h3>
           </div>
