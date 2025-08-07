@@ -176,11 +176,11 @@ export default function Contact() {
               </p>
             </div>
             <div>
-              <div className="w-12 h-12 bg-orange text-white rounded-full flex items-center justify-center mx-auto mb-4 font-michroma">
+              <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto mb-4 font-michroma">
                 3
               </div>
-              <h3 className="font-michroma text-lg mb-2">PROJECT START</h3>
-              <p className="text-gray-600 text-sm">
+              <h3 className="font-michroma text-foreground text-lg mb-2">PROJECT START</h3>
+              <p className="text-muted-foreground text-sm">
                 Once approved, we'll begin crafting your extraordinary digital
                 experience.
               </p>
