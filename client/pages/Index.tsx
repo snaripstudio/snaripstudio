@@ -417,10 +417,10 @@ export default function Index() {
                 className="w-20 h-20 rounded-full object-cover mx-auto mb-6"
               />
               <div className="mb-4">
-                <div className="font-medium text-lg">
+                <div className="font-medium text-lg text-foreground">
                   {testimonials[0].name}
                 </div>
-                <div className="text-sm text-gray-600">
+                <div className="text-sm text-muted-foreground">
                   {testimonials[0].position}
                 </div>
               </div>
