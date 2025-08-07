@@ -69,17 +69,20 @@ void main() {
 }
 `;
 
-const SilkPlane = forwardRef<any, { uniforms: any }>(function SilkPlane({ uniforms }, ref) {
+const SilkPlane = forwardRef<any, { uniforms: any }>(function SilkPlane(
+  { uniforms },
+  ref,
+) {
   const { viewport } = useThree();
 
   useLayoutEffect(() => {
-    if (ref && 'current' in ref && ref.current) {
+    if (ref && "current" in ref && ref.current) {
       ref.current.scale.set(viewport.width, viewport.height, 1);
     }
   }, [ref, viewport]);
 
   useFrame((_, delta) => {
-    if (ref && 'current' in ref && ref.current?.material?.uniforms?.uTime) {
+    if (ref && "current" in ref && ref.current?.material?.uniforms?.uTime) {
       ref.current.material.uniforms.uTime.value += 0.1 * delta;
     }
   });
@@ -124,7 +127,7 @@ const Silk = ({
       uRotation: { value: rotation },
       uTime: { value: 0 },
     }),
-    [speed, scale, noiseIntensity, color, rotation]
+    [speed, scale, noiseIntensity, color, rotation],
   );
 
   return (

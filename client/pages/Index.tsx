@@ -157,7 +157,6 @@ export default function Index() {
         <div className="line line-6"></div>
       </div>
 
-
       {/* Hero Section */}
       <section className="relative overflow-hidden min-h-screen flex items-center justify-center">
         {/* Silk Background */}
@@ -176,7 +175,9 @@ export default function Index() {
             {/* New Background Label */}
             <div className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20">
               <span className="text-yellow-300 text-sm">✨</span>
-              <span className="text-white text-sm font-medium">New Background</span>
+              <span className="text-white text-sm font-medium">
+                New Background
+              </span>
             </div>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-inter text-white leading-tight tracking-tight mb-12">
