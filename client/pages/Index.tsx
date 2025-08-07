@@ -243,16 +243,8 @@ export default function Index() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden min-h-[80vh] flex items-center mr-auto pr-48">
-        {/* Silk Background */}
-        <div className="absolute inset-0 w-full h-full">
-          <Silk
-            speed={5}
-            scale={1}
-            color="#7B7481"
-            noiseIntensity={1.5}
-            rotation={0}
-          />
-        </div>
+        {/* Animated Background */}
+        <AnimatedBackground color="#7B7481" />
 
         <div className="w-full px-4 md:px-8 relative z-10">
           <div className="max-w-2xl flex flex-col justify-start items-start">
