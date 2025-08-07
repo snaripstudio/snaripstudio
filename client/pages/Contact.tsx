@@ -156,11 +156,11 @@ export default function Contact() {
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <div className="w-12 h-12 bg-orange text-white rounded-full flex items-center justify-center mx-auto mb-4 font-michroma">
+              <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto mb-4 font-michroma">
                 1
               </div>
-              <h3 className="font-michroma text-lg mb-2">DISCOVERY CALL</h3>
-              <p className="text-gray-600 text-sm">
+              <h3 className="font-michroma text-foreground text-lg mb-2">DISCOVERY CALL</h3>
+              <p className="text-muted-foreground text-sm">
                 We'll schedule a call to understand your project, goals, and
                 requirements.
               </p>
