@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import Silk from "../components/Silk";
 
 export default function Index() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
