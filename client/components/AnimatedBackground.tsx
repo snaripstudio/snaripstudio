@@ -5,11 +5,11 @@ interface AnimatedBackgroundProps {
 const AnimatedBackground = ({ color = "#7B7481" }: AnimatedBackgroundProps) => {
   return (
     <div className="absolute inset-0 w-full h-full overflow-hidden">
-      {/* Base gradient background */}
-      <div 
+      {/* Base gradient background - Dark purple/blue like the image */}
+      <div
         className="absolute inset-0 w-full h-full"
         style={{
-          background: `linear-gradient(135deg, ${color}40 0%, ${color}60 25%, ${color}80 50%, ${color}60 75%, ${color}40 100%)`
+          background: `linear-gradient(135deg, #1a0d3d 0%, #2d1b69 25%, #4c2a85 50%, #6a3d9a 75%, #8b5aa6 100%)`
         }}
       />
       
