@@ -159,27 +159,38 @@ export default function Index() {
 
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden min-h-[80vh] flex items-center mr-auto pr-48">
+      <section className="relative overflow-hidden min-h-screen flex items-center justify-center">
         {/* Animated Background */}
-        <AnimatedBackground color="#7B7481" />
+        <AnimatedBackground />
 
         <div className="w-full px-4 md:px-8 relative z-10">
-          <div className="max-w-2xl flex flex-col justify-start items-start">
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-inter text-white leading-[0.9] tracking-tight m-0 mb-6">
-              SNARIP
+          <div className="max-w-4xl mx-auto text-center">
+            {/* New Background Label */}
+            <div className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20">
+              <span className="text-yellow-300 text-sm">✨</span>
+              <span className="text-white text-sm font-medium">New Background</span>
+            </div>
+
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-inter text-white leading-tight tracking-tight mb-12">
+              Silk touch is a good
               <br />
-              STUDIO
+              enhancement, Steve!
             </h1>
-            <p className="text-lg md:text-xl text-orange-100 leading-relaxed mb-12 max-w-lg">
-              Custom-crafted websites, flawless performance, and designs that
-              captivate—let's build your online success together.
-            </p>
-            <a
-              href="/contact"
-              className="inline-block bg-transparent border-2 border-white text-white px-8 py-4 text-sm font-medium tracking-wide transition-all hover:bg-white hover:text-orange-600"
-            >
-              GET STARTED
-            </a>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a
+                href="/contact"
+                className="bg-white text-gray-900 px-8 py-3 rounded-full text-sm font-medium tracking-wide transition-all hover:bg-gray-100 hover:shadow-lg"
+              >
+                Get Started
+              </a>
+              <a
+                href="#learn-more"
+                className="bg-transparent border border-white/30 text-white px-8 py-3 rounded-full text-sm font-medium tracking-wide transition-all hover:bg-white/10 hover:border-white/50"
+              >
+                Learn More
+              </a>
+            </div>
           </div>
         </div>
       </section>
