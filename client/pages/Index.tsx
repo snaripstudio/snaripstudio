@@ -210,22 +210,22 @@ export default function Index() {
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="animate-on-scroll fade-up">
-              <h2 className="text-sm font-medium tracking-widest text-gray-500 mb-4">
+              <h2 className="text-sm font-medium tracking-widest text-muted-foreground mb-4">
                 ABOUT US
               </h2>
-              <h3 className="text-3xl md:text-5xl font-michroma leading-tight mb-8">
+              <h3 className="text-3xl md:text-5xl font-michroma text-foreground leading-tight mb-8">
                 EVERY BRAND HAS A
                 <br />
                 UNIQUE STORY
               </h3>
-              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 At SnaripStudio, we believe every brand has a unique story—and
                 your website should tell it beautifully. We're a passionate team
                 of web developers and designers dedicated to creating
                 tailor-made websites that don't just look great, but also work
                 seamlessly, load quickly, and help your business grow.
               </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p className="text-lg text-muted-foreground leading-relaxed">
                 With years of combined experience, we merge creativity and
                 technology to deliver solutions that stand out in a crowded
                 digital world.
