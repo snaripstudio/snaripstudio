@@ -426,7 +426,7 @@ export default function Index() {
               </div>
             </div>
 
-            <blockquote className="text-lg md:text-xl font-normal leading-relaxed text-center">
+            <blockquote className="text-lg md:text-xl font-normal leading-relaxed text-center text-foreground">
               "{testimonials[0].quote}"
             </blockquote>
           </div>
