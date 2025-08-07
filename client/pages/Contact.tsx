@@ -216,7 +216,7 @@ export default function Contact() {
           height: 2px;
           bottom: -4px;
           left: 0;
-          background-color: hsl(var(--orange));
+          background-color: hsl(var(--primary));
           transition: width 0.3s ease;
         }
         .nav-link:hover::after {
