@@ -342,10 +342,10 @@ export default function Index() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-michroma mb-4 transform transition-transform duration-300 group-hover:scale-105">
+                  <h3 className="text-xl font-michroma text-foreground mb-4 transform transition-transform duration-300 group-hover:scale-105">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed">
                     {service.description}
                   </p>
                 </div>
