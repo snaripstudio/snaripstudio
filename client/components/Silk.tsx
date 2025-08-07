@@ -73,23 +73,24 @@ interface SilkPlaneProps {
   uniforms: any;
 }
 
-const SilkPlane = forwardRef<any, SilkPlaneProps>(function SilkPlane({ uniforms }, ref) {
+function SilkPlane({ uniforms }: SilkPlaneProps) {
+  const meshRef = useRef<any>();
   const { viewport } = useThree();
 
   useLayoutEffect(() => {
-    if (ref && typeof ref === 'object' && ref.current) {
-      ref.current.scale.set(viewport.width, viewport.height, 1);
+    if (meshRef.current) {
+      meshRef.current.scale.set(viewport.width, viewport.height, 1);
     }
-  }, [ref, viewport]);
+  }, [viewport]);
 
   useFrame((_, delta) => {
-    if (ref && typeof ref === 'object' && ref.current) {
-      ref.current.material.uniforms.uTime.value += 0.1 * delta;
+    if (meshRef.current?.material?.uniforms?.uTime) {
+      meshRef.current.material.uniforms.uTime.value += 0.1 * delta;
     }
   });
 
   return (
-    <mesh ref={ref}>
+    <mesh ref={meshRef}>
       <planeGeometry args={[1, 1, 1, 1]} />
       <shaderMaterial
         uniforms={uniforms}
@@ -98,9 +99,7 @@ const SilkPlane = forwardRef<any, SilkPlaneProps>(function SilkPlane({ uniforms 
       />
     </mesh>
   );
-});
-
-SilkPlane.displayName = "SilkPlane";
+}
 
 interface SilkProps {
   speed?: number;
@@ -117,8 +116,6 @@ const Silk = ({
   noiseIntensity = 1.5,
   rotation = 0,
 }: SilkProps) => {
-  const meshRef = useRef();
-
   const uniforms = useMemo(
     () => ({
       uSpeed: { value: speed },
@@ -132,9 +129,15 @@ const Silk = ({
   );
 
   return (
-    <Canvas dpr={[1, 2]} frameloop="always">
-      <SilkPlane ref={meshRef} uniforms={uniforms} />
-    </Canvas>
+    <div style={{ width: '100%', height: '100%' }}>
+      <Canvas
+        dpr={[1, 2]}
+        frameloop="always"
+        style={{ background: 'transparent' }}
+      >
+        <SilkPlane uniforms={uniforms} />
+      </Canvas>
+    </div>
   );
 };
 
