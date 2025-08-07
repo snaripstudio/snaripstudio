@@ -497,25 +497,25 @@ export default function Index() {
               <nav className="space-y-4">
                 <a
                   href="#about"
-                  className="block text-gray-300 hover:text-orange transition-colors"
+                  className="block text-muted-foreground hover:text-primary transition-colors"
                 >
                   About Us
                 </a>
                 <a
                   href="#services"
-                  className="block text-gray-300 hover:text-orange transition-colors"
+                  className="block text-muted-foreground hover:text-primary transition-colors"
                 >
                   Services
                 </a>
                 <a
                   href="#work"
-                  className="block text-gray-300 hover:text-orange transition-colors"
+                  className="block text-muted-foreground hover:text-primary transition-colors"
                 >
                   Portfolio
                 </a>
                 <a
                   href="/contact"
-                  className="block text-gray-300 hover:text-orange transition-colors"
+                  className="block text-muted-foreground hover:text-primary transition-colors"
                 >
                   Contact
                 </a>
