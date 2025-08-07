@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import Silk from "../components/Silk";
 
 export default function Index() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -156,119 +157,49 @@ export default function Index() {
         <div className="line line-6"></div>
       </div>
 
-      {/* Header */}
-      <header className="relative z-50 px-4 md:px-8 py-6">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <a href="/" className="flex items-center">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Ff48aa15f6f184b529ed3ca882d1ea006%2F80b9e9b58c234d4ebeea01c935603c20?format=webp&width=800"
-              alt="SnaripStudio Logo"
-              className="h-10 w-10 object-contain"
-            />
-          </a>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-12">
-            <a
-              href="/"
-              className="nav-link relative text-sm font-medium tracking-wide text-black transition-colors hover:text-orange"
-            >
-              HOME
-            </a>
-            <a
-              href="#about"
-              className="nav-link relative text-sm font-medium tracking-wide text-black transition-colors hover:text-orange"
-            >
-              ABOUT
-            </a>
-            <a
-              href="#services"
-              className="nav-link relative text-sm font-medium tracking-wide text-black transition-colors hover:text-orange"
-            >
-              SERVICES
-            </a>
-            <a
-              href="#work"
-              className="nav-link relative text-sm font-medium tracking-wide text-black transition-colors hover:text-orange"
-            >
-              WORK
-            </a>
-          </nav>
-
-          <a
-            href="/contact"
-            className="hidden md:block bg-orange-bright text-white px-6 py-3 text-sm font-medium tracking-wide transition-all hover:shadow-lg hover:shadow-orange-bright/25"
-          >
-            LET'S TALK
-          </a>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden flex flex-col space-y-1"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            <span className="w-6 h-0.5 bg-black transition-all"></span>
-            <span className="w-6 h-0.5 bg-black transition-all"></span>
-            <span className="w-6 h-0.5 bg-black transition-all"></span>
-          </button>
-        </div>
-
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-white border-t py-4 px-4">
-            <nav className="flex flex-col space-y-4">
-              <a href="/" className="text-sm font-medium tracking-wide">
-                HOME
-              </a>
-              <a href="#about" className="text-sm font-medium tracking-wide">
-                ABOUT
-              </a>
-              <a href="#services" className="text-sm font-medium tracking-wide">
-                SERVICES
-              </a>
-              <a href="#work" className="text-sm font-medium tracking-wide">
-                WORK
-              </a>
-              <a
-                href="/contact"
-                className="bg-orange-bright text-white px-6 py-3 text-sm font-medium tracking-wide w-fit"
-              >
-                LET'S TALK
-              </a>
-            </nav>
-          </div>
-        )}
-      </header>
-
       {/* Hero Section */}
-      <section className="hero-gradient relative overflow-hidden min-h-[80vh] flex items-center mr-auto pr-48">
-        {/* Animated Blob Shapes */}
-        <div className="absolute right-0 top-0 w-1/2 h-full">
-          {/* Blob 1 */}
-          <div className="blob-shape blob-1"></div>
-          {/* Blob 2 */}
-          <div className="blob-shape blob-2"></div>
-          {/* Blob 3 */}
-          <div className="blob-shape blob-3"></div>
+      <section className="relative overflow-hidden min-h-screen flex items-center justify-center">
+        {/* Silk Background */}
+        <div className="absolute inset-0 w-full h-full">
+          <Silk
+            speed={5}
+            scale={1}
+            color="#2d1b69"
+            noiseIntensity={1.5}
+            rotation={0}
+          />
         </div>
 
         <div className="w-full px-4 md:px-8 relative z-10">
-          <div className="max-w-2xl flex flex-col justify-start items-start">
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-michroma text-white leading-[0.9] tracking-tight m-0 mb-6">
-              SNARIP
+          <div className="max-w-4xl mx-auto text-center">
+            {/* New Background Label */}
+            <div className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20">
+              <span className="text-yellow-300 text-sm">✨</span>
+              <span className="text-white text-sm font-medium">
+                New Background
+              </span>
+            </div>
+
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-inter text-white leading-tight tracking-tight mb-12">
+              Silk touch is a good
               <br />
-              STUDIO
+              enhancement, Steve!
             </h1>
-            <p className="text-lg md:text-xl text-orange-100 leading-relaxed mb-12 max-w-lg">
-              Custom-crafted websites, flawless performance, and designs that
-              captivate—let's build your online success together.
-            </p>
-            <a
-              href="/contact"
-              className="inline-block bg-transparent border-2 border-white text-white px-8 py-4 text-sm font-medium tracking-wide transition-all hover:bg-white hover:text-orange-600"
-            >
-              GET STARTED
-            </a>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a
+                href="/contact"
+                className="bg-white text-gray-900 px-8 py-3 rounded-full text-sm font-medium tracking-wide transition-all hover:bg-gray-100 hover:shadow-lg"
+              >
+                Get Started
+              </a>
+              <a
+                href="#learn-more"
+                className="bg-transparent border border-white/30 text-white px-8 py-3 rounded-full text-sm font-medium tracking-wide transition-all hover:bg-white/10 hover:border-white/50"
+              >
+                Learn More
+              </a>
+            </div>
           </div>
         </div>
       </section>
