@@ -182,9 +182,9 @@ export default function Index() {
             </div>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-inter text-white leading-tight tracking-tight mb-12">
-              Silk touch is a good
+              Crafting Digital
               <br />
-              enhancement, Steve!
+              Experiences That Convert
             </h1>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
