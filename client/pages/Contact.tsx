@@ -104,8 +104,8 @@ export default function Contact() {
                   />
                 </svg>
               </div>
-              <h3 className="text-2xl font-michroma mb-4">EMAIL US</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <h3 className="text-2xl font-michroma text-foreground mb-4">EMAIL US</h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
                 Send us a detailed message about your project and we'll get back
                 to you within 24 hours.
               </p>
