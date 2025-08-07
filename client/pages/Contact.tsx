@@ -149,9 +149,9 @@ export default function Contact() {
       </section>
 
       {/* Additional Info */}
-      <section className="px-4 md:px-8 py-16 bg-gray-50">
+      <section className="px-4 md:px-8 py-16 bg-card">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-michroma mb-8">
+          <h2 className="text-3xl md:text-4xl font-michroma text-foreground mb-8">
             WHAT HAPPENS NEXT?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
