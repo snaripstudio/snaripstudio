@@ -111,11 +111,11 @@ export default function Contact() {
               </p>
               <a
                 href={`mailto:${email}?subject=Project Inquiry&body=Hi SnaripStudio,%0D%0A%0D%0AI'm interested in working with you on a project. Here are the details:%0D%0A%0D%0A[Please describe your project]`}
-                className="inline-block bg-black text-white px-8 py-3 font-medium tracking-wide hover:bg-gray-800 transition-colors"
+                className="inline-block bg-primary text-primary-foreground px-8 py-3 font-medium tracking-wide hover:bg-primary/90 transition-colors"
               >
                 SEND EMAIL
               </a>
-              <div className="mt-4 text-sm text-gray-500">{email}</div>
+              <div className="mt-4 text-sm text-muted-foreground">{email}</div>
             </div>
 
             {/* WhatsApp Contact */}
