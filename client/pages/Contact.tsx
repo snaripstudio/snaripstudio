@@ -119,7 +119,7 @@ export default function Contact() {
             </div>
 
             {/* WhatsApp Contact */}
-            <div className="text-center p-8 bg-gray-50 hover:bg-gray-100 transition-colors group">
+            <div className="text-center p-8 bg-card hover:bg-card/80 transition-colors group border border-border rounded-lg">
               <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
                 <svg
                   className="w-8 h-8 text-white"
