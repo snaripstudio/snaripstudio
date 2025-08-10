@@ -326,17 +326,18 @@ export default function CaseStudy() {
           width: 100%;
           scroll-snap-align: start;
           scroll-snap-stop: always;
-          padding: 2rem;
+          padding: 6rem 2rem 2rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
           position: relative;
+          box-sizing: border-box;
         }
 
         /* Ensure content doesn't overflow viewport */
         .scroll-section > div {
-          max-height: calc(100vh - 4rem);
-          overflow-y: auto;
+          max-height: calc(100vh - 8rem);
+          overflow: visible;
         }
 
         /* Simple Scroll Animations */
