@@ -145,6 +145,15 @@ export default function Index() {
         "https://cdn.builder.io/api/v1/image/assets%2Ff48aa15f6f184b529ed3ca882d1ea006%2F11c44a19c4b3408281b5949101120872?format=webp&width=800",
       logo: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=120&h=40&fit=crop&crop=center&auto=format&q=80",
     },
+    {
+      quote:
+        "Working with SnaripStudio was a game-changer for our cab booking platform. They delivered a sleek, responsive website that perfectly showcases our services and made it incredibly easy for customers to book rides. Our online bookings increased by 200% within just two months!",
+      name: "PRIYANSHU GUPTA",
+      position: "Founder, RihandCabs",
+      avatar:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
+      logo: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=120&h=40&fit=crop&crop=center&auto=format&q=80",
+    },
   ];
 
   return (
