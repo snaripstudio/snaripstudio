@@ -504,6 +504,21 @@ export default function Index() {
             </div>
           </div>
         </div>
+
+        {/* Case Studies CTA */}
+        <div className="px-4 md:px-8 pb-16">
+          <div className="max-w-7xl mx-auto text-center animate-on-scroll fade-up delay-500">
+            <a
+              href="/case-study"
+              className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 text-lg font-medium tracking-wide transition-all hover:shadow-lg hover:shadow-primary/25 group"
+            >
+              VIEW DETAILED CASE STUDIES
+              <span className="transform transition-transform group-hover:translate-x-1">
+                →
+              </span>
+            </a>
+          </div>
+        </div>
       </section>
 
       {/* Testimonials Carousel */}
