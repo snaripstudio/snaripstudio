@@ -175,15 +175,8 @@ export default function Index() {
         <div className="w-full px-4 md:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             {/* New Background Label */}
-            <StarBorder
-              as="div"
-              className="mb-8"
-              color="#5227FF"
-              speed="4s"
-            >
-              <span className="text-sm font-medium">
-                SnaripStudio
-              </span>
+            <StarBorder as="div" className="mb-8" color="#5227FF" speed="4s">
+              <span className="text-sm font-medium">SnaripStudio</span>
             </StarBorder>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-inter text-white leading-tight tracking-tight mb-12">
@@ -330,78 +323,119 @@ export default function Index() {
           </div>
 
           <div className="flex justify-center">
-            <div style={{height: '600px', position: 'relative', width: '100%', maxWidth: '800px'}}>
+            <div
+              style={{
+                height: "600px",
+                position: "relative",
+                width: "100%",
+                maxWidth: "800px",
+              }}
+            >
               <InfiniteScroll
                 items={[
                   {
                     content: (
                       <div className="text-center px-4">
-                        <div className="text-xs tracking-widest text-primary mb-2">DESIGN</div>
-                        <h3 className="text-lg font-michroma mb-3">CUSTOM WEBSITE DESIGN</h3>
+                        <div className="text-xs tracking-widest text-primary mb-2">
+                          DESIGN
+                        </div>
+                        <h3 className="text-lg font-michroma mb-3">
+                          CUSTOM WEBSITE DESIGN
+                        </h3>
                         <p className="text-sm text-muted-foreground leading-relaxed">
-                          Unique, pixel-perfect designs made from scratch. Every element crafted specifically for your brand's story and goals.
+                          Unique, pixel-perfect designs made from scratch. Every
+                          element crafted specifically for your brand's story
+                          and goals.
                         </p>
                       </div>
-                    )
+                    ),
                   },
                   {
                     content: (
                       <div className="text-center px-4">
-                        <div className="text-xs tracking-widest text-primary mb-2">DEVELOPMENT</div>
-                        <h3 className="text-lg font-michroma mb-3">RESPONSIVE WEB DEVELOPMENT</h3>
+                        <div className="text-xs tracking-widest text-primary mb-2">
+                          DEVELOPMENT
+                        </div>
+                        <h3 className="text-lg font-michroma mb-3">
+                          RESPONSIVE WEB DEVELOPMENT
+                        </h3>
                         <p className="text-sm text-muted-foreground leading-relaxed">
-                          Mobile-friendly websites that look stunning on any device. Clean, efficient code built for performance and scalability.
+                          Mobile-friendly websites that look stunning on any
+                          device. Clean, efficient code built for performance
+                          and scalability.
                         </p>
                       </div>
-                    )
+                    ),
                   },
                   {
                     content: (
                       <div className="text-center px-4">
-                        <div className="text-xs tracking-widest text-primary mb-2">E-COMMERCE</div>
-                        <h3 className="text-lg font-michroma mb-3">E-COMMERCE SOLUTIONS</h3>
+                        <div className="text-xs tracking-widest text-primary mb-2">
+                          E-COMMERCE
+                        </div>
+                        <h3 className="text-lg font-michroma mb-3">
+                          E-COMMERCE SOLUTIONS
+                        </h3>
                         <p className="text-sm text-muted-foreground leading-relaxed">
-                          Build online stores with powerful features that convert visitors into customers. Secure, fast, and user-friendly shopping experiences.
+                          Build online stores with powerful features that
+                          convert visitors into customers. Secure, fast, and
+                          user-friendly shopping experiences.
                         </p>
                       </div>
-                    )
+                    ),
                   },
                   {
                     content: (
                       <div className="text-center px-4">
-                        <div className="text-xs tracking-widest text-primary mb-2">SEO</div>
-                        <h3 className="text-lg font-michroma mb-3">SEO OPTIMIZATION</h3>
+                        <div className="text-xs tracking-widest text-primary mb-2">
+                          SEO
+                        </div>
+                        <h3 className="text-lg font-michroma mb-3">
+                          SEO OPTIMIZATION
+                        </h3>
                         <p className="text-sm text-muted-foreground leading-relaxed">
-                          Websites crafted with SEO best practices for better search engine visibility and organic traffic growth.
+                          Websites crafted with SEO best practices for better
+                          search engine visibility and organic traffic growth.
                         </p>
                       </div>
-                    )
+                    ),
                   },
                   {
                     content: (
                       <div className="text-center px-4">
-                        <div className="text-xs tracking-widest text-primary mb-2">CMS</div>
-                        <h3 className="text-lg font-michroma mb-3">CONTENT MANAGEMENT</h3>
+                        <div className="text-xs tracking-widest text-primary mb-2">
+                          CMS
+                        </div>
+                        <h3 className="text-lg font-michroma mb-3">
+                          CONTENT MANAGEMENT
+                        </h3>
                         <p className="text-sm text-muted-foreground leading-relaxed">
-                          Easy-to-manage sites with WordPress, custom CMS, or headless solutions. Update your content with confidence.
+                          Easy-to-manage sites with WordPress, custom CMS, or
+                          headless solutions. Update your content with
+                          confidence.
                         </p>
                       </div>
-                    )
+                    ),
                   },
                   {
                     content: (
                       <div className="text-center px-4">
-                        <div className="text-xs tracking-widest text-primary mb-2">MAINTENANCE</div>
-                        <h3 className="text-lg font-michroma mb-3">SECURITY & MAINTENANCE</h3>
+                        <div className="text-xs tracking-widest text-primary mb-2">
+                          MAINTENANCE
+                        </div>
+                        <h3 className="text-lg font-michroma mb-3">
+                          SECURITY & MAINTENANCE
+                        </h3>
                         <p className="text-sm text-muted-foreground leading-relaxed">
-                          Regular updates, backups, and secure coding practices. Keep your website safe, fast, and up-to-date.
+                          Regular updates, backups, and secure coding practices.
+                          Keep your website safe, fast, and up-to-date.
                         </p>
                       </div>
-                    )
+                    ),
                   },
                 ]}
                 isTilted={true}
-                tiltDirection='left'
+                tiltDirection="left"
                 autoplay={true}
                 autoplaySpeed={0.15}
                 autoplayDirection="down"
