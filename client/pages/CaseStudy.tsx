@@ -321,6 +321,34 @@ export default function CaseStudy() {
       </section>
 
       <style jsx>{`
+        /* Scroll Snap Container */
+        .scroll-container {
+          height: 100vh;
+          overflow-y: scroll;
+          scroll-snap-type: y mandatory;
+          scroll-behavior: smooth;
+          font-family: 'Inter', sans-serif;
+        }
+
+        /* Individual Scroll Sections */
+        .scroll-section {
+          height: 100vh;
+          width: 100%;
+          scroll-snap-align: start;
+          scroll-snap-stop: always;
+          padding: 2rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          position: relative;
+        }
+
+        /* Ensure content doesn't overflow viewport */
+        .scroll-section > div {
+          max-height: calc(100vh - 4rem);
+          overflow-y: auto;
+        }
+
         /* Simple Scroll Animations */
         .animate-on-scroll {
           opacity: 0;
@@ -337,8 +365,38 @@ export default function CaseStudy() {
           transform: translateY(0);
         }
 
+        /* Code styling */
         code {
           font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+          .scroll-section {
+            padding: 1rem;
+          }
+
+          .scroll-section > div {
+            max-height: calc(100vh - 2rem);
+          }
+        }
+
+        /* Smooth scrollbar styling */
+        .scroll-container::-webkit-scrollbar {
+          width: 4px;
+        }
+
+        .scroll-container::-webkit-scrollbar-track {
+          background: hsl(var(--muted));
+        }
+
+        .scroll-container::-webkit-scrollbar-thumb {
+          background: hsl(var(--primary));
+          border-radius: 2px;
+        }
+
+        .scroll-container::-webkit-scrollbar-thumb:hover {
+          background: hsl(var(--primary) / 0.8);
         }
       `}</style>
     </div>
