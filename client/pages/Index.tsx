@@ -449,7 +449,7 @@ export default function Index() {
                 autoplay={true}
                 autoplaySpeed={0.15}
                 autoplayDirection="down"
-                pauseOnHover={true}
+                pauseOnHover={false}
                 width="100%"
                 itemMinHeight={200}
               />
