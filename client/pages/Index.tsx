@@ -447,7 +447,7 @@ export default function Index() {
                 isTilted={true}
                 tiltDirection="left"
                 autoplay={true}
-                autoplaySpeed={0.15}
+                autoplaySpeed={0.25}
                 autoplayDirection="down"
                 pauseOnHover={false}
                 width="100%"
