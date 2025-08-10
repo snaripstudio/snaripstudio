@@ -5,6 +5,7 @@ import StarBorder from "../components/StarBorder";
 
 export default function Index() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   // Simple scroll animation setup
   useEffect(() => {
@@ -148,7 +149,7 @@ export default function Index() {
     {
       quote:
         "Working with SnaripStudio was a game-changer for our cab booking platform. They delivered a sleek, responsive website that perfectly showcases our services and made it incredibly easy for customers to book rides. Our online bookings increased by 200% within just two months!",
-      name: "PRIYANSHU GUPTA",
+      name: "MANISH JAISWAL",
       position: "Founder, RihandCabs",
       avatar:
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
@@ -515,23 +516,59 @@ export default function Index() {
           <div className="max-w-4xl animate-on-scroll fade-up delay-200 mx-auto">
             <div className="mb-8">
               <img
-                src={testimonials[0].avatar}
-                alt={testimonials[0].name}
-                className="w-20 h-20 rounded-full object-cover mx-auto mb-6"
+                src={testimonials[currentTestimonial].avatar}
+                alt={testimonials[currentTestimonial].name}
+                className="w-20 h-20 rounded-full object-cover mx-auto mb-6 transition-all duration-500"
               />
               <div className="mb-4">
                 <div className="font-medium text-lg text-foreground">
-                  {testimonials[0].name}
+                  {testimonials[currentTestimonial].name}
                 </div>
                 <div className="text-sm text-muted-foreground">
-                  {testimonials[0].position}
+                  {testimonials[currentTestimonial].position}
                 </div>
               </div>
             </div>
 
-            <blockquote className="text-lg md:text-xl font-normal leading-relaxed text-center text-foreground">
-              "{testimonials[0].quote}"
+            <blockquote className="text-lg md:text-xl font-normal leading-relaxed text-center text-foreground transition-all duration-500">
+              "{testimonials[currentTestimonial].quote}"
             </blockquote>
+
+            {/* Testimonial Navigation */}
+            <div className="flex justify-center items-center mt-8 gap-4">
+              <button
+                onClick={() => setCurrentTestimonial(currentTestimonial === 0 ? testimonials.length - 1 : currentTestimonial - 1)}
+                className="p-2 rounded-full bg-muted hover:bg-muted/80 transition-colors"
+                aria-label="Previous testimonial"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+
+              <div className="flex gap-2">
+                {testimonials.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentTestimonial(index)}
+                    className={`w-2 h-2 rounded-full transition-all ${
+                      index === currentTestimonial ? 'bg-primary w-8' : 'bg-muted hover:bg-muted/80'
+                    }`}
+                    aria-label={`Go to testimonial ${index + 1}`}
+                  />
+                ))}
+              </div>
+
+              <button
+                onClick={() => setCurrentTestimonial(currentTestimonial === testimonials.length - 1 ? 0 : currentTestimonial + 1)}
+                className="p-2 rounded-full bg-muted hover:bg-muted/80 transition-colors"
+                aria-label="Next testimonial"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </section>
