@@ -29,9 +29,9 @@ export default function CaseStudy() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background font-inter">
+    <div className="scroll-container">
       {/* Header */}
-      <header className="bg-card border-b border-border">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-sm border-b border-border">
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-6">
           <div className="flex items-center justify-between">
             <a href="/" className="text-2xl font-michroma text-primary">
@@ -53,28 +53,33 @@ export default function CaseStudy() {
       </header>
 
       {/* Hero Section */}
-      <section className="px-4 md:px-8 py-24 bg-gradient-to-br from-primary/10 to-accent/10">
-        <div className="max-w-7xl mx-auto">
-          <div className="animate-on-scroll fade-up">
+      <section className="scroll-section bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <div className="text-center animate-on-scroll fade-up">
             <div className="text-sm font-medium tracking-widest text-primary mb-4">
               CASE STUDY
             </div>
-            <h1 className="text-4xl md:text-6xl font-inter text-foreground leading-tight mb-6">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-inter text-foreground leading-tight mb-6">
               RihandCabs.in
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl leading-relaxed">
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
               Full-Stack Development & SEO Foundation for a Local Service Business
             </p>
+            <div className="mt-12 animate-bounce">
+              <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center">
+                <div className="w-1 h-3 bg-primary rounded-full mt-2"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Project Overview */}
-      <section className="px-4 md:px-8 py-16 bg-background">
-        <div className="max-w-4xl mx-auto">
-          <div className="animate-on-scroll fade-up">
-            <h2 className="text-3xl font-inter text-foreground mb-8">Project Overview</h2>
-            <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-6">
+      <section className="scroll-section bg-background flex items-center justify-center">
+        <div className="max-w-4xl mx-auto px-4 md:px-8">
+          <div className="text-center animate-on-scroll fade-up">
+            <h2 className="text-3xl md:text-5xl font-inter text-foreground mb-8">Project Overview</h2>
+            <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-8 text-lg">
               <p>
                 RihandCabs.in is a web presence developed for a local cab service operating on the niche route between Rihand and Varanasi, India. The project's goal was to create a fast, reliable, and professional online platform to attract local customers, build trust, and generate direct booking inquiries.
               </p>
@@ -87,23 +92,23 @@ export default function CaseStudy() {
       </section>
 
       {/* The Challenge */}
-      <section className="px-4 md:px-8 py-16 bg-card">
-        <div className="max-w-4xl mx-auto">
+      <section className="scroll-section bg-card flex items-center justify-center">
+        <div className="max-w-4xl mx-auto px-4 md:px-8">
           <div className="animate-on-scroll fade-up">
-            <h2 className="text-3xl font-inter text-foreground mb-8">The Challenge</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+            <h2 className="text-3xl md:text-5xl font-inter text-foreground mb-12 text-center">The Challenge</h2>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-8 text-center">
               The client needed to establish a digital footprint from scratch in a hyper-local market. The key challenges were:
             </p>
-            <div className="space-y-4">
+            <div className="grid md:grid-cols-2 gap-6">
               {[
                 "To create a modern, performant website that would build credibility with a local Indian audience.",
                 "To overcome complex technical hurdles related to domain and hosting integration.",
                 "To ensure the site was optimized for mobile devices, where most potential customers would be searching.",
                 "To establish a foundational presence on Google to be discoverable by customers searching for their specific route."
               ].map((challenge, index) => (
-                <div key={index} className="flex gap-4">
-                  <div className="flex-shrink-0 w-6 h-6 bg-primary rounded-full flex items-center justify-center mt-1">
-                    <span className="text-white text-sm font-bold">{index + 1}</span>
+                <div key={index} className="flex gap-4 p-6 bg-background rounded-lg">
+                  <div className="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center mt-1">
+                    <span className="text-white font-bold">{index + 1}</span>
                   </div>
                   <p className="text-muted-foreground leading-relaxed">{challenge}</p>
                 </div>
@@ -113,96 +118,86 @@ export default function CaseStudy() {
         </div>
       </section>
 
-      {/* Solution */}
-      <section className="px-4 md:px-8 py-16 bg-background">
-        <div className="max-w-4xl mx-auto">
+      {/* Solution Part 1 - Strategic Foundation */}
+      <section className="scroll-section bg-background flex items-center justify-center">
+        <div className="max-w-4xl mx-auto px-4 md:px-8">
           <div className="animate-on-scroll fade-up">
-            <h2 className="text-3xl font-inter text-foreground mb-8">My Approach & Solution</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-12">
-              I executed a multi-faceted strategy that combined strategic planning, modern development practices, performance engineering, and foundational SEO.
-            </p>
+            <h2 className="text-3xl md:text-5xl font-inter text-foreground mb-8 text-center">Strategic Foundation</h2>
+            <div className="text-center mb-12">
+              <div className="inline-block bg-primary/10 px-6 py-3 rounded-full">
+                <span className="text-primary font-medium">STEP 1</span>
+              </div>
+            </div>
+            <div className="bg-card p-8 rounded-lg">
+              <h3 className="text-2xl font-inter text-foreground mb-6 text-center">Domain Strategy</h3>
+              <p className="text-lg text-muted-foreground leading-relaxed text-center">
+                We began by choosing the <code className="bg-muted px-3 py-1 rounded text-base">.in</code> country-code top-level domain (ccTLD) over a generic <code className="bg-muted px-3 py-1 rounded text-base">.com</code>. This was a deliberate decision to immediately signal to both users and search engines that the business is local to India, thereby enhancing local SEO and building regional trust.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="space-y-12">
-              {/* Strategic Foundation */}
-              <div className="border-l-4 border-primary pl-8">
-                <h3 className="text-2xl font-inter text-foreground mb-4">1. Strategic Foundation</h3>
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="text-lg font-medium text-foreground mb-2">Domain Strategy:</h4>
-                    <p className="text-muted-foreground leading-relaxed">
-                      We began by choosing the <code className="bg-muted px-2 py-1 rounded text-sm">.in</code> country-code top-level domain (ccTLD) over a generic <code className="bg-muted px-2 py-1 rounded text-sm">.com</code>. This was a deliberate decision to immediately signal to both users and search engines that the business is local to India, thereby enhancing local SEO and building regional trust.
-                    </p>
+      {/* Solution Part 2 - Technical Infrastructure */}
+      <section className="scroll-section bg-card flex items-center justify-center">
+        <div className="max-w-4xl mx-auto px-4 md:px-8">
+          <div className="animate-on-scroll fade-up">
+            <h2 className="text-3xl md:text-5xl font-inter text-foreground mb-8 text-center">Technical Infrastructure</h2>
+            <div className="text-center mb-12">
+              <div className="inline-block bg-primary/10 px-6 py-3 rounded-full">
+                <span className="text-primary font-medium">STEP 2</span>
+              </div>
+            </div>
+            <div className="space-y-8">
+              <div className="bg-background p-8 rounded-lg">
+                <h3 className="text-xl font-medium text-foreground mb-4 text-center">Modern React Framework + Netlify Deployment</h3>
+                <p className="text-muted-foreground leading-relaxed text-center">
+                  The website was built using a modern React framework and deployed on Netlify for its high-performance edge network and CI/CD capabilities.
+                </p>
+              </div>
+              <div className="bg-background p-8 rounded-lg">
+                <h3 className="text-xl font-medium text-foreground mb-4 text-center">Complex DNS Configuration</h3>
+                <p className="text-muted-foreground leading-relaxed text-center">
+                  A significant challenge was integrating the GoDaddy-registered domain with Netlify's hosting. I successfully navigated a complex DNS configuration, diagnosing and rectifying an initial domain forwarding setup and implementing a robust nameserver delegation to Netlify DNS.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Solution Part 3 - Performance Optimization */}
+      <section className="scroll-section bg-background flex items-center justify-center">
+        <div className="max-w-4xl mx-auto px-4 md:px-8">
+          <div className="animate-on-scroll fade-up">
+            <h2 className="text-3xl md:text-5xl font-inter text-foreground mb-8 text-center">Performance Optimization</h2>
+            <div className="text-center mb-12">
+              <div className="inline-block bg-primary/10 px-6 py-3 rounded-full">
+                <span className="text-primary font-medium">STEP 3</span>
+              </div>
+            </div>
+            <div className="space-y-8">
+              <div className="text-center">
+                <div className="inline-flex items-center gap-4 bg-destructive/10 px-6 py-3 rounded-lg mb-6">
+                  <span className="text-destructive text-3xl font-bold">67/100</span>
+                  <span className="text-muted-foreground">Initial Mobile Score</span>
+                </div>
+              </div>
+              <div className="bg-card p-8 rounded-lg">
+                <h3 className="text-xl font-medium text-foreground mb-4 text-center">The Problem</h3>
+                <p className="text-muted-foreground leading-relaxed text-center mb-6">
+                  Through diagnostics, I identified that the bottleneck was a computationally expensive JavaScript animation (<code className="bg-muted px-2 py-1 rounded">Aurora</code> from <code className="bg-muted px-2 py-1 rounded">react-bits</code>) that performed poorly on mobile CPUs.
+                </p>
+                <h3 className="text-xl font-medium text-foreground mb-4 text-center">The Solution</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="bg-background p-6 rounded-lg">
+                    <h4 className="font-medium text-foreground mb-2">Desktop Users</h4>
+                    <p className="text-sm text-muted-foreground">Heavy <code>&lt;Aurora /&gt;</code> component rendered</p>
                   </div>
-                </div>
-              </div>
-
-              {/* Technical Infrastructure */}
-              <div className="border-l-4 border-primary pl-8">
-                <h3 className="text-2xl font-inter text-foreground mb-4">2. Technical Infrastructure & DNS Management</h3>
-                <div className="space-y-4">
-                  <p className="text-muted-foreground leading-relaxed">
-                    The website was built using a modern React framework and deployed on Netlify for its high-performance edge network and CI/CD capabilities.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    A significant challenge was integrating the GoDaddy-registered domain with Netlify's hosting. I successfully navigated a complex DNS configuration, diagnosing and rectifying an initial domain forwarding setup and implementing a robust nameserver delegation to Netlify DNS. This ensured a stable, secure, and seamless connection.
-                  </p>
-                </div>
-              </div>
-
-              {/* Performance Optimization */}
-              <div className="border-l-4 border-primary pl-8">
-                <h3 className="text-2xl font-inter text-foreground mb-4">3. Performance & Mobile Optimization</h3>
-                <div className="space-y-4">
-                  <p className="text-muted-foreground leading-relaxed">
-                    Initial testing with <strong>Google PageSpeed Insights</strong> revealed a low mobile performance score (67/100), which was unacceptable for the target audience.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Through diagnostics, I identified that the bottleneck was not a static image, but a computationally expensive JavaScript animation (<code className="bg-muted px-2 py-1 rounded text-sm">Aurora</code> from <code className="bg-muted px-2 py-1 rounded text-sm">react-bits</code>) used for the background, which performed poorly on mobile CPUs.
-                  </p>
-                  <div className="bg-muted/50 p-6 rounded-lg">
-                    <h4 className="text-lg font-medium text-foreground mb-3">The Solution:</h4>
-                    <p className="text-muted-foreground leading-relaxed mb-4">
-                      I engineered a sophisticated "mobile-first" conditional rendering solution:
-                    </p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex gap-2">
-                        <span className="text-primary">•</span>
-                        <span>Using React hooks to detect screen size, the heavy <code className="bg-muted px-2 py-1 rounded text-sm">&lt;Aurora /&gt;</code> component is now rendered <strong>only for desktop users</strong>.</span>
-                      </li>
-                      <li className="flex gap-2">
-                        <span className="text-primary">•</span>
-                        <span>Mobile users are served a lightweight, static, and highly optimized WebP image that mimics the look of the animation.</span>
-                      </li>
-                    </ul>
-                    <p className="text-muted-foreground leading-relaxed mt-4">
-                      This single change dramatically improved mobile load times and user experience, bringing the performance scores into a much healthier range.
-                    </p>
+                  <div className="bg-background p-6 rounded-lg">
+                    <h4 className="font-medium text-foreground mb-2">Mobile Users</h4>
+                    <p className="text-sm text-muted-foreground">Lightweight, optimized WebP image</p>
                   </div>
-                </div>
-              </div>
-
-              {/* SEO Foundation */}
-              <div className="border-l-4 border-primary pl-8">
-                <h3 className="text-2xl font-inter text-foreground mb-4">4. Foundational SEO & Google Integration</h3>
-                <div className="space-y-4">
-                  <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex gap-2">
-                      <span className="text-primary">•</span>
-                      <span>I established the website's relationship with Google by setting up and verifying the domain with <strong>Google Search Console</strong>. This involved troubleshooting DNS record types (correctly implementing a <code className="bg-muted px-2 py-1 rounded text-sm">TXT</code> record instead of an <code className="bg-muted px-2 py-1 rounded text-sm">A</code> record for verification).</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <span className="text-primary">•</span>
-                      <span>I debugged and successfully submitted a valid <code className="bg-muted px-2 py-1 rounded text-sm">sitemap.xml</code> after fixing pathing errors and incorrect base URLs that were generated during the build process.</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <span className="text-primary">•</span>
-                      <span>I guided the client through the entire indexing lifecycle, from the initial "Discovered - currently not indexed" status to the final successful "URL is on Google" confirmation, managing expectations throughout the process.</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <span className="text-primary">•</span>
-                      <span>A core part of the strategy was establishing the <strong>Google Business Profile (GBP)</strong> as the primary tool for local customer acquisition, providing guidance on its setup and optimization.</span>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -210,25 +205,66 @@ export default function CaseStudy() {
         </div>
       </section>
 
-      {/* Skills Demonstrated */}
-      <section className="px-4 md:px-8 py-16 bg-card">
-        <div className="max-w-4xl mx-auto">
+      {/* Solution Part 4 - SEO Foundation */}
+      <section className="scroll-section bg-card flex items-center justify-center">
+        <div className="max-w-4xl mx-auto px-4 md:px-8">
           <div className="animate-on-scroll fade-up">
-            <h2 className="text-3xl font-inter text-foreground mb-8">Key Skills Demonstrated</h2>
+            <h2 className="text-3xl md:text-5xl font-inter text-foreground mb-8 text-center">SEO Foundation</h2>
+            <div className="text-center mb-12">
+              <div className="inline-block bg-primary/10 px-6 py-3 rounded-full">
+                <span className="text-primary font-medium">STEP 4</span>
+              </div>
+            </div>
             <div className="grid md:grid-cols-2 gap-6">
+              {[
+                {
+                  title: "Google Search Console",
+                  description: "Established website relationship with Google, troubleshooting DNS record types (TXT vs A records)"
+                },
+                {
+                  title: "Sitemap Submission",
+                  description: "Debugged and submitted valid sitemap.xml after fixing pathing errors and incorrect base URLs"
+                },
+                {
+                  title: "Indexing Lifecycle",
+                  description: "Guided client from 'Discovered - not indexed' to 'URL is on Google' confirmation"
+                },
+                {
+                  title: "Google Business Profile",
+                  description: "Established GBP as primary tool for local customer acquisition and optimization"
+                }
+              ].map((item, index) => (
+                <div key={index} className="bg-background p-6 rounded-lg">
+                  <h3 className="text-lg font-medium text-foreground mb-3">{item.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed">{item.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Skills Demonstrated */}
+      <section className="scroll-section bg-background flex items-center justify-center">
+        <div className="max-w-4xl mx-auto px-4 md:px-8">
+          <div className="animate-on-scroll fade-up">
+            <h2 className="text-3xl md:text-5xl font-inter text-foreground mb-12 text-center">Key Skills Demonstrated</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 "Front-End Development: React.js",
                 "Hosting & Deployment: Netlify, CI/CD",
-                "DNS Management: GoDaddy, Netlify DNS, A vs. TXT records, Nameserver Delegation",
-                "Performance Optimization: Google PageSpeed Insights, Asset Optimization, Conditional Rendering, WebP image format",
-                "SEO: Google Search Console, Sitemap Submission, URL Inspection, Indexing, Local SEO Strategy",
-                "Problem Solving & Consulting: Diagnosing complex technical issues, guiding a client through technical processes"
+                "DNS Management: GoDaddy, Netlify DNS",
+                "Performance Optimization: PageSpeed Insights",
+                "SEO: Search Console, Sitemap Submission",
+                "Problem Solving & Consulting"
               ].map((skill, index) => (
-                <div key={index} className="flex gap-3 p-4 bg-background rounded-lg">
-                  <div className="flex-shrink-0 w-6 h-6 bg-primary rounded-full flex items-center justify-center mt-1">
-                    <span className="text-white text-xs">✓</span>
+                <div key={index} className="flex gap-3 p-6 bg-card rounded-lg text-center">
+                  <div className="w-full">
+                    <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center mx-auto mb-3">
+                      <span className="text-white text-xs">✓</span>
+                    </div>
+                    <span className="text-muted-foreground leading-relaxed">{skill}</span>
                   </div>
-                  <span className="text-muted-foreground leading-relaxed">{skill}</span>
                 </div>
               ))}
             </div>
@@ -237,13 +273,19 @@ export default function CaseStudy() {
       </section>
 
       {/* Outcome */}
-      <section className="px-4 md:px-8 py-16 bg-background">
-        <div className="max-w-4xl mx-auto">
-          <div className="animate-on-scroll fade-up">
-            <h2 className="text-3xl font-inter text-foreground mb-8">The Outcome</h2>
-            <div className="bg-gradient-to-r from-primary/10 to-accent/10 p-8 rounded-lg">
-              <p className="text-lg text-foreground leading-relaxed">
-                The result is a secure, professionally deployed, and highly performant website that is now fully indexed by Google. The <strong>rihandcabs.in</strong> project now has a strong technical foundation upon which to build its marketing efforts, with a clear strategy centered around its Google Business Profile to capture local search traffic and drive business growth.
+      <section className="scroll-section bg-card flex items-center justify-center">
+        <div className="max-w-4xl mx-auto px-4 md:px-8">
+          <div className="animate-on-scroll fade-up text-center">
+            <h2 className="text-3xl md:text-5xl font-inter text-foreground mb-12">The Outcome</h2>
+            <div className="bg-gradient-to-r from-primary/20 to-accent/20 p-12 rounded-lg">
+              <div className="mb-8">
+                <div className="inline-flex items-center gap-4 bg-primary/10 px-8 py-4 rounded-lg">
+                  <span className="text-primary text-2xl">🎯</span>
+                  <span className="text-foreground font-medium">Successfully Indexed by Google</span>
+                </div>
+              </div>
+              <p className="text-xl text-foreground leading-relaxed max-w-3xl mx-auto">
+                The result is a secure, professionally deployed, and highly performant website that is now fully indexed by Google. The <strong>rihandcabs.in</strong> project now has a strong technical foundation with a clear strategy centered around Google Business Profile to capture local search traffic and drive business growth.
               </p>
             </div>
           </div>
@@ -251,39 +293,32 @@ export default function CaseStudy() {
       </section>
 
       {/* CTA */}
-      <section className="px-4 md:px-8 py-24 bg-card text-center">
-        <div className="max-w-4xl mx-auto animate-on-scroll fade-up">
-          <h2 className="text-3xl md:text-4xl font-inter text-foreground mb-8">
-            Ready to Transform Your Business Online?
-          </h2>
-          <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Let's discuss how we can create a powerful digital presence for your business with strategic development and optimization.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/contact"
-              className="bg-primary text-primary-foreground px-8 py-4 text-lg font-medium tracking-wide transition-all hover:shadow-lg hover:shadow-primary/25"
-            >
-              Start Your Project
-            </a>
-            <a
-              href="/"
-              className="bg-transparent border border-border text-foreground px-8 py-4 text-lg font-medium tracking-wide transition-all hover:bg-muted"
-            >
-              View More Work
-            </a>
+      <section className="scroll-section bg-background flex items-center justify-center">
+        <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
+          <div className="animate-on-scroll fade-up">
+            <h2 className="text-3xl md:text-5xl font-inter text-foreground mb-8">
+              Ready to Transform Your Business Online?
+            </h2>
+            <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
+              Let's discuss how we can create a powerful digital presence for your business with strategic development and optimization.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="/contact"
+                className="bg-primary text-primary-foreground px-8 py-4 text-lg font-medium tracking-wide transition-all hover:shadow-lg hover:shadow-primary/25 rounded-lg"
+              >
+                Start Your Project
+              </a>
+              <a
+                href="/"
+                className="bg-transparent border border-border text-foreground px-8 py-4 text-lg font-medium tracking-wide transition-all hover:bg-muted rounded-lg"
+              >
+                View More Work
+              </a>
+            </div>
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-background border-t border-border text-foreground px-4 md:px-8 py-16">
-        <div className="max-w-7xl mx-auto text-center">
-          <div className="text-sm text-muted-foreground">
-            © 2024 SnaripStudio. All rights reserved.
-          </div>
-        </div>
-      </footer>
 
       <style jsx>{`
         /* Simple Scroll Animations */
