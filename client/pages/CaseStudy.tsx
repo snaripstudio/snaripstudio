@@ -48,7 +48,7 @@ export default function CaseStudy() {
       </header>
 
       {/* Hero Section */}
-      <section className="scroll-section bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
+      <section className="scroll-section bg-gradient-to-br from-primary/10 to-accent/10">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="text-center animate-on-scroll fade-up">
             <div className="text-sm font-medium tracking-widest text-primary mb-4">
@@ -70,7 +70,7 @@ export default function CaseStudy() {
       </section>
 
       {/* Project Overview */}
-      <section className="scroll-section bg-background flex items-center justify-center">
+      <section className="scroll-section bg-background">
         <div className="max-w-4xl mx-auto px-4 md:px-8">
           <div className="text-center animate-on-scroll fade-up">
             <h2 className="text-3xl md:text-5xl font-inter text-foreground mb-8">Project Overview</h2>
@@ -87,7 +87,7 @@ export default function CaseStudy() {
       </section>
 
       {/* The Challenge */}
-      <section className="scroll-section bg-card flex items-center justify-center">
+      <section className="scroll-section bg-card">
         <div className="max-w-4xl mx-auto px-4 md:px-8">
           <div className="animate-on-scroll fade-up">
             <h2 className="text-3xl md:text-5xl font-inter text-foreground mb-12 text-center">The Challenge</h2>
@@ -114,7 +114,7 @@ export default function CaseStudy() {
       </section>
 
       {/* Solution Part 1 - Strategic Foundation */}
-      <section className="scroll-section bg-background flex items-center justify-center">
+      <section className="scroll-section bg-background">
         <div className="max-w-4xl mx-auto px-4 md:px-8">
           <div className="animate-on-scroll fade-up">
             <h2 className="text-3xl md:text-5xl font-inter text-foreground mb-8 text-center">Strategic Foundation</h2>
@@ -134,7 +134,7 @@ export default function CaseStudy() {
       </section>
 
       {/* Solution Part 2 - Technical Infrastructure */}
-      <section className="scroll-section bg-card flex items-center justify-center">
+      <section className="scroll-section bg-card">
         <div className="max-w-4xl mx-auto px-4 md:px-8">
           <div className="animate-on-scroll fade-up">
             <h2 className="text-3xl md:text-5xl font-inter text-foreground mb-8 text-center">Technical Infrastructure</h2>
@@ -162,7 +162,7 @@ export default function CaseStudy() {
       </section>
 
       {/* Solution Part 3 - Performance Optimization */}
-      <section className="scroll-section bg-background flex items-center justify-center">
+      <section className="scroll-section bg-background">
         <div className="max-w-4xl mx-auto px-4 md:px-8">
           <div className="animate-on-scroll fade-up text-center">
             <h2 className="text-3xl md:text-5xl font-inter text-foreground mb-8">Performance Optimization</h2>
@@ -196,7 +196,7 @@ export default function CaseStudy() {
       </section>
 
       {/* Solution Part 4 - SEO Foundation */}
-      <section className="scroll-section bg-card flex items-center justify-center">
+      <section className="scroll-section bg-card">
         <div className="max-w-4xl mx-auto px-4 md:px-8">
           <div className="animate-on-scroll fade-up">
             <h2 className="text-3xl md:text-5xl font-inter text-foreground mb-8 text-center">SEO Foundation</h2>
@@ -235,7 +235,7 @@ export default function CaseStudy() {
       </section>
 
       {/* Skills Demonstrated */}
-      <section className="scroll-section bg-background flex items-center justify-center">
+      <section className="scroll-section bg-background">
         <div className="max-w-4xl mx-auto px-4 md:px-8">
           <div className="animate-on-scroll fade-up">
             <h2 className="text-3xl md:text-5xl font-inter text-foreground mb-12 text-center">Key Skills Demonstrated</h2>
@@ -263,7 +263,7 @@ export default function CaseStudy() {
       </section>
 
       {/* Outcome */}
-      <section className="scroll-section bg-card flex items-center justify-center">
+      <section className="scroll-section bg-card">
         <div className="max-w-4xl mx-auto px-4 md:px-8">
           <div className="animate-on-scroll fade-up text-center">
             <h2 className="text-3xl md:text-5xl font-inter text-foreground mb-12">The Outcome</h2>
@@ -283,7 +283,7 @@ export default function CaseStudy() {
       </section>
 
       {/* CTA */}
-      <section className="scroll-section bg-background flex items-center justify-center">
+      <section className="scroll-section bg-background">
         <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
           <div className="animate-on-scroll fade-up">
             <h2 className="text-3xl md:text-5xl font-inter text-foreground mb-8">
