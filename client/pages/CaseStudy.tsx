@@ -31,23 +31,18 @@ export default function CaseStudy() {
   return (
     <div className="scroll-container">
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-sm border-b border-border">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-transparent">
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-6">
           <div className="flex items-center justify-between">
-            <a href="/" className="text-2xl font-michroma text-primary">
-              SnaripStudio
+            <a
+              href="/"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-card/80 backdrop-blur-sm border border-border rounded-full text-foreground hover:text-primary transition-all hover:bg-card/90"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+              <span className="text-sm font-medium">Back to Home</span>
             </a>
-            <nav className="hidden md:flex space-x-8">
-              <a href="/" className="text-foreground hover:text-primary transition-colors">
-                Home
-              </a>
-              <a href="#case-studies" className="text-primary font-medium">
-                Case Studies
-              </a>
-              <a href="/contact" className="text-foreground hover:text-primary transition-colors">
-                Contact
-              </a>
-            </nav>
           </div>
         </div>
       </header>
@@ -169,37 +164,32 @@ export default function CaseStudy() {
       {/* Solution Part 3 - Performance Optimization */}
       <section className="scroll-section bg-background flex items-center justify-center">
         <div className="max-w-4xl mx-auto px-4 md:px-8">
-          <div className="animate-on-scroll fade-up">
-            <h2 className="text-3xl md:text-5xl font-inter text-foreground mb-8 text-center">Performance Optimization</h2>
-            <div className="text-center mb-12">
+          <div className="animate-on-scroll fade-up text-center">
+            <h2 className="text-3xl md:text-5xl font-inter text-foreground mb-8">Performance Optimization</h2>
+            <div className="mb-12">
               <div className="inline-block bg-primary/10 px-6 py-3 rounded-full">
                 <span className="text-primary font-medium">STEP 3</span>
               </div>
             </div>
-            <div className="space-y-8">
-              <div className="text-center">
-                <div className="inline-flex items-center gap-4 bg-destructive/10 px-6 py-3 rounded-lg mb-6">
-                  <span className="text-destructive text-3xl font-bold">67/100</span>
-                  <span className="text-muted-foreground">Initial Mobile Score</span>
-                </div>
+
+            <div className="flex justify-center items-center gap-8 mb-8">
+              <div className="bg-destructive/10 px-6 py-4 rounded-lg">
+                <span className="text-destructive text-3xl font-bold">67/100</span>
+                <p className="text-muted-foreground text-sm">Before</p>
               </div>
-              <div className="bg-card p-8 rounded-lg">
-                <h3 className="text-xl font-medium text-foreground mb-4 text-center">The Problem</h3>
-                <p className="text-muted-foreground leading-relaxed text-center mb-6">
-                  Through diagnostics, I identified that the bottleneck was a computationally expensive JavaScript animation (<code className="bg-muted px-2 py-1 rounded">Aurora</code> from <code className="bg-muted px-2 py-1 rounded">react-bits</code>) that performed poorly on mobile CPUs.
-                </p>
-                <h3 className="text-xl font-medium text-foreground mb-4 text-center">The Solution</h3>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="bg-background p-6 rounded-lg">
-                    <h4 className="font-medium text-foreground mb-2">Desktop Users</h4>
-                    <p className="text-sm text-muted-foreground">Heavy <code>&lt;Aurora /&gt;</code> component rendered</p>
-                  </div>
-                  <div className="bg-background p-6 rounded-lg">
-                    <h4 className="font-medium text-foreground mb-2">Mobile Users</h4>
-                    <p className="text-sm text-muted-foreground">Lightweight, optimized WebP image</p>
-                  </div>
-                </div>
+              <div className="text-primary text-2xl">→</div>
+              <div className="bg-primary/10 px-6 py-4 rounded-lg">
+                <span className="text-primary text-3xl font-bold">95/100</span>
+                <p className="text-muted-foreground text-sm">After</p>
               </div>
+            </div>
+
+            <div className="bg-card p-8 rounded-lg max-w-2xl mx-auto">
+              <h3 className="text-xl font-medium text-foreground mb-4">Smart Conditional Rendering</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Replaced heavy JavaScript animations with lightweight WebP images for mobile users,
+                while maintaining rich animations for desktop experiences.
+              </p>
             </div>
           </div>
         </div>
