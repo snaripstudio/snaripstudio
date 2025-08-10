@@ -116,21 +116,21 @@ export default function InfiniteScroll({
         container.addEventListener("mouseleave", startTicker);
 
         return () => {
-          observer.kill();
+          observer?.kill();
           stopTicker();
           container.removeEventListener("mouseenter", stopTicker);
           container.removeEventListener("mouseleave", startTicker);
         };
       } else {
         return () => {
-          observer.kill();
+          observer?.kill();
           rafId && cancelAnimationFrame(rafId);
         };
       }
     }
 
     return () => {
-      observer.kill();
+      observer?.kill();
       if (rafId) cancelAnimationFrame(rafId);
     };
   }, [
