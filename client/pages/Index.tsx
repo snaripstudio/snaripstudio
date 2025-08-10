@@ -152,7 +152,7 @@ export default function Index() {
       name: "MANISH JAISWAL",
       position: "Founder, RihandCabs",
       avatar:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
+        "https://cdn.builder.io/api/v1/image/assets%2F6034a906a3aa4789a8fd44988e1ebb28%2Fc7a5ed8b3c214b41ad68b85707a65de5?format=webp&width=800",
       logo: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=120&h=40&fit=crop&crop=center&auto=format&q=80",
     },
   ];
