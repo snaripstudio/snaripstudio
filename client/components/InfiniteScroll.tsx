@@ -62,7 +62,8 @@ export default function InfiniteScroll({
       gsap.set(child, { y });
     });
 
-    const observer = Observer.create({
+    // Only enable interactive scrolling if autoplay is disabled
+    const observer = !autoplay ? Observer.create({
       target: container,
       type: "wheel,touch,pointer",
       preventDefault: true,
@@ -86,7 +87,7 @@ export default function InfiniteScroll({
           });
         });
       }
-    });
+    }) : null;
 
     let rafId: number;
     if (autoplay) {
