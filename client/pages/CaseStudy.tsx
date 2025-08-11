@@ -31,19 +31,17 @@ export default function CaseStudy() {
   return (
     <div className="scroll-container">
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-transparent">
-        <div className="max-w-7xl mx-auto px-4 md:px-8 py-6">
-          <div className="flex items-center justify-between">
-            <a
-              href="/"
-              className="inline-flex items-center gap-2 px-4 py-2 bg-card/80 backdrop-blur-sm border border-border rounded-full text-foreground hover:text-primary transition-all hover:bg-card/90"
-            >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-              <span className="text-sm font-medium">Back to Home</span>
-            </a>
-          </div>
+      <header className="fixed top-4 left-4 z-50 pointer-events-none">
+        <div className="pointer-events-auto">
+          <a
+            href="/"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-card/90 backdrop-blur-sm border border-border rounded-full text-foreground hover:text-primary transition-all hover:bg-card/95 shadow-lg"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            <span className="text-sm font-medium">Back to Home</span>
+          </a>
         </div>
       </header>
 
