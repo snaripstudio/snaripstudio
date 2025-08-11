@@ -107,7 +107,7 @@ export default function Index() {
       description:
         "Stunning portfolio website for a videographer showcasing creative work with immersive galleries.",
       image:
-        "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+        "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "PORTFOLIO",
     },
     {
