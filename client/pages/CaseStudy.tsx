@@ -58,9 +58,11 @@ export default function CaseStudy() {
             <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
               Full-Stack Development & SEO Foundation for a Local Service Business
             </p>
-            <div className="mt-12 animate-bounce">
-              <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center">
-                <div className="w-1 h-3 bg-primary rounded-full mt-2"></div>
+            <div className="mt-12 flex justify-center">
+              <div className="animate-bounce">
+                <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center mx-auto">
+                  <div className="w-1 h-3 bg-primary rounded-full mt-2"></div>
+                </div>
               </div>
             </div>
           </div>
