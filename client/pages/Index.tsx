@@ -91,7 +91,7 @@ export default function Index() {
       description:
         "Modern financial dashboard with real-time analytics and intuitive user interface.",
       image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+        "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "UI/UX",
     },
     {
