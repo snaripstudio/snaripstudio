@@ -64,7 +64,7 @@ export default function Index() {
       description:
         "Websites crafted with SEO best practices for better search engine visibility and organic traffic growth.",
       image:
-        "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "SEO",
     },
     {
