@@ -326,10 +326,10 @@ export default function CaseStudy() {
           width: 100%;
           scroll-snap-align: start;
           scroll-snap-stop: always;
-          padding: 8rem 2rem 2rem;
+          padding: 2rem;
           display: flex;
           flex-direction: column;
-          justify-content: flex-start;
+          justify-content: center;
           position: relative;
           box-sizing: border-box;
         }
