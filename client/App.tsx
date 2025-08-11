@@ -9,13 +9,14 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Index from "./pages/Index";
 import Contact from "./pages/Contact";
+import CaseStudy from "./pages/CaseStudy";
 import NotFound from "./pages/NotFound";
 import Loading from "./components/Loading";
 
 const queryClient = new QueryClient();
 
 const AppContent = () => {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const location = useLocation();
 
   useEffect(() => {
@@ -35,6 +36,7 @@ const AppContent = () => {
     <Routes>
       <Route path="/" element={<Index />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/case-study" element={<CaseStudy />} />
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
       <Route path="*" element={<NotFound />} />
     </Routes>

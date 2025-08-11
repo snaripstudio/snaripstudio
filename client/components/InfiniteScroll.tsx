@@ -62,7 +62,8 @@ export default function InfiniteScroll({
       gsap.set(child, { y });
     });
 
-    const observer = Observer.create({
+    // Only enable interactive scrolling if autoplay is disabled
+    const observer = !autoplay ? Observer.create({
       target: container,
       type: "wheel,touch,pointer",
       preventDefault: true,
@@ -86,7 +87,7 @@ export default function InfiniteScroll({
           });
         });
       }
-    });
+    }) : null;
 
     let rafId: number;
     if (autoplay) {
@@ -115,21 +116,21 @@ export default function InfiniteScroll({
         container.addEventListener("mouseleave", startTicker);
 
         return () => {
-          observer.kill();
+          observer?.kill();
           stopTicker();
           container.removeEventListener("mouseenter", stopTicker);
           container.removeEventListener("mouseleave", startTicker);
         };
       } else {
         return () => {
-          observer.kill();
+          observer?.kill();
           rafId && cancelAnimationFrame(rafId);
         };
       }
     }
 
     return () => {
-      observer.kill();
+      observer?.kill();
       if (rafId) cancelAnimationFrame(rafId);
     };
   }, [

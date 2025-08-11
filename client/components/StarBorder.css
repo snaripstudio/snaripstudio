@@ -32,7 +32,7 @@
 .inner-content {
   position: relative;
   border: 1px solid hsl(var(--border));
-  background: hsl(var(--card));
+  background: transparent;
   color: hsl(var(--foreground));
   font-size: 16px;
   text-align: center;

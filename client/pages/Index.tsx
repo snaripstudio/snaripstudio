@@ -5,6 +5,7 @@ import StarBorder from "../components/StarBorder";
 
 export default function Index() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   // Simple scroll animation setup
   useEffect(() => {
@@ -39,7 +40,7 @@ export default function Index() {
       description:
         "Unique, pixel-perfect designs made from scratch. Every element crafted specifically for your brand's story and goals.",
       image:
-        "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+        "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "DESIGN",
     },
     {
@@ -47,7 +48,7 @@ export default function Index() {
       description:
         "Mobile-friendly websites that look stunning on any device. Clean, efficient code built for performance and scalability.",
       image:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+        "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "DEVELOPMENT",
     },
     {
@@ -55,7 +56,7 @@ export default function Index() {
       description:
         "Build online stores with powerful features that convert visitors into customers. Secure, fast, and user-friendly shopping experiences.",
       image:
-        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "E-COMMERCE",
     },
     {
@@ -63,7 +64,7 @@ export default function Index() {
       description:
         "Websites crafted with SEO best practices for better search engine visibility and organic traffic growth.",
       image:
-        "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "SEO",
     },
     {
@@ -71,7 +72,7 @@ export default function Index() {
       description:
         "Easy-to-manage sites with WordPress, custom CMS, or headless solutions. Update your content with confidence.",
       image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+        "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "CMS",
     },
     {
@@ -79,7 +80,7 @@ export default function Index() {
       description:
         "Regular updates, backups, and secure coding practices. Keep your website safe, fast, and up-to-date.",
       image:
-        "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+        "https://images.unsplash.com/photo-1518709268805-4e9042af2ea0?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "MAINTENANCE",
     },
   ];
@@ -90,7 +91,7 @@ export default function Index() {
       description:
         "Modern financial dashboard with real-time analytics and intuitive user interface.",
       image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+        "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "UI/UX",
     },
     {
@@ -98,7 +99,7 @@ export default function Index() {
       description:
         "Complete redesign of an e-commerce platform focusing on conversion optimization.",
       image:
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+        "https://images.unsplash.com/photo-1607706189992-eae578626c86?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "BRANDING",
     },
     {
@@ -106,7 +107,7 @@ export default function Index() {
       description:
         "Stunning portfolio website for a videographer showcasing creative work with immersive galleries.",
       image:
-        "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+        "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "PORTFOLIO",
     },
     {
@@ -114,7 +115,7 @@ export default function Index() {
       description:
         "Dynamic website for social media marketing agency with conversion-focused design and analytics integration.",
       image:
-        "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+        "https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "MARKETING",
     },
     {
@@ -122,7 +123,7 @@ export default function Index() {
       description:
         "Complete brand identity design for a tech startup including logo and guidelines.",
       image:
-        "https://images.unsplash.com/photo-1542744094-3a31f272c490?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+        "https://images.unsplash.com/photo-1545670723-196ed0954986?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "BRANDING",
     },
     {
@@ -130,7 +131,7 @@ export default function Index() {
       description:
         "Minimalist portfolio website for a creative professional with smooth animations.",
       image:
-        "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "WEB",
     },
   ];
@@ -144,6 +145,15 @@ export default function Index() {
       avatar:
         "https://cdn.builder.io/api/v1/image/assets%2Ff48aa15f6f184b529ed3ca882d1ea006%2F11c44a19c4b3408281b5949101120872?format=webp&width=800",
       logo: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=120&h=40&fit=crop&crop=center&auto=format&q=80",
+    },
+    {
+      quote:
+        "Working with SnaripStudio was a game-changer for our cab booking platform. They delivered a sleek, responsive website that perfectly showcases our services and made it incredibly easy for customers to book rides. Our online bookings increased by 200% within just two months!",
+      name: "MANISH JAISWAL",
+      position: "Founder, RihandCabs",
+      avatar:
+        "https://cdn.builder.io/api/v1/image/assets%2F6034a906a3aa4789a8fd44988e1ebb28%2Fc7a5ed8b3c214b41ad68b85707a65de5?format=webp&width=800",
+      logo: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=120&h=40&fit=crop&crop=center&auto=format&q=80",
     },
   ];
 
@@ -187,13 +197,13 @@ export default function Index() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="/contact"
+                href="#about"
                 className="bg-white text-gray-900 px-8 py-3 rounded-full text-sm font-medium tracking-wide transition-all hover:bg-gray-100 hover:shadow-lg"
               >
                 Get Started
               </a>
               <a
-                href="#learn-more"
+                href="/contact"
                 className="bg-transparent border border-white/30 text-white px-8 py-3 rounded-full text-sm font-medium tracking-wide transition-all hover:bg-white/10 hover:border-white/50"
               >
                 Learn More
@@ -231,7 +241,7 @@ export default function Index() {
             </div>
             <div className="animate-on-scroll fade-left">
               <img
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop&crop=center&auto=format&q=80"
+                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=400&fit=crop&crop=center&auto=format&q=80"
                 alt="Team collaboration and design process"
                 className="w-full h-[400px] object-cover grayscale transition-transform duration-500 hover:scale-105"
               />
@@ -437,9 +447,9 @@ export default function Index() {
                 isTilted={true}
                 tiltDirection="left"
                 autoplay={true}
-                autoplaySpeed={0.15}
+                autoplaySpeed={0.25}
                 autoplayDirection="down"
-                pauseOnHover={true}
+                pauseOnHover={false}
                 width="100%"
                 itemMinHeight={200}
               />
@@ -494,6 +504,21 @@ export default function Index() {
             </div>
           </div>
         </div>
+
+        {/* Case Studies CTA */}
+        <div className="px-4 md:px-8 pb-16">
+          <div className="max-w-7xl mx-auto text-center animate-on-scroll fade-up delay-500">
+            <a
+              href="/case-study"
+              className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 text-lg font-medium tracking-wide transition-all hover:shadow-lg hover:shadow-primary/25 group"
+            >
+              VIEW DETAILED CASE STUDIES
+              <span className="transform transition-transform group-hover:translate-x-1">
+                →
+              </span>
+            </a>
+          </div>
+        </div>
       </section>
 
       {/* Testimonials Carousel */}
@@ -506,23 +531,93 @@ export default function Index() {
           <div className="max-w-4xl animate-on-scroll fade-up delay-200 mx-auto">
             <div className="mb-8">
               <img
-                src={testimonials[0].avatar}
-                alt={testimonials[0].name}
-                className="w-20 h-20 rounded-full object-cover mx-auto mb-6"
+                src={testimonials[currentTestimonial].avatar}
+                alt={testimonials[currentTestimonial].name}
+                className="w-20 h-20 rounded-full object-cover mx-auto mb-6 transition-all duration-500"
               />
               <div className="mb-4">
                 <div className="font-medium text-lg text-foreground">
-                  {testimonials[0].name}
+                  {testimonials[currentTestimonial].name}
                 </div>
                 <div className="text-sm text-muted-foreground">
-                  {testimonials[0].position}
+                  {testimonials[currentTestimonial].position}
                 </div>
               </div>
             </div>
 
-            <blockquote className="text-lg md:text-xl font-normal leading-relaxed text-center text-foreground">
-              "{testimonials[0].quote}"
+            <blockquote className="text-lg md:text-xl font-normal leading-relaxed text-center text-foreground transition-all duration-500">
+              "{testimonials[currentTestimonial].quote}"
             </blockquote>
+
+            {/* Testimonial Navigation */}
+            <div className="flex justify-center items-center mt-8 gap-4">
+              <button
+                onClick={() =>
+                  setCurrentTestimonial(
+                    currentTestimonial === 0
+                      ? testimonials.length - 1
+                      : currentTestimonial - 1,
+                  )
+                }
+                className="p-2 rounded-full bg-muted hover:bg-muted/80 transition-colors"
+                aria-label="Previous testimonial"
+              >
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+
+              <div className="flex gap-2">
+                {testimonials.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentTestimonial(index)}
+                    className={`w-2 h-2 rounded-full transition-all ${
+                      index === currentTestimonial
+                        ? "bg-primary w-8"
+                        : "bg-muted hover:bg-muted/80"
+                    }`}
+                    aria-label={`Go to testimonial ${index + 1}`}
+                  />
+                ))}
+              </div>
+
+              <button
+                onClick={() =>
+                  setCurrentTestimonial(
+                    currentTestimonial === testimonials.length - 1
+                      ? 0
+                      : currentTestimonial + 1,
+                  )
+                }
+                className="p-2 rounded-full bg-muted hover:bg-muted/80 transition-colors"
+                aria-label="Next testimonial"
+              >
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -606,6 +701,12 @@ export default function Index() {
                   className="block text-muted-foreground hover:text-primary transition-colors"
                 >
                   Portfolio
+                </a>
+                <a
+                  href="/case-study"
+                  className="block text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Case Studies
                 </a>
                 <a
                   href="/contact"
