@@ -99,7 +99,7 @@ export default function Index() {
       description:
         "Complete redesign of an e-commerce platform focusing on conversion optimization.",
       image:
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+        "https://images.unsplash.com/photo-1607706189992-eae578626c86?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "BRANDING",
     },
     {
