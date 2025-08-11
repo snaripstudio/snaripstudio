@@ -16,7 +16,7 @@ import Loading from "./components/Loading";
 const queryClient = new QueryClient();
 
 const AppContent = () => {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const location = useLocation();
 
   useEffect(() => {
