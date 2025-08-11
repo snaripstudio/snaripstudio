@@ -40,7 +40,7 @@ export default function Index() {
       description:
         "Unique, pixel-perfect designs made from scratch. Every element crafted specifically for your brand's story and goals.",
       image:
-        "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+        "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "DESIGN",
     },
     {
