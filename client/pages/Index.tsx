@@ -115,7 +115,7 @@ export default function Index() {
       description:
         "Dynamic website for social media marketing agency with conversion-focused design and analytics integration.",
       image:
-        "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+        "https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "MARKETING",
     },
     {
