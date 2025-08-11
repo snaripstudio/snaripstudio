@@ -552,12 +552,28 @@ export default function Index() {
             {/* Testimonial Navigation */}
             <div className="flex justify-center items-center mt-8 gap-4">
               <button
-                onClick={() => setCurrentTestimonial(currentTestimonial === 0 ? testimonials.length - 1 : currentTestimonial - 1)}
+                onClick={() =>
+                  setCurrentTestimonial(
+                    currentTestimonial === 0
+                      ? testimonials.length - 1
+                      : currentTestimonial - 1,
+                  )
+                }
                 className="p-2 rounded-full bg-muted hover:bg-muted/80 transition-colors"
                 aria-label="Previous testimonial"
               >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M15 19l-7-7 7-7"
+                  />
                 </svg>
               </button>
 
@@ -567,7 +583,9 @@ export default function Index() {
                     key={index}
                     onClick={() => setCurrentTestimonial(index)}
                     className={`w-2 h-2 rounded-full transition-all ${
-                      index === currentTestimonial ? 'bg-primary w-8' : 'bg-muted hover:bg-muted/80'
+                      index === currentTestimonial
+                        ? "bg-primary w-8"
+                        : "bg-muted hover:bg-muted/80"
                     }`}
                     aria-label={`Go to testimonial ${index + 1}`}
                   />
@@ -575,12 +593,28 @@ export default function Index() {
               </div>
 
               <button
-                onClick={() => setCurrentTestimonial(currentTestimonial === testimonials.length - 1 ? 0 : currentTestimonial + 1)}
+                onClick={() =>
+                  setCurrentTestimonial(
+                    currentTestimonial === testimonials.length - 1
+                      ? 0
+                      : currentTestimonial + 1,
+                  )
+                }
                 className="p-2 rounded-full bg-muted hover:bg-muted/80 transition-colors"
                 aria-label="Next testimonial"
               >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
                 </svg>
               </button>
             </div>
