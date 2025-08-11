@@ -80,7 +80,7 @@ export default function Index() {
       description:
         "Regular updates, backups, and secure coding practices. Keep your website safe, fast, and up-to-date.",
       image:
-        "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+        "https://images.unsplash.com/photo-1518709268805-4e9042af2ea0?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "MAINTENANCE",
     },
   ];
