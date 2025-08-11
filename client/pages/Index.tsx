@@ -123,7 +123,7 @@ export default function Index() {
       description:
         "Complete brand identity design for a tech startup including logo and guidelines.",
       image:
-        "https://images.unsplash.com/photo-1542744094-3a31f272c490?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+        "https://images.unsplash.com/photo-1545670723-196ed0954986?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "BRANDING",
     },
     {
