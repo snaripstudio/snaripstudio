@@ -56,7 +56,7 @@ export default function Index() {
       description:
         "Build online stores with powerful features that convert visitors into customers. Secure, fast, and user-friendly shopping experiences.",
       image:
-        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "E-COMMERCE",
     },
     {
