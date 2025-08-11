@@ -131,7 +131,7 @@ export default function Index() {
       description:
         "Minimalist portfolio website for a creative professional with smooth animations.",
       image:
-        "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "WEB",
     },
   ];
