@@ -48,7 +48,7 @@ export default function Index() {
       description:
         "Mobile-friendly websites that look stunning on any device. Clean, efficient code built for performance and scalability.",
       image:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+        "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "DEVELOPMENT",
     },
     {
