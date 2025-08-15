@@ -2,14 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import Silk from "../components/Silk";
 import InfiniteScroll from "../components/InfiniteScroll";
 import StarBorder from "../components/StarBorder";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
+import FlowingMenu from "../components/FlowingMenu";
 
 export default function Index() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
