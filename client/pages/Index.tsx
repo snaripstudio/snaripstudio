@@ -766,35 +766,6 @@ export default function Index() {
           width: 100%;
         }
 
-        .marquee-container {
-          width: 100%;
-          overflow: hidden;
-        }
-
-        .marquee-content {
-          display: flex;
-          gap: 2rem;
-          animation: marquee 80s linear infinite;
-          width: max-content;
-        }
-
-        .marquee-container:hover .marquee-content {
-          animation-play-state: paused;
-        }
-
-        .marquee-item {
-          flex-shrink: 0;
-          width: 320px;
-        }
-
-        @keyframes marquee {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(calc(-320px * 6 - 2rem * 6));
-          }
-        }
 
         /* Simple Scroll Animations */
         .animate-on-scroll {
