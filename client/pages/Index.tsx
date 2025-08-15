@@ -705,12 +705,6 @@ export default function Index() {
                   Portfolio
                 </a>
                 <a
-                  href="/case-study"
-                  className="block text-muted-foreground hover:text-primary transition-colors"
-                >
-                  Case Studies
-                </a>
-                <a
                   href="/contact"
                   className="block text-muted-foreground hover:text-primary transition-colors"
                 >
