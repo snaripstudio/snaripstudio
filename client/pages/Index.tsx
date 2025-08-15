@@ -305,7 +305,7 @@ export default function Index() {
           </div>
         </div>
 
-        <div className="w-full max-w-4xl mx-auto animate-on-scroll fade-up delay-300">
+        <div className="w-full animate-on-scroll fade-up delay-300">
           <div style={{ height: '600px', position: 'relative' }}>
             <FlowingMenu items={projects} />
           </div>
