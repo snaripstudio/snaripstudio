@@ -94,7 +94,7 @@
   background-position: 50% 50%;
 }
 
-.menu__item-link:hover+.marquee {
+.menu__item-link:hover + .marquee {
   transform: translate3d(0, 0%, 0);
 }
 
@@ -102,7 +102,7 @@
   from {
     transform: translateX(0);
   }
-  
+
   to {
     transform: translateX(-50%);
   }
@@ -113,11 +113,11 @@
   .menu__item-link {
     font-size: 3vh;
   }
-  
+
   .marquee span {
     font-size: 3vh;
   }
-  
+
   .marquee__img {
     width: 150px;
     height: 6vh;
@@ -129,11 +129,11 @@
   .menu__item-link {
     font-size: 2.5vh;
   }
-  
+
   .marquee span {
     font-size: 2.5vh;
   }
-  
+
   .marquee__img {
     width: 120px;
     height: 5vh;

@@ -88,22 +88,26 @@ export default function Index() {
   const projects = [
     {
       text: "LUXE WEDDINGS",
-      image: "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+      image:
+        "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       link: "https://luxeweddings.netlify.app/",
     },
     {
       text: "CONIX MEDIA",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+      image:
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       link: "https://conixmedia.netlify.app/",
     },
     {
       text: "LENS PHOTOGRAPHY",
-      image: "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+      image:
+        "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       link: "https://lens-photography.netlify.app/",
     },
     {
       text: "RIHAND CABS",
-      image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+      image:
+        "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       link: "https://rihandcabs.in",
     },
   ];
@@ -290,7 +294,6 @@ export default function Index() {
         </div>
       </section>
 
-
       {/* Project Marquee */}
       <section id="work" className="bg-card">
         <div className="px-4 md:px-8 py-16">
@@ -305,11 +308,10 @@ export default function Index() {
         </div>
 
         <div className="w-full animate-on-scroll fade-up delay-300">
-          <div style={{ height: '600px', position: 'relative' }}>
+          <div style={{ height: "600px", position: "relative" }}>
             <FlowingMenu items={projects} />
           </div>
         </div>
-
       </section>
 
       {/* Testimonials Carousel */}
@@ -473,7 +475,9 @@ export default function Index() {
           <div className="grid md:grid-cols-2 gap-16 animate-on-scroll fade-up">
             {/* Column 1: Links */}
             <div>
-              <h3 className="font-montserrat text-lg mb-6 font-semibold">NAVIGATION</h3>
+              <h3 className="font-montserrat text-lg mb-6 font-semibold">
+                NAVIGATION
+              </h3>
               <nav className="space-y-4">
                 <a
                   href="#about"
@@ -504,7 +508,9 @@ export default function Index() {
 
             {/* Column 2: Social Links */}
             <div>
-              <h3 className="font-montserrat text-lg mb-6 font-semibold">CONNECT</h3>
+              <h3 className="font-montserrat text-lg mb-6 font-semibold">
+                CONNECT
+              </h3>
               <div className="space-y-4">
                 <a
                   href="#"
@@ -554,7 +560,6 @@ export default function Index() {
         .nav-link:hover::after {
           width: 100%;
         }
-
 
         /* Simple Scroll Animations */
         .animate-on-scroll {
