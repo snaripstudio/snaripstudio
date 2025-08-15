@@ -444,58 +444,10 @@ export default function Index() {
           </div>
         </div>
 
-        <div className="w-full max-w-6xl mx-auto animate-on-scroll fade-up delay-300">
-          <Carousel
-            opts={{
-              align: "start",
-              loop: true,
-            }}
-            plugins={[
-              Autoplay({
-                delay: 3000,
-                stopOnInteraction: true,
-              }),
-            ]}
-            className="w-full"
-          >
-            <CarouselContent className="-ml-2 md:-ml-4">
-              {projects.map((project, index) => (
-                <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-                  <div
-                    className="group cursor-pointer h-full"
-                    onClick={() => window.open(project.url, '_blank')}
-                    title={`View ${project.title}`}
-                  >
-                    <div className="relative overflow-hidden w-full h-64 rounded-lg">
-                      <img
-                        src={project.image}
-                        alt={project.title}
-                        className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-110"
-                      />
-                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-500"></div>
-                      <div className="absolute top-4 right-4 text-xs font-medium tracking-widest text-white bg-black/70 px-2 py-1 rounded">
-                        {project.category}
-                      </div>
-                      <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <div className="text-center text-white p-6">
-                          <p className="text-sm leading-relaxed">
-                            {project.description}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="pt-6 px-4">
-                      <h3 className="text-xl font-michroma mb-2 group-hover:text-primary transition-colors duration-300">
-                        {project.title}
-                      </h3>
-                    </div>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="hidden md:flex" />
-            <CarouselNext className="hidden md:flex" />
-          </Carousel>
+        <div className="w-full max-w-4xl mx-auto animate-on-scroll fade-up delay-300">
+          <div style={{ height: '600px', position: 'relative' }}>
+            <FlowingMenu items={projects} />
+          </div>
         </div>
 
       </section>
