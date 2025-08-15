@@ -467,7 +467,7 @@ export default function Index() {
       <footer className="bg-background border-t border-border text-foreground px-4 md:px-8 py-16 relative overflow-hidden">
         {/* Background Text */}
         <div className="absolute inset-0 flex items-center justify-center opacity-[0.02] pointer-events-none">
-          <span className="text-[20rem] font-michroma">SNARIP</span>
+          <span className="text-[20rem] font-montserrat">SNARIP</span>
         </div>
 
         <div className="max-w-7xl mx-auto relative z-10">
