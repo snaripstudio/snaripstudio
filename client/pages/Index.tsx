@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import Silk from "../components/Silk";
-import InfiniteScroll from "../components/InfiniteScroll";
 import StarBorder from "../components/StarBorder";
+import FlowingMenu from "../components/FlowingMenu";
 
 export default function Index() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -87,52 +87,28 @@ export default function Index() {
 
   const projects = [
     {
-      title: "FINTECH PLATFORM",
-      description:
-        "Modern financial dashboard with real-time analytics and intuitive user interface.",
+      text: "LUXE WEDDINGS",
       image:
-        "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
-      category: "UI/UX",
+        "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+      link: "https://luxeweddings.netlify.app/",
     },
     {
-      title: "E-COMMERCE REDESIGN",
-      description:
-        "Complete redesign of an e-commerce platform focusing on conversion optimization.",
+      text: "CONIX MEDIA",
       image:
-        "https://images.unsplash.com/photo-1607706189992-eae578626c86?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
-      category: "BRANDING",
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+      link: "https://conixmedia.netlify.app/",
     },
     {
-      title: "VIDEOGRAPHY PORTFOLIO",
-      description:
-        "Stunning portfolio website for a videographer showcasing creative work with immersive galleries.",
+      text: "LENS PHOTOGRAPHY",
       image:
-        "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
-      category: "PORTFOLIO",
+        "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+      link: "https://lens-photography.netlify.app/",
     },
     {
-      title: "SOCIAL MEDIA AGENCY",
-      description:
-        "Dynamic website for social media marketing agency with conversion-focused design and analytics integration.",
+      text: "RIHAND CABS",
       image:
-        "https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
-      category: "MARKETING",
-    },
-    {
-      title: "STARTUP IDENTITY",
-      description:
-        "Complete brand identity design for a tech startup including logo and guidelines.",
-      image:
-        "https://images.unsplash.com/photo-1545670723-196ed0954986?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
-      category: "BRANDING",
-    },
-    {
-      title: "PORTFOLIO WEBSITE",
-      description:
-        "Minimalist portfolio website for a creative professional with smooth animations.",
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
-      category: "WEB",
+        "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+      link: "https://rihandcabs.in",
     },
   ];
 
@@ -158,7 +134,7 @@ export default function Index() {
   ];
 
   return (
-    <div className="min-h-screen bg-background font-inter relative overflow-hidden">
+    <div className="min-h-screen bg-background relative overflow-hidden">
       {/* Animated Background Lines */}
       <div className="background-lines">
         <div className="line line-1"></div>
@@ -189,7 +165,7 @@ export default function Index() {
               <span className="text-sm font-medium">SnaripStudio</span>
             </StarBorder>
 
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-inter text-white leading-tight tracking-tight mb-12">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-montserrat text-white leading-tight tracking-tight mb-12">
               Crafting Digital
               <br />
               Experiences That Convert
@@ -221,7 +197,7 @@ export default function Index() {
               <h2 className="text-sm font-medium tracking-widest text-muted-foreground mb-4">
                 ABOUT US
               </h2>
-              <h3 className="text-3xl md:text-5xl font-inter text-foreground leading-tight mb-8">
+              <h3 className="text-3xl md:text-5xl font-montserrat text-foreground leading-tight mb-8">
                 EVERY BRAND HAS A
                 <br />
                 UNIQUE STORY
@@ -257,7 +233,7 @@ export default function Index() {
             <h2 className="text-sm font-medium tracking-widest text-muted-foreground mb-4">
               WHAT MAKES US UNIQUE
             </h2>
-            <h3 className="text-3xl md:text-5xl font-inter text-foreground leading-tight">
+            <h3 className="text-3xl md:text-5xl font-montserrat text-foreground leading-tight">
               WHY CHOOSE
               <br />
               SNARIPSTUDIO
@@ -305,7 +281,7 @@ export default function Index() {
                   <span className="text-white text-sm">✓</span>
                 </div>
                 <div>
-                  <h4 className="font-michroma text-lg mb-2">
+                  <h4 className="font-montserrat text-lg mb-2 font-semibold">
                     {feature.title}
                   </h4>
                   <p className="text-gray-600 leading-relaxed">
@@ -318,205 +294,22 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="px-4 md:px-8 py-16 bg-background">
-        <div className="max-w-7xl mx-auto">
-          <div className="mb-16 animate-on-scroll fade-up">
-            <h2 className="text-sm font-medium tracking-widest text-muted-foreground mb-4">
-              OUR SERVICES
-            </h2>
-            <h3 className="text-3xl md:text-5xl font-inter text-foreground leading-tight">
-              COMPREHENSIVE
-              <br />
-              WEB SOLUTIONS
-            </h3>
-          </div>
-
-          <div className="flex justify-center">
-            <div
-              style={{
-                height: "600px",
-                position: "relative",
-                width: "100%",
-                maxWidth: "800px",
-              }}
-            >
-              <InfiniteScroll
-                items={[
-                  {
-                    content: (
-                      <div className="text-center px-4">
-                        <div className="text-xs tracking-widest text-primary mb-2">
-                          DESIGN
-                        </div>
-                        <h3 className="text-lg font-michroma mb-3">
-                          CUSTOM WEBSITE DESIGN
-                        </h3>
-                        <p className="text-sm text-muted-foreground leading-relaxed">
-                          Unique, pixel-perfect designs made from scratch. Every
-                          element crafted specifically for your brand's story
-                          and goals.
-                        </p>
-                      </div>
-                    ),
-                  },
-                  {
-                    content: (
-                      <div className="text-center px-4">
-                        <div className="text-xs tracking-widest text-primary mb-2">
-                          DEVELOPMENT
-                        </div>
-                        <h3 className="text-lg font-michroma mb-3">
-                          RESPONSIVE WEB DEVELOPMENT
-                        </h3>
-                        <p className="text-sm text-muted-foreground leading-relaxed">
-                          Mobile-friendly websites that look stunning on any
-                          device. Clean, efficient code built for performance
-                          and scalability.
-                        </p>
-                      </div>
-                    ),
-                  },
-                  {
-                    content: (
-                      <div className="text-center px-4">
-                        <div className="text-xs tracking-widest text-primary mb-2">
-                          E-COMMERCE
-                        </div>
-                        <h3 className="text-lg font-michroma mb-3">
-                          E-COMMERCE SOLUTIONS
-                        </h3>
-                        <p className="text-sm text-muted-foreground leading-relaxed">
-                          Build online stores with powerful features that
-                          convert visitors into customers. Secure, fast, and
-                          user-friendly shopping experiences.
-                        </p>
-                      </div>
-                    ),
-                  },
-                  {
-                    content: (
-                      <div className="text-center px-4">
-                        <div className="text-xs tracking-widest text-primary mb-2">
-                          SEO
-                        </div>
-                        <h3 className="text-lg font-michroma mb-3">
-                          SEO OPTIMIZATION
-                        </h3>
-                        <p className="text-sm text-muted-foreground leading-relaxed">
-                          Websites crafted with SEO best practices for better
-                          search engine visibility and organic traffic growth.
-                        </p>
-                      </div>
-                    ),
-                  },
-                  {
-                    content: (
-                      <div className="text-center px-4">
-                        <div className="text-xs tracking-widest text-primary mb-2">
-                          CMS
-                        </div>
-                        <h3 className="text-lg font-michroma mb-3">
-                          CONTENT MANAGEMENT
-                        </h3>
-                        <p className="text-sm text-muted-foreground leading-relaxed">
-                          Easy-to-manage sites with WordPress, custom CMS, or
-                          headless solutions. Update your content with
-                          confidence.
-                        </p>
-                      </div>
-                    ),
-                  },
-                  {
-                    content: (
-                      <div className="text-center px-4">
-                        <div className="text-xs tracking-widest text-primary mb-2">
-                          MAINTENANCE
-                        </div>
-                        <h3 className="text-lg font-michroma mb-3">
-                          SECURITY & MAINTENANCE
-                        </h3>
-                        <p className="text-sm text-muted-foreground leading-relaxed">
-                          Regular updates, backups, and secure coding practices.
-                          Keep your website safe, fast, and up-to-date.
-                        </p>
-                      </div>
-                    ),
-                  },
-                ]}
-                isTilted={true}
-                tiltDirection="left"
-                autoplay={true}
-                autoplaySpeed={0.25}
-                autoplayDirection="down"
-                pauseOnHover={false}
-                width="100%"
-                itemMinHeight={200}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Project Marquee */}
-      <section id="work" className="py-16 bg-card">
-        <div className="px-4 md:px-8 mb-16">
+      <section id="work" className="bg-card">
+        <div className="px-4 md:px-8 py-16">
           <div className="max-w-7xl mx-auto animate-on-scroll fade-up">
             <h2 className="text-sm font-medium tracking-widest text-muted-foreground mb-4">
               SELECTED PROJECTS
             </h2>
-            <h3 className="text-3xl md:text-5xl font-inter text-foreground leading-tight">
+            <h3 className="text-3xl md:text-5xl font-montserrat text-foreground leading-tight">
               OUR RECENT WORK
             </h3>
           </div>
         </div>
 
-        <div className="relative overflow-hidden animate-on-scroll fade-up delay-300">
-          <div className="marquee-container">
-            <div className="marquee-content">
-              {[...projects, ...projects].map((project, index) => (
-                <div key={index} className="marquee-item group cursor-pointer">
-                  <div className="relative overflow-hidden w-80 h-64">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-500"></div>
-                    <div className="absolute top-4 right-4 text-xs font-medium tracking-widest text-white bg-black/70 px-2 py-1">
-                      {project.category}
-                    </div>
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <div className="text-center text-white p-6">
-                        <p className="text-sm leading-relaxed">
-                          {project.description}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="pt-6 px-4">
-                    <h3 className="text-xl font-michroma mb-2">
-                      {project.title}
-                    </h3>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Case Studies CTA */}
-        <div className="px-4 md:px-8 pb-16">
-          <div className="max-w-7xl mx-auto text-center animate-on-scroll fade-up delay-500">
-            <a
-              href="/case-study"
-              className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 text-lg font-medium tracking-wide transition-all hover:shadow-lg hover:shadow-primary/25 group"
-            >
-              VIEW DETAILED CASE STUDIES
-              <span className="transform transition-transform group-hover:translate-x-1">
-                →
-              </span>
-            </a>
+        <div className="w-full animate-on-scroll fade-up delay-300">
+          <div style={{ height: "600px", position: "relative" }}>
+            <FlowingMenu items={projects} />
           </div>
         </div>
       </section>
@@ -629,7 +422,7 @@ export default function Index() {
             <h2 className="text-sm font-medium tracking-widest text-muted-foreground mb-4">
               WHY CHOOSE US
             </h2>
-            <h3 className="text-3xl md:text-5xl font-inter text-foreground leading-tight mb-8">
+            <h3 className="text-3xl md:text-5xl font-montserrat text-foreground leading-tight mb-8">
               WE DON'T JUST BUILD
               <br />
               WEBSITES—WE CRAFT
@@ -649,7 +442,7 @@ export default function Index() {
       {/* CTA Section */}
       <section className="px-4 md:px-8 py-24 bg-card text-foreground">
         <div className="max-w-7xl mx-auto text-center animate-on-scroll fade-up">
-          <h2 className="text-4xl md:text-6xl font-inter text-foreground leading-tight mb-8">
+          <h2 className="text-4xl md:text-6xl font-montserrat text-foreground leading-tight mb-8">
             READY TO TRANSFORM
             <br />
             YOUR DIGITAL PRESENCE?
@@ -675,14 +468,16 @@ export default function Index() {
       <footer className="bg-background border-t border-border text-foreground px-4 md:px-8 py-16 relative overflow-hidden">
         {/* Background Text */}
         <div className="absolute inset-0 flex items-center justify-center opacity-[0.02] pointer-events-none">
-          <span className="text-[20rem] font-michroma">SNARIP</span>
+          <span className="text-[20rem] font-montserrat">SNARIP</span>
         </div>
 
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid md:grid-cols-2 gap-16 animate-on-scroll fade-up">
             {/* Column 1: Links */}
             <div>
-              <h3 className="font-michroma text-lg mb-6">NAVIGATION</h3>
+              <h3 className="font-montserrat text-lg mb-6 font-semibold">
+                NAVIGATION
+              </h3>
               <nav className="space-y-4">
                 <a
                   href="#about"
@@ -703,12 +498,6 @@ export default function Index() {
                   Portfolio
                 </a>
                 <a
-                  href="/case-study"
-                  className="block text-muted-foreground hover:text-primary transition-colors"
-                >
-                  Case Studies
-                </a>
-                <a
                   href="/contact"
                   className="block text-muted-foreground hover:text-primary transition-colors"
                 >
@@ -719,7 +508,9 @@ export default function Index() {
 
             {/* Column 2: Social Links */}
             <div>
-              <h3 className="font-michroma text-lg mb-6">CONNECT</h3>
+              <h3 className="font-montserrat text-lg mb-6 font-semibold">
+                CONNECT
+              </h3>
               <div className="space-y-4">
                 <a
                   href="#"
@@ -768,36 +559,6 @@ export default function Index() {
         }
         .nav-link:hover::after {
           width: 100%;
-        }
-
-        .marquee-container {
-          width: 100%;
-          overflow: hidden;
-        }
-
-        .marquee-content {
-          display: flex;
-          gap: 2rem;
-          animation: marquee 80s linear infinite;
-          width: max-content;
-        }
-
-        .marquee-container:hover .marquee-content {
-          animation-play-state: paused;
-        }
-
-        .marquee-item {
-          flex-shrink: 0;
-          width: 320px;
-        }
-
-        @keyframes marquee {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(calc(-320px * 6 - 2rem * 6));
-          }
         }
 
         /* Simple Scroll Animations */
