@@ -278,7 +278,7 @@ export default function Index() {
                   <span className="text-white text-sm">✓</span>
                 </div>
                 <div>
-                  <h4 className="font-michroma text-lg mb-2">
+                  <h4 className="font-montserrat text-lg mb-2 font-semibold">
                     {feature.title}
                   </h4>
                   <p className="text-gray-600 leading-relaxed">
