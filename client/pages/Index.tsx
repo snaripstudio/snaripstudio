@@ -88,40 +88,24 @@ export default function Index() {
 
   const projects = [
     {
-      title: "LUXE WEDDINGS",
-      description:
-        "Professional wedding photography and videography service featuring a gallery of work, service details for wedding films and pre-wedding shoots, and contact information for event bookings.",
-      image:
-        "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
-      category: "PHOTOGRAPHY",
-      url: "https://luxeweddings.netlify.app/",
+      text: "LUXE WEDDINGS",
+      image: "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+      link: "https://luxeweddings.netlify.app/",
     },
     {
-      title: "CONIX MEDIA",
-      description:
-        "Digital marketing and web development agency offering social media marketing, SEO, and website design services to improve business online presence and generate leads.",
-      image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
-      category: "MARKETING",
-      url: "https://conixmedia.netlify.app/",
+      text: "CONIX MEDIA",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+      link: "https://conixmedia.netlify.app/",
     },
     {
-      title: "LENS PHOTOGRAPHY",
-      description:
-        "Professional photography portfolio showcasing a collection of work across various categories, serving as a visual resume for potential clients to view quality and style.",
-      image:
-        "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
-      category: "PORTFOLIO",
-      url: "https://lens-photography.netlify.app/",
+      text: "LENS PHOTOGRAPHY",
+      image: "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+      link: "https://lens-photography.netlify.app/",
     },
     {
-      title: "RIHAND CABS",
-      description:
-        "Local cab service platform featuring route information between Rihand and Varanasi, service details, and direct booking capabilities with professional online presence.",
-      image:
-        "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
-      category: "TRANSPORT",
-      url: "https://rihandcabs.in",
+      text: "RIHAND CABS",
+      image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+      link: "https://rihandcabs.in",
     },
   ];
 
