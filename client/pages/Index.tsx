@@ -230,7 +230,7 @@ export default function Index() {
             <h2 className="text-sm font-medium tracking-widest text-muted-foreground mb-4">
               WHAT MAKES US UNIQUE
             </h2>
-            <h3 className="text-3xl md:text-5xl font-inter text-foreground leading-tight">
+            <h3 className="text-3xl md:text-5xl font-montserrat text-foreground leading-tight">
               WHY CHOOSE
               <br />
               SNARIPSTUDIO
