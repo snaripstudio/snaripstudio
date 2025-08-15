@@ -69,7 +69,7 @@ export default function Contact() {
       {/* Contact Hero Section */}
       <section className="px-4 md:px-8 py-16 md:py-24">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-inter text-foreground leading-[1.1] tracking-tight mb-8">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-montserrat text-foreground leading-[1.1] tracking-tight mb-8">
             LET'S CREATE
             <br />
             <span className="text-primary">SOMETHING</span>
