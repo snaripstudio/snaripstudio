@@ -505,7 +505,7 @@ export default function Index() {
 
             {/* Column 2: Social Links */}
             <div>
-              <h3 className="font-michroma text-lg mb-6">CONNECT</h3>
+              <h3 className="font-montserrat text-lg mb-6 font-semibold">CONNECT</h3>
               <div className="space-y-4">
                 <a
                   href="#"
