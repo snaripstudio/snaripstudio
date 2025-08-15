@@ -474,7 +474,7 @@ export default function Index() {
           <div className="grid md:grid-cols-2 gap-16 animate-on-scroll fade-up">
             {/* Column 1: Links */}
             <div>
-              <h3 className="font-michroma text-lg mb-6">NAVIGATION</h3>
+              <h3 className="font-montserrat text-lg mb-6 font-semibold">NAVIGATION</h3>
               <nav className="space-y-4">
                 <a
                   href="#about"
