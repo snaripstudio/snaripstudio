@@ -131,7 +131,7 @@ export default function Index() {
   ];
 
   return (
-    <div className="min-h-screen bg-background font-inter relative overflow-hidden">
+    <div className="min-h-screen bg-background relative overflow-hidden">
       {/* Animated Background Lines */}
       <div className="background-lines">
         <div className="line line-1"></div>
