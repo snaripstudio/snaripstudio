@@ -162,7 +162,7 @@ export default function Index() {
               <span className="text-sm font-medium">SnaripStudio</span>
             </StarBorder>
 
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-inter text-white leading-tight tracking-tight mb-12">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-montserrat text-white leading-tight tracking-tight mb-12">
               Crafting Digital
               <br />
               Experiences That Convert
