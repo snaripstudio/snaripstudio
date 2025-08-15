@@ -441,7 +441,7 @@ export default function Index() {
       {/* CTA Section */}
       <section className="px-4 md:px-8 py-24 bg-card text-foreground">
         <div className="max-w-7xl mx-auto text-center animate-on-scroll fade-up">
-          <h2 className="text-4xl md:text-6xl font-inter text-foreground leading-tight mb-8">
+          <h2 className="text-4xl md:text-6xl font-montserrat text-foreground leading-tight mb-8">
             READY TO TRANSFORM
             <br />
             YOUR DIGITAL PRESENCE?
