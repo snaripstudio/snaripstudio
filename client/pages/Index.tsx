@@ -2,6 +2,14 @@ import { useState, useEffect, useRef } from "react";
 import Silk from "../components/Silk";
 import InfiniteScroll from "../components/InfiniteScroll";
 import StarBorder from "../components/StarBorder";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 export default function Index() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -87,52 +95,40 @@ export default function Index() {
 
   const projects = [
     {
-      title: "FINTECH PLATFORM",
+      title: "LUXE WEDDINGS",
       description:
-        "Modern financial dashboard with real-time analytics and intuitive user interface.",
+        "Professional wedding photography and videography service featuring a gallery of work, service details for wedding films and pre-wedding shoots, and contact information for event bookings.",
       image:
-        "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
-      category: "UI/UX",
+        "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+      category: "PHOTOGRAPHY",
+      url: "https://luxeweddings.netlify.app/",
     },
     {
-      title: "E-COMMERCE REDESIGN",
+      title: "CONIX MEDIA",
       description:
-        "Complete redesign of an e-commerce platform focusing on conversion optimization.",
+        "Digital marketing and web development agency offering social media marketing, SEO, and website design services to improve business online presence and generate leads.",
       image:
-        "https://images.unsplash.com/photo-1607706189992-eae578626c86?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
-      category: "BRANDING",
-    },
-    {
-      title: "VIDEOGRAPHY PORTFOLIO",
-      description:
-        "Stunning portfolio website for a videographer showcasing creative work with immersive galleries.",
-      image:
-        "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
-      category: "PORTFOLIO",
-    },
-    {
-      title: "SOCIAL MEDIA AGENCY",
-      description:
-        "Dynamic website for social media marketing agency with conversion-focused design and analytics integration.",
-      image:
-        "https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
       category: "MARKETING",
+      url: "https://conixmedia.netlify.app/",
     },
     {
-      title: "STARTUP IDENTITY",
+      title: "LENS PHOTOGRAPHY",
       description:
-        "Complete brand identity design for a tech startup including logo and guidelines.",
+        "Professional photography portfolio showcasing a collection of work across various categories, serving as a visual resume for potential clients to view quality and style.",
       image:
-        "https://images.unsplash.com/photo-1545670723-196ed0954986?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
-      category: "BRANDING",
+        "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+      category: "PORTFOLIO",
+      url: "https://lens-photography.netlify.app/",
     },
     {
-      title: "PORTFOLIO WEBSITE",
+      title: "RIHAND CABS",
       description:
-        "Minimalist portfolio website for a creative professional with smooth animations.",
+        "Local cab service platform featuring route information between Rihand and Varanasi, service details, and direct booking capabilities with professional online presence.",
       image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
-      category: "WEB",
+        "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=400&fit=crop&crop=center&auto=format&q=80",
+      category: "TRANSPORT",
+      url: "https://rihandcabs.in",
     },
   ];
 
