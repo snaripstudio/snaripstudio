@@ -14,6 +14,9 @@ export default {
     },
     extend: {
       fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
+        lato: ["Lato", "sans-serif"],
+        // Keep existing fonts for backward compatibility
         michroma: ["Michroma", "sans-serif"],
         inter: ["Inter", "sans-serif"],
       },
