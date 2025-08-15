@@ -44,10 +44,10 @@ export default function Contact() {
               ABOUT
             </a>
             <a
-              href="/#services"
+              href="/#work"
               className="nav-link relative text-sm font-medium tracking-wide text-foreground transition-colors hover:text-primary"
             >
-              SERVICES
+              WORK
             </a>
             <a
               href="/#work"
