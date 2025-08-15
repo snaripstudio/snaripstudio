@@ -293,8 +293,8 @@ export default function Index() {
 
 
       {/* Project Marquee */}
-      <section id="work" className="py-16 bg-card">
-        <div className="px-4 md:px-8 mb-16">
+      <section id="work" className="bg-card">
+        <div className="px-4 md:px-8 py-16">
           <div className="max-w-7xl mx-auto animate-on-scroll fade-up">
             <h2 className="text-sm font-medium tracking-widest text-muted-foreground mb-4">
               SELECTED PROJECTS
