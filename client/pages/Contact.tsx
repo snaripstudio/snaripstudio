@@ -25,7 +25,7 @@ export default function Contact() {
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2F7a415af69a664de19824c2561d4b2dbb%2F61a664dbf0a04373ab36d55007f782f6"
               alt="SnaripStudio Logo"
-              className="h-10 w-11 object-contain -ml-1"
+              className="h-11 w-11 object-cover rounded-full -ml-1"
             />
           </a>
 
