@@ -169,6 +169,8 @@ export default function Index() {
               Crafting Digital
               <br />
               Experiences That Convert
+              <br />
+              Ideas into Growth
             </h1>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

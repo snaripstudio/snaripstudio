@@ -34,7 +34,7 @@
   border: 1px solid hsl(var(--border));
   background: transparent;
   color: hsl(var(--foreground));
-  font-size: 16px;
+  font-size: 24px;
   text-align: center;
   padding: 16px 26px;
   border-radius: 20px;
