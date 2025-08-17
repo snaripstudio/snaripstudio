@@ -36,7 +36,7 @@
   color: hsl(var(--foreground));
   font-size: 24px;
   text-align: center;
-  padding: 16px 26px;
+  padding: 16px;
   border-radius: 20px;
   z-index: 1;
 }
