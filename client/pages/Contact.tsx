@@ -50,7 +50,6 @@ export default function Contact() {
               WORK
             </a>
           </nav>
-
         </div>
       </header>
 
