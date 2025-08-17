@@ -49,20 +49,8 @@ export default function Contact() {
             >
               WORK
             </a>
-            <a
-              href="/#work"
-              className="nav-link relative text-sm font-medium tracking-wide text-foreground transition-colors hover:text-primary"
-            >
-              WORK
-            </a>
           </nav>
 
-          <a
-            href="/contact"
-            className="hidden md:block bg-primary text-primary-foreground px-6 py-3 text-sm font-medium tracking-wide transition-all hover:shadow-lg hover:shadow-primary/25"
-          >
-            LET'S TALK
-          </a>
         </div>
       </header>
 
@@ -147,7 +135,7 @@ export default function Contact() {
                 CHAT ON WHATSAPP
               </a>
               <div className="mt-4 text-sm text-muted-foreground">
-                {whatsappNumber}
+                +91 6386873180, +91 7905468326
               </div>
             </div>
           </div>
