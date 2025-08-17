@@ -162,7 +162,7 @@ export default function Index() {
           <div className="max-w-4xl mx-auto text-center">
             {/* New Background Label */}
             <StarBorder as="div" className="mb-8" color="#5227FF" speed="4s">
-              <span className="text-sm font-medium">SnaripStudio</span>
+              <p>Snarip Studio</p>
             </StarBorder>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-montserrat text-white leading-tight tracking-tight mb-12">
