@@ -184,7 +184,7 @@ export default function Index() {
                 href="/contact"
                 className="bg-transparent border border-white/30 text-white px-8 py-3 rounded-full text-sm font-medium tracking-wide transition-all hover:bg-white/10 hover:border-white/50"
               >
-                Learn More
+                Let's Connect
               </a>
             </div>
           </div>
