@@ -219,8 +219,8 @@ export default function Index() {
             </div>
             <div className="animate-on-scroll fade-left">
               <img
-                src="https://images.pexels.com/photos/4623169/pexels-photo-4623169.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
-                alt="Modern tech workspace with diverse team using computers and technology"
+                src="https://images.pexels.com/photos/1367271/pexels-photo-1367271.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                alt="Professional team collaborating in a bright, modern conference room"
                 className="w-full h-[400px] object-cover transition-transform duration-500 hover:scale-105"
               />
             </div>
