@@ -162,13 +162,15 @@ export default function Index() {
           <div className="max-w-4xl mx-auto text-center">
             {/* New Background Label */}
             <StarBorder as="div" className="mb-8" color="#5227FF" speed="4s">
-              <span className="text-sm font-medium">SnaripStudio</span>
+              <p>Snarip Studio</p>
             </StarBorder>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-montserrat text-white leading-tight tracking-tight mb-12">
               Crafting Digital
               <br />
               Experiences That Convert
+              <br />
+              Ideas into Growth
             </h1>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -182,7 +184,7 @@ export default function Index() {
                 href="/contact"
                 className="bg-transparent border border-white/30 text-white px-8 py-3 rounded-full text-sm font-medium tracking-wide transition-all hover:bg-white/10 hover:border-white/50"
               >
-                Learn More
+                Let's Connect
               </a>
             </div>
           </div>
@@ -217,9 +219,9 @@ export default function Index() {
             </div>
             <div className="animate-on-scroll fade-left">
               <img
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=400&fit=crop&crop=center&auto=format&q=80"
-                alt="Team collaboration and design process"
-                className="w-full h-[400px] object-cover grayscale transition-transform duration-500 hover:scale-105"
+                src="https://images.pexels.com/photos/1181359/pexels-photo-1181359.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop"
+                alt="Developer working on code with laptop and programming resources"
+                className="w-full h-[400px] object-cover transition-transform duration-500 hover:scale-105"
               />
             </div>
           </div>

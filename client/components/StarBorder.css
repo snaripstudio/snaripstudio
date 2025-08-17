@@ -34,11 +34,15 @@
   border: 1px solid hsl(var(--border));
   background: transparent;
   color: hsl(var(--foreground));
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: bold;
   text-align: center;
-  padding: 16px 26px;
+  padding: 16px 16px 20px;
   border-radius: 20px;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes star-movement-bottom {

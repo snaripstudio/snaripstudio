@@ -23,9 +23,9 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <a href="/" className="flex items-center">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Ff48aa15f6f184b529ed3ca882d1ea006%2F80b9e9b58c234d4ebeea01c935603c20?format=webp&width=800"
+              src="https://cdn.builder.io/api/v1/image/assets%2F7a415af69a664de19824c2561d4b2dbb%2F61a664dbf0a04373ab36d55007f782f6"
               alt="SnaripStudio Logo"
-              className="h-10 w-10 object-contain"
+              className="h-11 w-11 object-cover rounded-full -ml-1"
             />
           </a>
 
@@ -49,20 +49,7 @@ export default function Contact() {
             >
               WORK
             </a>
-            <a
-              href="/#work"
-              className="nav-link relative text-sm font-medium tracking-wide text-foreground transition-colors hover:text-primary"
-            >
-              WORK
-            </a>
           </nav>
-
-          <a
-            href="/contact"
-            className="hidden md:block bg-primary text-primary-foreground px-6 py-3 text-sm font-medium tracking-wide transition-all hover:shadow-lg hover:shadow-primary/25"
-          >
-            LET'S TALK
-          </a>
         </div>
       </header>
 
@@ -147,7 +134,7 @@ export default function Contact() {
                 CHAT ON WHATSAPP
               </a>
               <div className="mt-4 text-sm text-muted-foreground">
-                {whatsappNumber}
+                +91 6386873180, +91 7905468326
               </div>
             </div>
           </div>
