@@ -196,7 +196,7 @@ export default function Index() {
               <p>Snarip Studio</p>
             </StarBorder>
 
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-montserrat leading-tight tracking-tight mb-12 text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-bright">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-montserrat text-white leading-tight tracking-tight mb-12">
               Crafting Digital
               <br />
               Experiences That Convert
