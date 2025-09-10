@@ -231,7 +231,7 @@ export default function Index() {
                 WEBSITE DEVELOPMENT IN NCR
               </h2>
               <h3 className="text-3xl md:text-5xl font-montserrat text-foreground leading-tight mb-6">
-                Website Development Company in Greater Noida, Noida & Gurgaon
+                Website Development Company
               </h3>
               <div className="h-px w-24 bg-border mx-auto mb-6" />
               <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
