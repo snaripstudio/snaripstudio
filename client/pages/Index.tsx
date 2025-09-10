@@ -225,8 +225,8 @@ export default function Index() {
       {/* SEO Service Area Section */}
       <section id="services" className="px-4 md:px-8 py-16 bg-card">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+          <div className="grid grid-cols-1 gap-8 md:gap-10 lg:gap-12 items-start justify-items-center">
+            <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-sm font-medium tracking-widest text-muted-foreground mb-4">
                 WEBSITE DEVELOPMENT IN NCR
               </h2>
