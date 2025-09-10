@@ -635,7 +635,7 @@ export default function Index() {
               "snatip studios",
               "smarip stuidio",
               "snarip stud.io",
-              "snarp studeo"
+              "snarp studeo",
             ],
             url: typeof window !== "undefined" ? window.location.origin : "",
             image:
