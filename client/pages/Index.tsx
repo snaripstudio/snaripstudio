@@ -233,14 +233,17 @@ export default function Index() {
                 Website Development in Greater Noida, Noida & Gurgaon
               </h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Looking for a web development company in
-                Greater Noida, Noida, or Gurgaon? We design and develop fast,
-                SEO-optimized websites that convert visitors into customers.
-                From corporate sites to e‑commerce, we deliver end‑to‑end
-                solutions including design, development, SEO, and maintenance.
+                Looking for a web development company in Greater Noida, Noida,
+                or Gurgaon? We design and develop fast, SEO-optimized websites
+                that convert visitors into customers. From corporate sites to
+                e‑commerce, we deliver end‑to‑end solutions including design,
+                development, SEO, and maintenance.
               </p>
             </div>
-            <ul className="space-y-4 sr-only" aria-label="Service areas (hidden)">
+            <ul
+              className="space-y-4 sr-only"
+              aria-label="Service areas (hidden)"
+            >
               <li className="flex items-start gap-3">
                 <span className="mt-1">✅</span>{" "}
                 <span>
