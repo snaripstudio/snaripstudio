@@ -241,13 +241,6 @@ export default function Index() {
                 solutions including design, development, SEO, and maintenance.
               </p>
             </div>
-            <div className="animate-on-scroll fade-left">
-              <img
-                src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop"
-                alt="Web development and SEO services in Greater Noida, Noida, and Gurgaon"
-                className="w-full h-[400px] object-cover transition-transform duration-500 hover:scale-105"
-              />
-            </div>
           </div>
         </div>
       </section>
