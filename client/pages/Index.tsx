@@ -196,7 +196,7 @@ export default function Index() {
               <p>Snarip Studio</p>
             </StarBorder>
 
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-montserrat text-white leading-tight tracking-tight mb-12">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-montserrat leading-tight tracking-tight mb-12 text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-bright">
               Crafting Digital
               <br />
               Experiences That Convert
@@ -207,13 +207,13 @@ export default function Index() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
                 href="#about"
-                className="bg-white text-gray-900 px-8 py-3 rounded-full text-sm font-medium tracking-wide transition-all hover:bg-gray-100 hover:shadow-lg"
+                className="bg-white text-gray-900 px-8 py-3 rounded-full text-sm font-medium tracking-wide transition-all hover:bg-gray-100 hover:shadow-lg hover:ring-2 hover:ring-primary/30 hover:-translate-y-0.5"
               >
                 Get Started
               </a>
               <a
                 href="/contact"
-                className="bg-transparent border border-white/30 text-white px-8 py-3 rounded-full text-sm font-medium tracking-wide transition-all hover:bg-white/10 hover:border-white/50"
+                className="bg-transparent border border-white/30 text-white px-8 py-3 rounded-full text-sm font-medium tracking-wide transition-all hover:bg-white/10 hover:border-white/50 hover:-translate-y-0.5 hover:shadow-md"
               >
                 Let's Connect
               </a>
@@ -233,7 +233,8 @@ export default function Index() {
               <h3 className="text-3xl md:text-5xl font-montserrat text-foreground leading-tight mb-6">
                 Website Development Company in Greater Noida, Noida & Gurgaon
               </h3>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <div className="h-px w-24 bg-border mx-auto mb-6" />
+              <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
                 Looking for a website maker or web development company in
                 Greater Noida, Noida, or Gurgaon? We design and develop fast,
                 SEO-optimized websites that convert visitors into customers.
@@ -280,7 +281,7 @@ export default function Index() {
               <img
                 src="https://images.pexels.com/photos/1181359/pexels-photo-1181359.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop"
                 alt="Developer working on code with laptop and programming resources"
-                className="w-full h-[400px] object-cover transition-transform duration-500 hover:scale-105"
+                className="w-full h-[400px] object-cover transition-transform duration-500 hover:scale-105 rounded-xl shadow-lg shadow-black/20"
               />
             </div>
           </div>
