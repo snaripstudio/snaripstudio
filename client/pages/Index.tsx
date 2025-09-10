@@ -12,16 +12,16 @@ export default function Index() {
   useEffect(() => {
     setSEO({
       title:
-        "Website Development & Website Maker in Greater Noida, Noida & Gurgaon | SnaripStudio",
+        "Website Development Company in Greater Noida, Noida & Gurgaon | SnaripStudio",
       description:
-        "SnaripStudio builds fast, SEO-friendly websites that grow your business. Trusted website maker and web development company serving Greater Noida, Noida and Gurgaon.",
+        "SnaripStudio builds fast, SEO-friendly websites that grow your business. Trusted website development company serving Greater Noida, Noida and Gurgaon.",
       keywords: [
         "snarip",
         "snarip studio",
         "snaripstudio",
         "snarip studios",
-        "website maker",
         "website development",
+        "website development company",
         "web development company",
         "Greater Noida",
         "Noida",
@@ -231,7 +231,7 @@ export default function Index() {
                 WEBSITE DEVELOPMENT IN NCR
               </h2>
               <h3 className="text-3xl md:text-5xl font-montserrat text-foreground leading-tight mb-6">
-                Website Maker in Greater Noida, Noida & Gurgaon
+                Website Development Company in Greater Noida, Noida & Gurgaon
               </h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Looking for a website maker or web development company in
@@ -241,27 +241,13 @@ export default function Index() {
                 solutions including design, development, SEO, and maintenance.
               </p>
             </div>
-            <ul className="space-y-4" aria-label="Service areas">
-              <li className="flex items-start gap-3">
-                <span className="mt-1">✅</span>{" "}
-                <span>
-                  Greater Noida – custom websites, landing pages, and e‑commerce
-                  stores
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="mt-1">✅</span>{" "}
-                <span>
-                  Noida – performance‑focused development and SEO implementation
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="mt-1">✅</span>{" "}
-                <span>
-                  Gurgaon (Gurugram) – business websites that rank and convert
-                </span>
-              </li>
-            </ul>
+            <div className="animate-on-scroll fade-left">
+              <img
+                src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop"
+                alt="Web development and SEO services in Greater Noida, Noida, and Gurgaon"
+                className="w-full h-[400px] object-cover transition-transform duration-500 hover:scale-105"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -554,7 +540,110 @@ export default function Index() {
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
             name: "Snarip Studio",
-            alternateName: ["Snarip", "SnaripStudio", "Snarip Studios"],
+            alternateName: [
+              "Snarip",
+              "SnaripStudio",
+              "Snarip Studios",
+              "snrip studio",
+              "sarip studio",
+              "narip studio",
+              "snarp studio",
+              "snaip studio",
+              "snari studio",
+              "ssnarip studio",
+              "snaarip studio",
+              "snarrip studio",
+              "snariip studio",
+              "snaripp studio",
+              "snaripa studio",
+              "sanrip studio",
+              "snraip studio",
+              "snairp studio",
+              "snarpi studio",
+              "nsarip studio",
+              "snarop studio",
+              "snatip studio",
+              "smarip studio",
+              "snwrip studio",
+              "snario studio",
+              "sbarip studio",
+              "snarjp studio",
+              "snarkp studio",
+              "snaeip studio",
+              "anarip studio",
+              "znarip studio",
+              "snarip dtudio",
+              "snorip studio",
+              "snerip studio",
+              "snarup studio",
+              "snyrip studio",
+              "snarip studo",
+              "snarip stodio",
+              "snarip studeo",
+              "snarip stuidio",
+              "snarip studi",
+              "snarip stido",
+              "snarip studoi",
+              "snarip staduio",
+              "snarip studios",
+              "snaripstudio",
+              "snarip-studio",
+              "snarips studio",
+              "snaripstudios",
+              "the snarip studio",
+              "snarip studio co",
+              "snarip studio com",
+              "snrip studios",
+              "sanrip studios",
+              "snarrip studios",
+              "smarip studios",
+              "snrip studo",
+              "sanrip studo",
+              "snarrip stodio",
+              "snarop studeo",
+              "snatip stuidio",
+              "sanripstudio",
+              "snripstudio",
+              "snaripstudos",
+              "snaripstudo",
+              "snaripstodio",
+              "sanrip studeo",
+              "snraip stuidio",
+              "snairp studoi",
+              "snarpi stado",
+              "nsarip studo",
+              "snarp studios",
+              "snaip studo",
+              "snari studeo",
+              "snaro studio",
+              "snari studios",
+              "snapi studio",
+              "snaripe studio",
+              "snario studio",
+              "snarip stufio",
+              "snarip syudio",
+              "snarip atudio",
+              "snarip studuo",
+              "snarip atudios",
+              "snarip stufios",
+              "snairp studo",
+              "snarpi stodio",
+              "sarip studios",
+              "narip studos",
+              "snarrip stufio",
+              "snaarip studeo",
+              "sanripstudeo",
+              "snaripp studo",
+              "snariip stodio",
+              "snarip stoudio",
+              "snarpi studos",
+              "snorip studios",
+              "snerip studeo",
+              "snatip studios",
+              "smarip stuidio",
+              "snarip stud.io",
+              "snarp studeo"
+            ],
             url: typeof window !== "undefined" ? window.location.origin : "",
             image:
               "https://cdn.builder.io/api/v1/image/assets%2Ff48aa15f6f184b529ed3ca882d1ea006%2F80b9e9b58c234d4ebeea01c935603c20?format=webp&width=800",
