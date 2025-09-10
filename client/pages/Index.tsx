@@ -537,7 +537,10 @@ export default function Index() {
             { '@type': 'Place', name: 'Gurgaon' },
             { '@type': 'Place', name: 'Gurugram' }
           ],
-          sameAs: []
+          sameAs: [
+            'https://www.linkedin.com/company/snarip-studio',
+            'https://www.instagram.com/snaripstudio/'
+          ]
         })
       }} />
 
@@ -590,28 +593,20 @@ export default function Index() {
               </h3>
               <div className="space-y-4">
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/snarip-studio"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
                 >
                   <span>LinkedIn</span>
                 </a>
                 <a
-                  href="#"
-                  className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
-                >
-                  <span>Behance</span>
-                </a>
-                <a
-                  href="#"
+                  href="https://www.instagram.com/snaripstudio/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
                 >
                   <span>Instagram</span>
-                </a>
-                <a
-                  href="#"
-                  className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
-                >
-                  <span>Twitter</span>
                 </a>
               </div>
             </div>
