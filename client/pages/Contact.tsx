@@ -11,10 +11,13 @@ export default function Contact() {
 
   useEffect(() => {
     setSEO({
-      title: "Contact SnaripStudio | Website Development in Noida · Greater Noida · Gurgaon",
+      title: "Contact Snarip Studio | Website Development in Noida · Greater Noida · Gurgaon",
       description:
-        "Get a fast, SEO-friendly website. Contact SnaripStudio – website maker and web development company serving Greater Noida, Noida and Gurgaon.",
+        "Get a fast, SEO-friendly website. Contact Snarip (Snarip Studio) – website maker and web development company serving Greater Noida, Noida and Gurgaon.",
       keywords: [
+        "snarip",
+        "snarip studio",
+        "snaripstudio",
         "contact website maker",
         "contact web development company",
         "Greater Noida",
