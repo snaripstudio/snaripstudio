@@ -39,6 +39,11 @@ export function setSEO({ title, description, keywords = [], canonicalPath }: SEO
   upsertMeta("og:description", "property", description);
   upsertMeta("og:type", "property", "website");
   upsertMeta("og:url", "property", url);
+  upsertMeta("og:site_name", "property", "Snarip Studio");
+
+  // App/site naming
+  upsertMeta("application-name", "name", "Snarip Studio");
+  upsertMeta("apple-mobile-web-app-title", "name", "Snarip Studio");
 
   // Twitter
   upsertMeta("twitter:card", "name", "summary_large_image");
