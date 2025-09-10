@@ -22,5 +22,8 @@ export function createServer() {
   // SEO: dynamic sitemap that uses the request host/protocol
   app.get("/sitemap.xml", handleSitemap);
 
+  // Let non-API, non-sitemap routes fall through to Vite's SPA history fallback
+  app.use((_, __, next) => next());
+
   return app;
 }
