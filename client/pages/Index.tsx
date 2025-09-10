@@ -16,6 +16,10 @@ export default function Index() {
       description:
         "SnaripStudio builds fast, SEO-friendly websites that grow your business. Trusted website maker and web development company serving Greater Noida, Noida and Gurgaon.",
       keywords: [
+        "snarip",
+        "snarip studio",
+        "snaripstudio",
+        "snarip studios",
         "website maker",
         "website development",
         "web development company",
@@ -262,6 +266,9 @@ export default function Index() {
                 With years of combined experience, we merge creativity and
                 technology to deliver solutions that stand out in a crowded
                 digital world.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mt-4">
+                Snarip (Snarip Studio) is a web development studio helping brands build fast, SEO‑friendly websites in Greater Noida, Noida and Gurgaon.
               </p>
             </div>
             <div className="animate-on-scroll fade-left">
@@ -518,7 +525,8 @@ export default function Index() {
         __html: JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'ProfessionalService',
-          name: 'SnaripStudio',
+          name: 'Snarip Studio',
+          alternateName: ['Snarip', 'SnaripStudio', 'Snarip Studios'],
           url: typeof window !== 'undefined' ? window.location.origin : '',
           image: 'https://cdn.builder.io/api/v1/image/assets%2Ff48aa15f6f184b529ed3ca882d1ea006%2F80b9e9b58c234d4ebeea01c935603c20?format=webp&width=800',
           email: 'snaripstudio@gmail.com',
