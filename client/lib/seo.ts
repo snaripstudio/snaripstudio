@@ -25,14 +25,25 @@ function setCanonical(url: string) {
   link.setAttribute("href", url);
 }
 
-export function setSEO({ title, description, keywords = [], canonicalPath }: SEOOptions) {
+export function setSEO({
+  title,
+  description,
+  keywords = [],
+  canonicalPath,
+}: SEOOptions) {
   const base = window.location.origin;
-  const url = canonicalPath ? new URL(canonicalPath, base).toString() : window.location.href;
+  const url = canonicalPath
+    ? new URL(canonicalPath, base).toString()
+    : window.location.href;
 
   document.title = title;
   upsertMeta("description", "name", description);
   if (keywords.length) upsertMeta("keywords", "name", keywords.join(", "));
-  upsertMeta("robots", "name", "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1");
+  upsertMeta(
+    "robots",
+    "name",
+    "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+  );
 
   // Open Graph
   upsertMeta("og:title", "property", title);

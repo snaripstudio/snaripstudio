@@ -6,7 +6,8 @@ const pages = [
 ];
 
 function getBaseUrl(req: any) {
-  const proto = (req.headers["x-forwarded-proto"] as string) || req.protocol || "https";
+  const proto =
+    (req.headers["x-forwarded-proto"] as string) || req.protocol || "https";
   const host = (req.headers["x-forwarded-host"] as string) || req.headers.host;
   return `${proto}://${host}`;
 }
