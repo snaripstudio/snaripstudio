@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { setSEO } from "@/lib/seo";
+
 export default function Contact() {
   const email = "snaripstudio@gmail.com";
   const whatsappNumber = "+91 6386873180";
@@ -5,6 +8,27 @@ export default function Contact() {
     "Hi! I'm interested in working with SnaripStudio for my project.";
 
   const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/[^\d]/g, "")}?text=${encodeURIComponent(whatsappMessage)}`;
+
+  useEffect(() => {
+    setSEO({
+      title:
+        "Contact Snarip Studio | Website Development in Noida · Greater Noida · Gurgaon",
+      description:
+        "Get a fast, SEO-friendly website. Contact Snarip (Snarip Studio) – website maker and web development company serving Greater Noida, Noida and Gurgaon.",
+      keywords: [
+        "snarip",
+        "snarip studio",
+        "snaripstudio",
+        "contact website maker",
+        "contact web development company",
+        "Greater Noida",
+        "Noida",
+        "Gurgaon",
+        "Gurugram",
+      ],
+      canonicalPath: "/contact",
+    });
+  }, []);
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
