@@ -3,7 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SnaripStudio - Digital Agency</title>
+    <title>Website Development & Website Maker in Greater Noida, Noida & Gurgaon | SnaripStudio</title>
+    <meta name="description" content="SnaripStudio builds fast, SEO-friendly websites. Website maker and web development company serving Greater Noida, Noida and Gurgaon." />
+    <meta name="keywords" content="website maker, website development, web development company, Greater Noida, Noida, Gurgaon, Gurugram, SEO services, ecommerce website" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <link rel="canonical" href="/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Website Development & Website Maker in Greater Noida, Noida & Gurgaon | SnaripStudio" />
+    <meta property="og:description" content="SnaripStudio builds fast, SEO-friendly websites. Website maker and web development company serving Greater Noida, Noida and Gurgaon." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Website Development & Website Maker in Greater Noida, Noida & Gurgaon | SnaripStudio" />
+    <meta name="twitter:description" content="SnaripStudio builds fast, SEO-friendly websites. Website maker and web development company serving Greater Noida, Noida and Gurgaon." />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,6 +26,21 @@
       type="image/png"
       href="https://cdn.builder.io/api/v1/image/assets%2Ff48aa15f6f184b529ed3ca882d1ea006%2F80b9e9b58c234d4ebeea01c935603c20?format=webp&width=800"
     />
+    <script>
+      (function() {
+        try {
+          var canonical = document.querySelector("link[rel='canonical']");
+          if (canonical) canonical.setAttribute("href", window.location.href);
+          var ogUrl = document.querySelector("meta[property='og:url']");
+          if (!ogUrl) {
+            ogUrl = document.createElement('meta');
+            ogUrl.setAttribute('property', 'og:url');
+            document.head.appendChild(ogUrl);
+          }
+          ogUrl.setAttribute('content', window.location.href);
+        } catch (e) {}
+      })();
+    </script>
     <style>
       /* Prevent flash of unstyled content */
       html,
