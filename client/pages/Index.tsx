@@ -731,7 +731,7 @@ export default function Index() {
         </div>
       </footer>
 
-      <style jsx>{`
+      <style>{`
         .nav-link::after {
           content: "";
           position: absolute;
