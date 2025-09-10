@@ -12,15 +12,14 @@ export default function Index() {
   useEffect(() => {
     setSEO({
       title:
-        "Website Development & Website Maker in Greater Noida, Noida & Gurgaon | SnaripStudio",
+        "Website Development in Greater Noida, Noida & Gurgaon | SnaripStudio",
       description:
-        "SnaripStudio builds fast, SEO-friendly websites that grow your business. Trusted website maker and web development company serving Greater Noida, Noida and Gurgaon.",
+        "SnaripStudio builds fast, SEO-friendly websites that grow your business. Trusted web development company serving Greater Noida, Noida and Gurgaon.",
       keywords: [
         "snarip",
         "snarip studio",
         "snaripstudio",
         "snarip studios",
-        "website maker",
         "website development",
         "web development company",
         "Greater Noida",
@@ -231,17 +230,20 @@ export default function Index() {
                 WEBSITE DEVELOPMENT IN NCR
               </h2>
               <h3 className="text-3xl md:text-5xl font-montserrat text-foreground leading-tight mb-6">
-                Website Maker in Greater Noida, Noida & Gurgaon
+                Website Development in Greater Noida, Noida & Gurgaon
               </h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Looking for a website maker or web development company in
-                Greater Noida, Noida, or Gurgaon? We design and develop fast,
-                SEO-optimized websites that convert visitors into customers.
-                From corporate sites to e‑commerce, we deliver end‑to‑end
-                solutions including design, development, SEO, and maintenance.
+                Looking for a web development company in Greater Noida, Noida,
+                or Gurgaon? We design and develop fast, SEO-optimized websites
+                that convert visitors into customers. From corporate sites to
+                e‑commerce, we deliver end‑to‑end solutions including design,
+                development, SEO, and maintenance.
               </p>
             </div>
-            <ul className="space-y-4" aria-label="Service areas">
+            <ul
+              className="space-y-4 sr-only"
+              aria-label="Service areas (hidden)"
+            >
               <li className="flex items-start gap-3">
                 <span className="mt-1">✅</span>{" "}
                 <span>
