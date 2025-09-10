@@ -2,10 +2,33 @@ import { useState, useEffect, useRef } from "react";
 import Silk from "../components/Silk";
 import StarBorder from "../components/StarBorder";
 import FlowingMenu from "../components/FlowingMenu";
+import { setSEO } from "@/lib/seo";
 
 export default function Index() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
+
+  // Page SEO
+  useEffect(() => {
+    setSEO({
+      title:
+        "Website Development & Website Maker in Greater Noida, Noida & Gurgaon | SnaripStudio",
+      description:
+        "SnaripStudio builds fast, SEO-friendly websites that grow your business. Trusted website maker and web development company serving Greater Noida, Noida and Gurgaon.",
+      keywords: [
+        "website maker",
+        "website development",
+        "web development company",
+        "Greater Noida",
+        "Noida",
+        "Gurgaon",
+        "Gurugram",
+        "SEO services",
+        "ecommerce website",
+      ],
+      canonicalPath: "/",
+    });
+  }, []);
 
   // Simple scroll animation setup
   useEffect(() => {
@@ -134,7 +157,7 @@ export default function Index() {
   ];
 
   return (
-    <div className="min-h-screen bg-background relative overflow-hidden">
+    <div className="min-h-screen bg-background relative overflow-hidden" itemScope itemType="https://schema.org/ProfessionalService">
       {/* Animated Background Lines */}
       <div className="background-lines">
         <div className="line line-1"></div>
@@ -187,6 +210,30 @@ export default function Index() {
                 Let's Connect
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SEO Service Area Section */}
+      <section id="services" className="px-4 md:px-8 py-16 bg-card">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-sm font-medium tracking-widest text-muted-foreground mb-4">
+                WEBSITE DEVELOPMENT IN NCR
+              </h2>
+              <h3 className="text-3xl md:text-5xl font-montserrat text-foreground leading-tight mb-6">
+                Website Maker in Greater Noida, Noida & Gurgaon
+              </h3>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Looking for a website maker or web development company in Greater Noida, Noida, or Gurgaon? We design and develop fast, SEO-optimized websites that convert visitors into customers. From corporate sites to e‑commerce, we deliver end‑to‑end solutions including design, development, SEO, and maintenance.
+              </p>
+            </div>
+            <ul className="space-y-4" aria-label="Service areas">
+              <li className="flex items-start gap-3"><span className="mt-1">✅</span> <span>Greater Noida – custom websites, landing pages, and e‑commerce stores</span></li>
+              <li className="flex items-start gap-3"><span className="mt-1">✅</span> <span>Noida – performance‑focused development and SEO implementation</span></li>
+              <li className="flex items-start gap-3"><span className="mt-1">✅</span> <span>Gurgaon (Gurugram) – business websites that rank and convert</span></li>
+            </ul>
           </div>
         </div>
       </section>
@@ -465,6 +512,26 @@ export default function Index() {
           </a>
         </div>
       </section>
+
+      {/* LocalBusiness structured data */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'ProfessionalService',
+          name: 'SnaripStudio',
+          url: typeof window !== 'undefined' ? window.location.origin : '',
+          image: 'https://cdn.builder.io/api/v1/image/assets%2Ff48aa15f6f184b529ed3ca882d1ea006%2F80b9e9b58c234d4ebeea01c935603c20?format=webp&width=800',
+          email: 'snaripstudio@gmail.com',
+          telephone: '+916386873180',
+          areaServed: [
+            { '@type': 'Place', name: 'Greater Noida' },
+            { '@type': 'Place', name: 'Noida' },
+            { '@type': 'Place', name: 'Gurgaon' },
+            { '@type': 'Place', name: 'Gurugram' }
+          ],
+          sameAs: []
+        })
+      }} />
 
       {/* Footer */}
       <footer className="bg-background border-t border-border text-foreground px-4 md:px-8 py-16 relative overflow-hidden">
