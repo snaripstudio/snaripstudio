@@ -17,6 +17,7 @@ import Index from "./pages/Index";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Loading from "./components/Loading";
+import Packages from "./pages/Packages";
 
 const queryClient = new QueryClient();
 
