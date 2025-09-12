@@ -1,7 +1,14 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { setSEO } from "@/lib/seo";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Check } from "lucide-react";
@@ -30,7 +37,8 @@ export default function Packages() {
           Website Design Packages
         </h1>
         <p className="mt-4 text-lg text-muted-foreground">
-          Transparent pricing for every stage of your business. Let's build something amazing together.
+          Transparent pricing for every stage of your business. Let's build
+          something amazing together.
         </p>
       </section>
 
@@ -47,7 +55,8 @@ export default function Packages() {
               <div className="text-sm text-muted-foreground">/one-time</div>
             </div>
             <p className="text-sm text-muted-foreground">
-              Get a clean, modern web presence that establishes your credibility and attracts new clients.
+              Get a clean, modern web presence that establishes your credibility
+              and attracts new clients.
             </p>
             <ul className="space-y-3">
               {[
@@ -85,7 +94,8 @@ export default function Packages() {
               <div className="text-sm text-muted-foreground">/one-time</div>
             </div>
             <p className="text-sm text-muted-foreground">
-              Includes advanced features to convert visitors into customers and streamline your operations.
+              Includes advanced features to convert visitors into customers and
+              streamline your operations.
             </p>
             <ul className="space-y-3">
               {[
@@ -112,14 +122,17 @@ export default function Packages() {
         <Card className="flex flex-col">
           <CardHeader>
             <CardTitle>E-commerce Package</CardTitle>
-            <CardDescription>Start selling your products online.</CardDescription>
+            <CardDescription>
+              Start selling your products online.
+            </CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">
             <div>
               <div className="text-3xl font-bold">Starting at ₹50,000</div>
             </div>
             <p className="text-sm text-muted-foreground">
-              A complete online store solution, built on a powerful and easy-to-manage platform.
+              A complete online store solution, built on a powerful and
+              easy-to-manage platform.
             </p>
             <ul className="space-y-3">
               {[
@@ -144,7 +157,8 @@ export default function Packages() {
       </section>
 
       <p className="mt-10 text-xs text-muted-foreground">
-        *Domain and hosting costs are separate and to be paid for by the client. We assist with the setup process.
+        *Domain and hosting costs are separate and to be paid for by the client.
+        We assist with the setup process.
       </p>
     </main>
   );
